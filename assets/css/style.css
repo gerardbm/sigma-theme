@@ -153,10 +153,10 @@ body {
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 16px;
 	font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
+	font-variant: normal;
+	font-weight: 400;
 	letter-spacing: 0;
-    line-height: 20px;
+	line-height: 20px;
 	-ms-word-wrap: break-word;
 	overflow-wrap: break-word;
 	text-transform: none;
@@ -233,8 +233,8 @@ header {
 	display: inline-block;
 	font-size: 14px;
 	line-height: 33px;
-    text-align: center;
-    width: 33px;
+	text-align: center;
+	width: 33px;
 }
 
 .top-bar a:hover {
@@ -242,21 +242,46 @@ header {
 }
 
 .fa-icon-sitemap:before {
-    content: "\f0e8";
-    font-family: "FontAwesome";
+	content: "\f0e8";
+	font-family: "FontAwesome";
 }
 
 .fa-icon-twitter:before {
-    content: "\f099";
-    font-family: "FontAwesome";
+	content: "\f099";
+	font-family: "FontAwesome";
 }
 
 .fa-icon-facebook:before {
-    content: "\f09a";
-    font-family: "FontAwesome";
+	content: "\f09a";
+	font-family: "FontAwesome";
 }
 
 .fa-icon-rss:before {
-    content: "\f09e";
-    font-family: "FontAwesome";
+	content: "\f09e";
+	font-family: "FontAwesome";
+}
+
+.sticky {
+	height: 55px;
+	position: relative;
+}
+
+.menu-bar {
+	background: #cde;
+	color: #333;
+	display: block;
+	height: 55px;
+	overflow: visible;
+	position: relative;
+	-webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.19);
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.19);
+}
+
+.fixed-menu .menu-bar {
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
 }
