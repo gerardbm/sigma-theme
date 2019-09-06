@@ -144,6 +144,19 @@ input[type="submit"] {
 	-moz-appearance: button;
 }
 
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
 /*----------------------------------------------------------*/
 /* 2. Layout
 /*----------------------------------------------------------*/
@@ -228,13 +241,30 @@ header {
 	text-align: right;
 }
 
+.top-bar ul {
+	float: right;
+}
+
+.top-bar ul li {
+	float: left;
+}
+
+.top-bar ul li:last-of-type {
+	margin-right: -12px;
+}
+
 .top-bar a {
+	border-left: 1px solid #dcdcdc;
 	color: #567;
 	display: inline-block;
 	font-size: 14px;
-	line-height: 33px;
+	line-height: 34px;
 	text-align: center;
-	width: 33px;
+	width: 34px;
+}
+
+.top-bar ul li:first-of-type a {
+	border-left: none;
 }
 
 .top-bar a:hover {
@@ -267,15 +297,15 @@ header {
 }
 
 .menu-bar {
+	-webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.34);
+	-moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.34);
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.34);
 	background: #fff;
 	color: #234;
 	display: block;
 	height: 55px;
 	overflow: visible;
 	position: relative;
-	-webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.34);
-	-moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.34);
-	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.34);
 }
 
 .fixed-menu .menu-bar {
