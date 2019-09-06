@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+/*----------------------------------------------------------*/
+/* 1. CSS Reset
+/*----------------------------------------------------------*/
+
+article,
+aside,
+details,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+figure {
+	display: inline-block;
+}
+
+html {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+*,
+html,
+body,
+div,
+th,
+td,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+label,
+p,
+fieldset,
+input,
+blockquote {
+	direction: ltr;
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style: normal;
+	font-weight: 400;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	font-size: 100%;
+	font-weight: 400;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+a img {
+	border: none;
+}
+
+a {
+	outline: 0;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+}
+
+/*----------------------------------------------------------*/
+/* 2. Layout
+/*----------------------------------------------------------*/
+
+body {
+	color: #333;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 16px;
+	font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+	letter-spacing: 0;
+    line-height: 20px;
+	-ms-word-wrap: break-word;
+	overflow-wrap: break-word;
+	text-transform: none;
+	word-break: break-word;
+	word-wrap: break-word;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	width: auto;
+}
+
+.sidebar-right {
+	float: left;
+	height: 100%;
+	margin: 55px 0 55px;
+	position: relative;
+	width: 601px;
+}
+.sidebar-left {
+	float: right;
+	height: 100%;
+	margin: 55px 0 55px 0;
+	position: relative;
+	width: 601px;
+}
+
+.one-column {
+	margin: 55px 0 55px 0;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 956px;
+}
+
+hr.clear {
+	background: none;
+	border: 0;
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+}
+
+/*----------------------------------------------------------*/
+/* 3. Header
+/*----------------------------------------------------------*/
+
+header {
+	border-top: 5px solid #f17e01;
+}
+
+.top-bar {
+	background: #234;
+	border-bottom: 1px solid #789;
+	display: block;
+	height: 34px;
+	overflow: visible;
+	position: relative;
+	text-align: right;
+}
+
+.top-bar a {
+	color: #cde;
+	font-size: 14px;
+    padding: 0;
+    text-align: center;
+    width: 33px;
+}
+
+.fa-icon-sitemap a:before {
+    content: "\f0e8";
+    font-family: "FontAwesome";
+}
+
+.fa-icon-twitter a:before {
+    content: "\f099";
+    font-family: "FontAwesome";
+}
+
+.fa-icon-facebook a:before {
+    content: "\f09a";
+    font-family: "FontAwesome";
+}
+
+.fa-icon-rss a:before {
+    content: "\f09e";
+    font-family: "FontAwesome";
+}
