@@ -119,6 +119,7 @@ a img {
 
 a {
 	outline: 0;
+	text-decoration: none;
 }
 
 .aligncenter {
@@ -229,28 +230,33 @@ header {
 
 .top-bar a {
 	color: #cde;
+	display: inline-block;
 	font-size: 14px;
-    padding: 0;
+	line-height: 33px;
     text-align: center;
     width: 33px;
 }
 
-.fa-icon-sitemap a:before {
+.top-bar a:hover {
+	color: #f17e01;
+}
+
+.fa-icon-sitemap:before {
     content: "\f0e8";
     font-family: "FontAwesome";
 }
 
-.fa-icon-twitter a:before {
+.fa-icon-twitter:before {
     content: "\f099";
     font-family: "FontAwesome";
 }
 
-.fa-icon-facebook a:before {
+.fa-icon-facebook:before {
     content: "\f09a";
     font-family: "FontAwesome";
 }
 
-.fa-icon-rss a:before {
+.fa-icon-rss:before {
     content: "\f09e";
     font-family: "FontAwesome";
 }
