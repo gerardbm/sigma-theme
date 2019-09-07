@@ -350,3 +350,7 @@ header {
 	opacity: 1;
 	padding-top: 4px;
 }
+
+.scrollup:hover {
+	background: #f17e01;
+}
