@@ -224,7 +224,7 @@ hr.clear {
 }
 
 /*----------------------------------------------------------*/
-/* 3. Header
+/* 3. Header (top bar)
 /*----------------------------------------------------------*/
 
 header {
@@ -296,6 +296,10 @@ header {
 	position: relative;
 }
 
+/*----------------------------------------------------------*/
+/* 4. Header (menu bar)
+/*----------------------------------------------------------*/
+
 .menu-bar {
 	-webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.34);
 	-moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.34);
@@ -316,8 +320,20 @@ header {
 	z-index: 9999;
 }
 
+.logo {
+	display: inline-block;
+	height: 55px;
+	line-height: 55px;
+	vertical-align: top;
+}
+
+.logo img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
 /*----------------------------------------------------------*/
-/* 4. Scroll up
+/* 5. Title bar
 /*----------------------------------------------------------*/
 
 .title-bar {
