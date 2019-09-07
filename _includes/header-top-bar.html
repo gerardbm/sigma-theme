@@ -2,9 +2,24 @@
 	<div class="wrap">
 		<ul>
 			<li><a target="_blank" rel="nofollow" class="fa-icon-sitemap" href="aaa" title="Sitemap"><span class="screen-reader-text">Sitemap</span></a></li>
-			<li><a target="_blank" rel="nofollow" class="fa-icon-twitter" href="aaa" title="Facebook"><span class="screen-reader-text">Twitter</span></a></li>
-			<li><a target="_blank" rel="nofollow" class="fa-icon-facebook" href="aaa" title="Twitter"><span class="screen-reader-text">Facebook</span></a></li>
-			<li><a target="_blank" rel="nofollow" class="fa-icon-rss" href="aaa" title="RSS"><span class="screen-reader-text">RSS</span></a></li>
+		{% if site.twitter_username %}
+			<li><a target="_blank" rel="nofollow" class="fa-icon-twitter" href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" title="Twitter"><span class="screen-reader-text">Twitter</span></a></li>{% endif %}
+		{% if site.facebook_username %}
+			<li><a target="_blank" rel="nofollow" class="fa-icon-facebook" href="https://www.facebook.com/{{ site.facebook_username | cgi_escape | escape }}" title="Facebook"><span class="screen-reader-text">Facebook</span></a></li>{%  endif %}
+		{% if site.linkedin_username %}
+			<li><a target="_blank" rel="nofollow" class="fa-icon-linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}" title="LinkedIn"><span class="screen-reader-text">LinkedIn</span></a></li>{% endif %}
+		{% if site.pinterest_username %}
+			<li><a target="_blank" rel="nofollow" class="fa-icon-pinterest" href="https://www.pinterest.com/{{ site.pinterest_username | cgi_escape | escape }}" title="Pinterest"><span class="screen-reader-text">Pinterest</span></a></li>{% endif %}
+		{% if site.instagram_username %}
+			<li><a target="_blank" rel="nofollow" class="fa-icon-instagram" href="https://instagram.com/{{ site.instagram_username | cgi_escape | escape }}" title="Instagram"><span class="screen-reader-text">Instagram</span></a></li>{% endif %}
+		{% if site.github_username %}
+			<li><a target="_blank" rel="nofollow" class="fa-icon-github" href="https://github.com/{{ site.github_username | cgi_escape | escape }}" title="Github"><span class="screen-reader-text">Github</span></a></li>{% endif %}
+		{% if site.youtube_username %}
+			<li><a target="_blank" rel="nofollow" class="fa-icon-youtube" href="https://youtube.com/{{ site.youtube_username | cgi_escape | escape }}" title="Youtube"><span class="screen-reader-text">Youtube</span></a></li>{% endif %}
+		{% if site.rss_feedburner %}
+			<li><a target="_blank" rel="nofollow" class="fa-icon-rss" href="{{ site.rss_feedburner | escape }}" title="RSS"><span class="screen-reader-text">RSS</span></a></li>
+		{% else %}
+			<li><a target="_blank" rel="nofollow" class="fa-icon-rss" href="{{ 'feed.xml' | relative_url }}" title="RSS"><span class="screen-reader-text">RSS</span></a></li>{% endif %}
 		</ul>
 	</div>
 </nav>

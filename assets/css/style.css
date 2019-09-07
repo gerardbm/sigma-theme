@@ -257,7 +257,7 @@ header {
 	border-left: 1px solid #dcdcdc;
 	color: #567;
 	display: inline-block;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 34px;
 	text-align: center;
 	width: 34px;
@@ -283,6 +283,31 @@ header {
 
 .fa-icon-facebook:before {
 	content: "\f09a";
+	font-family: "FontAwesome";
+}
+
+.fa-icon-linkedin:before {
+	content: "\f0e1";
+	font-family: "FontAwesome";
+}
+
+.fa-icon-pinterest:before {
+	content: "\f231";
+	font-family: "FontAwesome";
+}
+
+.fa-icon-instagram:before {
+	content: "\f16d";
+	font-family: "FontAwesome";
+}
+
+.fa-icon-github:before {
+	content: "\f09b";
+	font-family: "FontAwesome";
+}
+
+.fa-icon-youtube:before {
+	content: "\f166";
 	font-family: "FontAwesome";
 }
 
