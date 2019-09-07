@@ -320,6 +320,26 @@ header {
 /* 4. Scroll up
 /*----------------------------------------------------------*/
 
+.title-bar {
+	background: #f3f5f8;
+	border-bottom: 1px solid #dcdcdc;
+	color: #234;
+	display: table;
+	height: 89px;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.title-bar span {
+	display: table-cell;
+	height: 89px;
+	vertical-align: middle;
+}
+
+/*----------------------------------------------------------*/
+/* Z. Scroll up
+/*----------------------------------------------------------*/
+
 .scrollup {
 	background: rgba(0, 0, 0, 0.75);
 	-webkit-border-radius: 2px;
