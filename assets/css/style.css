@@ -228,7 +228,7 @@ hr.clear {
 /*----------------------------------------------------------*/
 
 header {
-	border-top: 5px solid #567;
+	border-top: 5px solid #555;
 }
 
 .top-bar {
@@ -255,7 +255,7 @@ header {
 
 .top-bar a {
 	border-left: 1px solid #dcdcdc;
-	color: #567;
+	color: #555;
 	display: inline-block;
 	font-size: 16px;
 	line-height: 34px;
@@ -330,7 +330,6 @@ header {
 	-moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.34);
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.34);
 	background: #fff;
-	color: #234;
 	display: block;
 	height: 55px;
 	overflow: visible;
@@ -364,7 +363,6 @@ header {
 .title-bar {
 	background: #f3f5f8;
 	border-bottom: 1px solid #dcdcdc;
-	color: #234;
 	display: table;
 	height: 89px;
 	table-layout: fixed;
@@ -375,6 +373,23 @@ header {
 	display: table-cell;
 	height: 89px;
 	vertical-align: middle;
+}
+
+/*----------------------------------------------------------*/
+/* X. Footer
+/*----------------------------------------------------------*/
+
+footer {
+	background: #242628;
+	border-top: 8px solid #555;
+	color: #94999e;
+	font-size: 14px;
+	height: 89px;
+	overflow: hidden;
+}
+
+footer a {
+	color: #bcbfc2;
 }
 
 /*----------------------------------------------------------*/
