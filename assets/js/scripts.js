@@ -14,9 +14,9 @@ var button = document.getElementsByClassName("scrollup")[0];
 
 function scrollToTop() {
 	if (window.pageYOffset > 250) {
-		button.style.display = "block";
+		button.classList.add("is-visible");
 	} else {
-		button.style.display = "none";
+		button.classList.remove("is-visible");
 	}
 }
 
