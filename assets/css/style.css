@@ -381,7 +381,7 @@ header {
 
 footer {
 	background: #242628;
-	border-top: 8px solid #555;
+	border-top: 8px solid #aaa;
 	color: #94999e;
 	font-size: 14px;
 	overflow: hidden;
@@ -394,6 +394,14 @@ footer span {
 
 footer a {
 	color: #bcbfc2;
+}
+
+.bottom-links {
+	border-bottom: 1px solid #000;
+	-webkit-box-shadow: 0 1px 0 #393939;
+	-moz-box-shadow: 0 1px 0 #393939;
+	box-shadow: 0 1px 0 #393939;
+	min-height: 55px;
 }
 
 /*----------------------------------------------------------*/
