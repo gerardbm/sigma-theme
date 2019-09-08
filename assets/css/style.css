@@ -432,7 +432,7 @@ footer a {
 	transition: background .3s ease-out, opacity .3s, visibility .3s;
 	visibility: hidden;
 	width: 34px;
-	z-index: 9999;
+	z-index: 9985;
 }
 
 .scrollup.is-visible {

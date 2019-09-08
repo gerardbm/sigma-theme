@@ -1,6 +1,13 @@
 <footer>
 	<div class="wrap">
 		<div class="bottom-links">
+			<ul>
+				{% for page in site.pages %}
+					<li>
+						<a href="{{ page.url }}">{{ page.title }}</a>
+					</li>
+				{% endfor %}
+			</ul>
 		</div>
 		{% assign this_year = site.time | date: '%Y' | plus: 0 %}
 		{% if site.first_year < this_year %}
