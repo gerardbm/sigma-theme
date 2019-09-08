@@ -384,8 +384,12 @@ footer {
 	border-top: 8px solid #555;
 	color: #94999e;
 	font-size: 14px;
-	height: 89px;
 	overflow: hidden;
+	text-align: center;
+}
+
+footer span {
+	line-height: 55px;
 }
 
 footer a {
@@ -398,12 +402,12 @@ footer a {
 
 .scrollup {
 	background: rgba(0, 0, 0, 0.75);
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	bottom: 13px;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	bottom: 0;
 	cursor: pointer;
-	height: 36px;
+	height: 34px;
 	opacity: 0;
 	position: fixed;
 	right: 13px;
@@ -413,7 +417,7 @@ footer a {
 	-o-transition: background .3s ease-out, opacity .3s, visibility .3s;
 	transition: background .3s ease-out, opacity .3s, visibility .3s;
 	visibility: hidden;
-	width: 36px;
+	width: 40px;
 	z-index: 9999;
 }
 
