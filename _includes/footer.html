@@ -1,14 +1,14 @@
 <footer>
+	{% if site.data.footer-links %}
+	<div class="bottom-links">
+		<ul class="wrap">
+		{% for item in site.data.footer-links.docs -%}
+			<li><a href="{{ item.url | relative }}">{{ item.title }}</a></li>
+		{%- endfor %}
+		</ul>
+	</div>
+	{% endif %}
 	<div class="wrap">
-		<div class="bottom-links">
-			<ul>
-				{% for page in site.pages %}
-					<li>
-						<a href="{{ page.url }}">{{ page.title }}</a>
-					</li>
-				{% endfor %}
-			</ul>
-		</div>
 		{% assign this_year = site.time | date: '%Y' | plus: 0 %}
 		{% if site.first_year < this_year %}
 			{% assign first_year = site.first_year | append: "-" %}

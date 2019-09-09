@@ -223,6 +223,10 @@ hr.clear {
 	width: 0;
 }
 
+a:hover {
+	color: #f17e01;
+}
+
 /*----------------------------------------------------------*/
 /* 3. Header (top bar)
 /*----------------------------------------------------------*/
@@ -408,6 +412,17 @@ footer a {
 	-moz-box-shadow: 0 1px 0 #393939;
 	box-shadow: 0 1px 0 #393939;
 	min-height: 55px;
+}
+
+.bottom-links ul li {
+	display: inline-block;
+	line-height: 55px;
+}
+
+.bottom-links li + li::before {
+    content: "|";
+    display: inline-block;
+    margin: 0 8px;
 }
 
 /*----------------------------------------------------------*/
