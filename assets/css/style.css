@@ -90,16 +90,6 @@ th {
 	text-align: left;
 }
 
-.entry-content h1,
-.entry-content h2,
-.entry-content h3,
-.entry-content h4,
-.entry-content h5,
-.entry-content h6 {
-	font-size: 100%;
-	font-weight: 400;
-}
-
 q:before,
 q:after {
 	content: '';
@@ -383,6 +373,19 @@ header {
 .menu-bar,
 .title-bar {
 	clear: both;
+}
+
+/*----------------------------------------------------------*/
+/* 6. The content
+/*----------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Oswald",Arial,Helvetica,sans-serif;
 }
 
 /*----------------------------------------------------------*/
