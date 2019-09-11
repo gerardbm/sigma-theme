@@ -1,8 +1,6 @@
 <nav class="top-bar">
 	<div class="wrap">
 		<ul>
-		{% if site.sitemap_link == true %}
-			<li><a target="_blank" rel="nofollow" class="fa-icon-sitemap" href="{{ 'sitemap.xml' | relative_url }}" title="Sitemap"><span class="screen-reader-text">Sitemap</span></a></li>{% endif %}
 		{% if site.twitter_username %}
 			<li><a target="_blank" rel="nofollow" class="fa-icon-twitter" href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" title="Twitter"><span class="screen-reader-text">Twitter</span></a></li>{% endif %}
 		{% if site.facebook_username %}
@@ -17,6 +15,8 @@
 			<li><a target="_blank" rel="nofollow" class="fa-icon-github" href="https://github.com/{{ site.github_username | cgi_escape | escape }}" title="Github"><span class="screen-reader-text">Github</span></a></li>{% endif %}
 		{% if site.youtube_username %}
 			<li><a target="_blank" rel="nofollow" class="fa-icon-youtube" href="https://youtube.com/{{ site.youtube_username | cgi_escape | escape }}" title="Youtube"><span class="screen-reader-text">Youtube</span></a></li>{% endif %}
+		{% if site.sitemap_link == true %}
+			<li><a target="_blank" rel="nofollow" class="fa-icon-sitemap" href="{{ 'sitemap.xml' | relative_url }}" title="Sitemap"><span class="screen-reader-text">Sitemap</span></a></li>{% endif %}
 		{% if site.rss_feedburner %}
 			<li><a target="_blank" rel="nofollow" class="fa-icon-rss" href="{{ site.rss_feedburner | escape }}" title="RSS"><span class="screen-reader-text">RSS</span></a></li>
 		{% else %}
