@@ -1,7 +1,8 @@
 <nav class="top-bar">
 	<div class="wrap">
 		<ul>
-			<li><a target="_blank" rel="nofollow" class="fa-icon-sitemap" href="aaa" title="Sitemap"><span class="screen-reader-text">Sitemap</span></a></li>
+		{% if site.sitemap_link == true %}
+			<li><a target="_blank" rel="nofollow" class="fa-icon-sitemap" href="{{ 'sitemap.xml' | relative_url }}" title="Sitemap"><span class="screen-reader-text">Sitemap</span></a></li>{% endif %}
 		{% if site.twitter_username %}
 			<li><a target="_blank" rel="nofollow" class="fa-icon-twitter" href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" title="Twitter"><span class="screen-reader-text">Twitter</span></a></li>{% endif %}
 		{% if site.facebook_username %}
