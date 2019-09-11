@@ -350,6 +350,30 @@ header {
 	vertical-align: middle;
 }
 
+.navigation {
+	float: right;
+	font-size: 14px;
+}
+
+.navigation ul li {
+	display: inline-block;
+	line-height: 55px;
+	padding-left: 21px;
+}
+
+.navigation ul li:first-of-type {
+	padding-left: 0;
+}
+
+.navigation ul li a:link,
+.navigation ul li a:visited {
+	color: #303336;
+}
+
+.navigation ul li a:hover {
+	color: #f17e01;
+}
+
 /*----------------------------------------------------------*/
 /* 5. Title bar
 /*----------------------------------------------------------*/

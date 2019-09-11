@@ -6,6 +6,15 @@
 					<img src="{{ '/assets/img/logo.png' | relative_url }}" alt="{{ site.title | escape }}" title="{{ site.title | escape }}">
 				</a>
 			</div>
+			{% if site.data.navigation %}
+			<nav class="navigation">
+				<ul>
+				{% for item in site.data.navigation.docs -%}
+					<li><a title="{{ item.title | capitalize }}" href="{{ item.url | relative }}">{{ item.title }}</a></li>
+				{%- endfor %}
+				</ul>
+			</nav>
+			{% endif %}
 		</div>
 	</div>
 </div>
