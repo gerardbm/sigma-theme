@@ -15,7 +15,7 @@ layout: default
       {%- endif -%}</p>
 
 		{% for category in page.categories %}
-			<a href="/blog/{{ category | slugize }}/">{{ category }}</a>
+			<a href="/{{ category }}/">{{ category }}</a>
 		{% endfor %}
   </section>
 
