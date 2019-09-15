@@ -1,6 +1,21 @@
+{% assign t = site.data.translations %}
 <section class="title-bar">
 	<div class="wrap">
-		<span>Artículo</span>
+	{% if page.layout == 'post' %}
+		<span>{{ t[site.lang]['post'] }}</span>
+	{%- endif %}
+	{% if page.layout == 'page' %}
+		<span>{{ t[site.lang]['page'] }}</span>
+	{%- endif %}
+	{% if page.layout == 'categories' %}
+		<span>{{ t[site.lang]['category'] }}</span>
+	{%- endif %}
+	{% if page.url == "/404.html" %}
+		<span>Error</span>
+	{%- endif %}
+	{% for category in page.categories %}
+		<a href="/blog/{{ category | slugize }}/">{{ category }}</a>
+	{% endfor %}
 	</div>
 </section>
 

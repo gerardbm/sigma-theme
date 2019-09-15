@@ -1,0 +1,13 @@
+---
+en:
+  post: "Post"
+  page: "Page"
+  category: "Category"
+es:
+  post: "Artículo"
+  page: "Página"
+  category: "Categoría"
+ca:
+  post: "Article"
+  page: "Pàgina"
+  category: "Categoria"
