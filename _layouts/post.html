@@ -3,42 +3,55 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <section class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+	<section class="post-header">
+		<h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+		<p class="post-meta">
+			{% assign t = site.data.translations %}
+			<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+				{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+				{{ page.date | date: date_format }}
+			</time>
 
-		{% for category in page.categories %}
-			<a href="/{{ category }}/">{{ category }}</a>
-		{% endfor %}
-  </section>
+			{% if page.author %}
+			/ {{ t[site.lang]['by'] }} <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="post-author" itemprop="name">{{ page.author }}</span></span>
+			{% endif %}
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+			{% if page.categories != empty %}
+			/ {{ t[site.lang]['in'] }}
+				{% for category in page.categories %}
+
+					{% if forloop.last == false %}
+						{% assign sep = ", " %}
+					{% else %}
+						{% assign sep = "" %}
+					{% endif %}
+
+					<a href="/{{ category }}/">{{ category }}</a>{{ sep }}
+				{% endfor %}
+			{%- endif -%}
+		</p>
+	</section>
+
+	<div class="post-content e-content" itemprop="articleBody">
+		{{ content }}
+	</div>
 
 	<!-- If this is a post, show previous/next post links -->
 	{% if page.id %}
 
-	{% if page.previous.url %}
-	<a href="{{page.previous.url}}">{{page.previous.title}}</a>
+		{% if page.previous.url %}
+			<a href="{{page.previous.url}}">{{page.previous.title}}</a>
+		{% endif %}
+
+		{% if page.next.url %}
+			<a class="button is-link ellipsis" title="{{page.previous.title}}" href="{{page.next.url}}">{{page.next.title}}</a>
+		{% endif %}
+
 	{% endif %}
 
-	{% if page.next.url %}
-	<a class="button is-link ellipsis" title="{{page.previous.title}}" href="{{page.next.url}}">{{page.next.title}}</a>
-	{% endif %}
+	{%- if site.disqus.shortname -%}
+	{%- include disqus_comments.html -%}
+	{%- endif -%}
 
-	{% endif %}
-
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+	<a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

@@ -400,7 +400,7 @@ header {
 }
 
 /*----------------------------------------------------------*/
-/* 6. The content
+/* 6. Main content
 /*----------------------------------------------------------*/
 
 .main-content {
@@ -416,6 +416,7 @@ h5,
 h6 {
 	font-family: "Oswald",Arial,Helvetica,sans-serif;
 	font-weight: 400;
+	margin-bottom: 15px;
 }
 
 h1 {
@@ -440,6 +441,46 @@ h5 {
 
 h6 {
 	font-size: 1.1em;
+}
+
+p {
+	line-height: 22px;
+	margin-bottom: 1.6em;
+}
+
+/*----------------------------------------------------------*/
+/* 7. Post content
+/*----------------------------------------------------------*/
+
+.post-title {
+	line-height: 1.2em;
+	margin-top: -5px;
+}
+
+.post-meta {
+	border-bottom: 1px dashed #dcdcdc;
+	color: #798086;
+	display: block;
+	padding-bottom: 15px;
+}
+
+.post-meta a:link,
+.post-meta a:visited {
+	color: #798086;
+	text-decoration: underline;
+}
+
+.post-meta a:hover {
+	color: #f17e01;
+}
+
+.post-content a:link,
+.post-content a:visited {
+	color: #f17e01;
+}
+
+.post-content a:hover {
+	color: #000;
 }
 
 /*----------------------------------------------------------*/

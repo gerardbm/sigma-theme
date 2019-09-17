@@ -3,11 +3,17 @@ en:
   post: "Post"
   page: "Page"
   category: "Category"
+  by: "By"
+  in: "In"
 es:
   post: "Artículo"
   page: "Página"
   category: "Categoría"
+  by: "Por"
+  in: "En"
 ca:
   post: "Article"
   page: "Pàgina"
   category: "Categoria"
+  by: "Per"
+  in: "En"
