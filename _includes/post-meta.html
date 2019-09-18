@@ -1,0 +1,20 @@
+{% assign t = site.data.translations %}
+<p class="post-meta">
+	<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+		{{- page.date | date: date_format -}}
+	</time>
+
+	{% if page.author -%}
+	<span> / {{ t[site.lang]['by'] }}</span>
+	<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="post-author" itemprop="name">{{ page.author }}</span></span>
+	{%- endif %}
+
+	{% if page.categories != empty -%}
+	<span> / {{ t[site.lang]['in'] }} </span>
+		{%- for category in page.categories -%}
+			<a href="/{{ category | slugify }}/">{{ category }}</a>
+			{%- unless forloop.last %}, {% endunless -%}
+		{%- endfor -%}
+	{%- endif %}
+</p>
