@@ -25,6 +25,34 @@
 		{%- endif -%}
 	</time>
 
+	{% if page.last_modified_at -%}
+	<span>({{ t[site.lang]['upd'] }}: </span>
+	<time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">
+		{%- if site.lang == 'en' -%}
+			{{- page.last_modified_at | date: "%B %d, %Y" -}}
+		{%- else -%}
+			{{- page.last_modified_at | date: "%d " -}}
+			{%- assign m = page.last_modified_at | date: "%-m" -%}
+			{%- case m -%}
+			{%- when '1' %}{{ z[site.lang]['jan'] -}}
+			{%- when '2' %}{{ z[site.lang]['feb'] -}}
+			{%- when '3' %}{{ z[site.lang]['mar'] -}}
+			{%- when '4' %}{{ z[site.lang]['apr'] -}}
+			{%- when '5' %}{{ z[site.lang]['may'] -}}
+			{%- when '6' %}{{ z[site.lang]['jun'] -}}
+			{%- when '7' %}{{ z[site.lang]['jul'] -}}
+			{%- when '8' %}{{ z[site.lang]['aug'] -}}
+			{%- when '9' %}{{ z[site.lang]['sep'] -}}
+			{%- when '10' %}{{ z[site.lang]['oct'] -}}
+			{%- when '11' %}{{ z[site.lang]['nov'] }}
+			{%- when '12' %}{{ z[site.lang]['dec'] }}
+			{%- endcase -%}
+			{{- page.last_modified_at | date: " %Y" -}}
+		{%- endif -%}
+	</time>
+	<span>)</span>
+	{%- endif %}
+
 	{% if page.author -%}
 	<span> / {{ t[site.lang]['by'] }}</span>
 	<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="post-author" itemprop="name">{{ page.author }}</span></span>

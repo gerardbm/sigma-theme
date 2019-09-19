@@ -5,15 +5,18 @@ en:
   category: "Category"
   by: "By"
   in: "In"
+  upd: "upd"
 es:
   post: "Artículo"
   page: "Página"
   category: "Categoría"
   by: "Por"
   in: "En"
+  upd: "act"
 ca:
   post: "Article"
   page: "Pàgina"
   category: "Categoria"
   by: "Per"
   in: "En"
+  upd: "act"
