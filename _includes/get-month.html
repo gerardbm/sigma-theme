@@ -1,0 +1,15 @@
+{%- assign m = include.tdate | date: "%-m" -%}
+{%- case m -%}
+	{%- when '1' %}{{ z[site.lang]['jan'] -}}
+	{%- when '2' %}{{ z[site.lang]['feb'] -}}
+	{%- when '3' %}{{ z[site.lang]['mar'] -}}
+	{%- when '4' %}{{ z[site.lang]['apr'] -}}
+	{%- when '5' %}{{ z[site.lang]['may'] -}}
+	{%- when '6' %}{{ z[site.lang]['jun'] -}}
+	{%- when '7' %}{{ z[site.lang]['jul'] -}}
+	{%- when '8' %}{{ z[site.lang]['aug'] -}}
+	{%- when '9' %}{{ z[site.lang]['sep'] -}}
+	{%- when '10' %}{{ z[site.lang]['oct'] -}}
+	{%- when '11' %}{{ z[site.lang]['nov'] }}
+	{%- when '12' %}{{ z[site.lang]['dec'] }}
+{%- endcase -%}
