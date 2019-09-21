@@ -159,7 +159,7 @@ body {
 	font-variant: normal;
 	font-weight: 400;
 	letter-spacing: 0;
-	line-height: 20px;
+	line-height: 24px;
 	-ms-word-wrap: break-word;
 	overflow-wrap: break-word;
 	text-transform: none;
@@ -416,7 +416,6 @@ h5,
 h6 {
 	font-family: "Oswald",Arial,Helvetica,sans-serif;
 	font-weight: 400;
-	margin-bottom: 15px;
 }
 
 h1 {
@@ -443,9 +442,48 @@ h6 {
 	font-size: 1.1em;
 }
 
-p {
+.main-content p {
 	line-height: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.main-content p,
+.main-content ul,
+.main-content ol {
 	margin-bottom: 1.6em;
+}
+
+.main-content ul li > ul,
+.main-content ol li > ol,
+.main-content ul li > ol,
+.main-content ol li > ul {
+	margin: 8px 0;
+}
+
+.main-content ul li {
+	list-style: disc;
+}
+
+.main-content ul li > ul li {
+	list-style: circle;
+}
+
+.main-content ul li > ul li > ul li {
+	list-style: square;
+}
+
+.main-content ol li {
+	list-style: decimal;
+}
+
+.main-content ul,
+.main-content ol {
+	padding-left: 30px;
 }
 
 /*----------------------------------------------------------*/
@@ -454,7 +492,7 @@ p {
 
 .post-title {
 	line-height: 1.2em;
-	margin-top: -5px;
+	margin: -5px 0 15px;
 }
 
 .post-meta {
@@ -476,11 +514,11 @@ p {
 
 .post-content a:link,
 .post-content a:visited {
-	color: #f17e01;
+	color: #095cae;
 }
 
 .post-content a:hover {
-	color: #000;
+	color: #f17e01;
 }
 
 /*----------------------------------------------------------*/
