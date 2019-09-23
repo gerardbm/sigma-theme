@@ -522,6 +522,7 @@ h6 {
 .post-content p > code,
 .post-content li > code {
 	background: #f3f5f8;
+	border: 1px solid #dcdcdc;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -555,6 +556,24 @@ h6 {
 	margin-right: 15px;
 	padding-right: 14px;
 }
+
+.post-content > table {
+	border: 1px solid #798086;
+	margin-bottom: 1.6em;
+	width: 100%;
+}
+
+.post-content > table tr:nth-of-type(even) {
+	background: #f3f5f8;
+}
+
+.post-content > table th,
+.post-content > table td {
+	border: 1px solid #798086;
+	padding: 3px 8px;
+	word-break: normal;
+}
+
 
 /*----------------------------------------------------------*/
 /* X. Footer
