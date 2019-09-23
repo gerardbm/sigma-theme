@@ -563,6 +563,12 @@ h6 {
 	width: 100%;
 }
 
+.post-content > table thead {
+	background: #d3d5d8;
+	font-weight: bold;
+	text-align: left;
+}
+
 .post-content > table tr:nth-of-type(even) {
 	background: #f3f5f8;
 }
@@ -574,6 +580,10 @@ h6 {
 	word-break: normal;
 }
 
+.post-content > table tfoot {
+	background: #d3d5d8;
+	font-weight: bold;
+}
 
 /*----------------------------------------------------------*/
 /* X. Footer
@@ -581,7 +591,7 @@ h6 {
 
 footer {
 	background: #242628;
-	border-top: 8px solid #aaa;
+	border-top: 8px solid #b3b5b8;
 	color: #94999e;
 	font-size: 14px;
 	overflow: hidden;
