@@ -538,6 +538,7 @@ h6 {
 /* Workaround to fix double class */
 .post-content .highlight > .highlight {
 	border: none;
+	font-size: 1em;
 	margin: 0;
 	padding: 0;
 }
