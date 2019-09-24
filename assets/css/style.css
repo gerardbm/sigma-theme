@@ -129,12 +129,12 @@ input[type="submit"] {
 body {
 	color: #303336;
 	font-family: Arial,Helvetica,sans-serif;
-	font-size: 16px;
+	font-size: 1em;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
 	letter-spacing: 0;
-	line-height: 24px;
+	line-height: 1.5em;
 	-ms-word-wrap: break-word;
 	overflow-wrap: break-word;
 	text-transform: none;
@@ -226,7 +226,7 @@ header {
 	border-left: 1px solid #dcdcdc;
 	color: #555;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 34px;
 	text-align: center;
 	width: 34px;
@@ -327,7 +327,7 @@ header {
 
 .navigation {
 	float: right;
-	font-size: 14px;
+	font-size: 0.875em;
 }
 
 .navigation ul li {
@@ -519,7 +519,7 @@ h6 {
 	border-radius: 3px;
 	color: #d01040;
 	font-family: monospace;
-	font-size: 14px;
+	font-size: 1.1em;
 	margin: 0 2px;
 	padding: 1px 5px;
 }
@@ -529,7 +529,7 @@ h6 {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	font-size: 15px;
+	font-size: 1.15em;
 	line-height: normal;
 	overflow: auto;
 	padding: 15px;
@@ -578,7 +578,7 @@ h6 {
 
 .post-content sup,
 .post-content sub {
-	font-size: 80%;
+	font-size: 0.875em;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
@@ -605,7 +605,7 @@ h6 {
 	box-shadow: 0 1px 1px rgba(0,0,0,.2), 
 		inset 0 2px 0 0 rgba(255,255,255,.7);
 	color: #404346;
-	font-size: 14px;
+	font-size: 1.1em;
 	margin: 0 2px;
 	padding: 1px 5px;
 }
@@ -618,7 +618,7 @@ footer {
 	background: #242628;
 	border-top: 8px solid #b3b5b8;
 	color: #94999e;
-	font-size: 14px;
+	font-size: 0.875em;
 	overflow: hidden;
 	text-align: center;
 }
