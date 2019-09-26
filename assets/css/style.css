@@ -615,6 +615,10 @@ h6 {
 	padding: 1px 5px;
 }
 
+.post-content > pre {
+	margin-bottom: 1.6em;
+}
+
 .post-content dd {
 	margin: 0 0 8px 30px;
 }
@@ -631,6 +635,7 @@ h6 {
 	font-weight: bold;
 	padding: 0.5em 1em;
 	text-align: center;
+	text-shadow: 1px 1px rgba(0,0,0,0.34);
 	-webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
 	-ms-transition: all .2s ease-in-out;
