@@ -426,6 +426,7 @@ h6 {
 .main-content ul,
 .main-content ol,
 .main-content dl,
+.main-content hr,
 .main-content abbr,
 .main-content figure,
 .main-content address,
@@ -617,6 +618,12 @@ h6 {
 
 .post-content > pre {
 	margin-bottom: 1.6em;
+}
+
+.post-content hr {
+	border: 0;
+	border-bottom: 1px dashed #dcdcdc;
+	margin-top: 0;
 }
 
 .post-content dd {
