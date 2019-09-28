@@ -430,6 +430,7 @@ h6 {
 .main-content abbr,
 .main-content figure,
 .main-content address,
+.main-content figcaption,
 .main-content blockquote,
 .main-content .highlight {
 	margin-bottom: 1.6em;
@@ -497,6 +498,43 @@ h6 {
 
 .post-content a:hover {
 	color: #f17e01;
+}
+
+.post-content img {
+	display: block;
+}
+
+.post-content .align-center,
+.post-content figure.align-center img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.post-content figure.align-center figcaption {
+	text-align: center;
+}
+
+.post-content .align-left {
+	float: left;
+	padding: 5px 1.6em 5px 0;
+}
+
+.post-content .align-right {
+	float: right;
+	padding: 5px 0 5px 1.6em;
+}
+
+.post-content figure.align-center,
+.post-content figure.align-left,
+.post-content figure.align-right {
+	margin-bottom: 0;
+}
+
+.post-content figcaption {
+	color: #798086;
+	font-size: 0.875em;
+	font-style: italic;
+	margin-top: 5px;
 }
 
 .post-content blockquote {
