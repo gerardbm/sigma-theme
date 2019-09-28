@@ -537,6 +537,36 @@ h6 {
 	margin-top: 5px;
 }
 
+.post-content .half,
+.post-content .third {
+	align-items: flex-start;
+	-ms-box-align: start;
+	-moz-box-align: start;
+	-webkit-box-align: start;
+	-ms-box-pack: justify;
+	-moz-box-pack: justify;
+	-webkit-box-pack: justify;
+	display: -webkit-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.post-content .half > a,
+.post-content .half > img {
+	width: calc(50% - 0.5em);
+}
+
+.post-content .third > a,
+.post-content .third > img {
+	width: calc(33.3333% - 0.5em);
+}
+
+.post-content .half figcaption,
+.post-content .third figcaption {
+	margin-bottom: 0;
+}
+
 .post-content blockquote {
 	background: #f3f5f8;
 	border-left: 4px solid #798086;
