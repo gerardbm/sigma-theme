@@ -587,15 +587,38 @@ h6 {
 	margin: 15px 0 0;
 }
 
-.post-content .notice {
-	background: #f3f5f8;
+.post-content .notice,
+.post-content .notice--info,
+.post-content .notice--success,
+.post-content .notice--warning,
+.post-content .notice--danger {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
-	-moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
-	box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
-	padding: 8px 15px;
+	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+	-moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+	padding: 10px 15px;
+}
+
+.post-content .notice {
+	background: #f3f5f8;
+}
+
+.post-content .notice--info {
+	background: #ebf5f8;
+}
+
+.post-content .notice--success {
+	background: #ecf6ec;
+}
+
+.post-content .notice--warning {
+	background: #fbf2e6;
+}
+
+.post-content .notice--danger {
+	background: #fdefef;
 }
 
 .post-content p > code,
