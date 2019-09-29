@@ -588,10 +588,10 @@ h6 {
 }
 
 .post-content .notice,
-.post-content .notice--info,
-.post-content .notice--success,
-.post-content .notice--warning,
-.post-content .notice--danger {
+.post-content .notice-info,
+.post-content .notice-success,
+.post-content .notice-warning,
+.post-content .notice-danger {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -605,19 +605,19 @@ h6 {
 	background: #f3f5f8;
 }
 
-.post-content .notice--info {
+.post-content .notice-info {
 	background: #ebf5f8;
 }
 
-.post-content .notice--success {
+.post-content .notice-success {
 	background: #ecf6ec;
 }
 
-.post-content .notice--warning {
+.post-content .notice-warning {
 	background: #fbf2e6;
 }
 
-.post-content .notice--danger {
+.post-content .notice-danger {
 	background: #fdefef;
 }
 
@@ -732,7 +732,7 @@ h6 {
 	margin: 0 0 8px 30px;
 }
 
-.btn {
+.post-content .btn {
 	background-color: #789;
 	border-radius: 4px;
 	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
@@ -753,28 +753,28 @@ h6 {
 	vertical-align: bottom;
 }
 
-a.btn:link,
-a.btn:visited {
+.post-content a.btn:link,
+.post-content a.btn:visited {
 	text-decoration: none;
 }
 
-.btn--success {
+.post-content .btn-success {
 	background-color: #62c462;
 }
 
-.btn--warning {
+.post-content .btn-warning {
 	background-color: #f89406;
 }
 
-.btn--danger {
+.post-content .btn-danger {
 	background-color: #ee5f5b;
 }
 
-.btn--info {
+.post-content .btn-info {
 	background-color: #52adc8;
 }
 
-.btn--inverse {
+.post-content .btn-inverse {
 	background-color: #fff;
 	-webkit-box-shadow: inset 0 0 0 1px #789;
 	-moz-box-shadow: inset 0 0 0 1px #789;
@@ -782,27 +782,27 @@ a.btn:visited {
 	color: #303336 !important;
 }
 
-.btn:hover {
+.post-content .btn:hover {
 	background-color: #303336;
 }
 
-.btn--success:hover {
+.post-content .btn-success:hover {
 	background-color: #4e9d4e;
 }
 
-.btn--warning:hover {
+.post-content .btn-warning:hover {
 	background-color: #c67605;
 }
 
-.btn--danger:hover {
+.post-content .btn-danger:hover {
 	background-color: #be4c49;
 }
 
-.btn--info:hover {
+.post-content .btn-info:hover {
 	background-color: #428aa0;
 }
 
-.btn--inverse:hover {
+.post-content .btn-inverse:hover {
 	background-color: #303336;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -810,15 +810,15 @@ a.btn:visited {
 	color: #fff !important;
 }
 
-.btn--small {
+.post-content .btn-small {
 	font-size: 0.875em;
 }
 
-.btn--large {
+.post-content .btn-large {
 	font-size: 1.125em;
 }
 
-.btn--x-large {
+.post-content .btn-x-large {
 	font-size: 1.25em;
 }
 
