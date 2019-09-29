@@ -12,6 +12,10 @@ layout: default
 		{{ content }}
 	</div>
 
+	{% if site.share == true %}
+		{% include social-share.html %}
+	{% endif %}
+
 	<!-- If this is a post, show previous/next post links -->
 	{% if page.id %}
 

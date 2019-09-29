@@ -6,6 +6,7 @@ en:
   by: "By"
   in: "In"
   upd: "upd"
+  share: "Share"
 es:
   post: "Artículo"
   page: "Página"
@@ -13,6 +14,7 @@ es:
   by: "Por"
   in: "En"
   upd: "act"
+  share: "Comparte"
 ca:
   post: "Article"
   page: "Pàgina"
@@ -20,3 +22,4 @@ ca:
   by: "Per"
   in: "En"
   upd: "act"
+  share: "Comparteix"
