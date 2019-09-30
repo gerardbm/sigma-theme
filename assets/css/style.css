@@ -540,16 +540,16 @@ h6 {
 
 .post-content .half > a,
 .post-content .half > img {
-	width: 49%;
 	float: left;
 	margin-right: 2%;
+	width: 49%;
 }
 
 .post-content .third > a,
 .post-content .third > img {
-	width: 32%;
 	float: left;
 	margin-right: 2%;
+	width: 32%;
 }
 
 .post-content .half > a:last-of-type,
