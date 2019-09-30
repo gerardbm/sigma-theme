@@ -562,10 +562,37 @@ h6 {
 	width: 32%;
 }
 
+.post-content .quarter > a,
+.post-content .quarter > img {
+	float: left;
+	margin-right: 2%;
+	width: 23.5%;
+}
+
+.post-content .fifth > a,
+.post-content .fifth > img {
+	float: left;
+	margin-right: 2%;
+	width: 18.4%;
+}
+
+.post-content .sixth > a,
+.post-content .sixth > img {
+	float: left;
+	margin-right: 2%;
+	width: 15%;
+}
+
 .post-content .half > a:last-of-type,
 .post-content .half > img:last-of-type,
 .post-content .third > a:last-of-type,
-.post-content .third > img:last-of-type {
+.post-content .third > img:last-of-type,
+.post-content .quarter > a:last-of-type,
+.post-content .quarter > img:last-of-type,
+.post-content .fifth > a:last-of-type,
+.post-content .fifth > img:last-of-type,
+.post-content .sixth > a:last-of-type,
+.post-content .sixth > img:last-of-type {
 	float: right;
 	margin-right: 0;
 }
