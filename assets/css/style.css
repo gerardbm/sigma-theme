@@ -432,7 +432,8 @@ h6 {
 .main-content address,
 .main-content figcaption,
 .main-content blockquote,
-.main-content .highlight {
+.main-content .highlight,
+.main-content .social-share {
 	margin-bottom: 1.6em;
 }
 
@@ -724,7 +725,7 @@ h6 {
 
 .post-content hr {
 	border: 0;
-	border-bottom: 1px dashed #dcdcdc;
+	border-bottom: 1px dashed #798086;
 	margin-top: 0;
 }
 
@@ -820,6 +821,63 @@ h6 {
 
 .post-content .btn-x-large {
 	font-size: 1.25em;
+}
+
+/*----------------------------------------------------------*/
+/* 8. Social share buttons
+/*----------------------------------------------------------*/
+
+.social-share h4 {
+	width: 100%;
+}
+
+.social-share a {
+	background: #fff;
+	border: 1px solid #dcdcdc;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: inset 0 -12px 10px -3px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 -12px 10px -3px rgba(0,0,0,.05);
+	box-shadow: inset 0 -12px 10px -3px rgba(0,0,0,.05);
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	height: 34px;
+	line-height: 34px;
+	margin-right: 2%;
+	text-align: center;
+	width: 49%;
+}
+
+.social-share a:link,
+.social-share a:visited {
+	color: #303336;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.social-share a:last-of-type {
+	float: right;
+	margin-right: 0;
+}
+
+.social-share .fa-icon-twitter:hover,
+.social-share .fa-icon-facebook:hover {
+	color: #fff;
+}
+
+.social-share .fa-icon-twitter:hover {
+	background: #55acee;
+	border: 1px solid #55acee;
+}
+
+.social-share .fa-icon-facebook:hover {
+	background: #3b5998;
+	border: 1px solid #3b5998;
 }
 
 /*----------------------------------------------------------*/
