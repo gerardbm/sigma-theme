@@ -438,12 +438,14 @@ h6 {
 .main-content dl,
 .main-content hr,
 .main-content abbr,
+.main-content iframe,
 .main-content figure,
 .main-content address,
 .main-content figcaption,
 .main-content blockquote,
 .main-content .highlight,
 .main-content .social-share,
+.post-content,
 .post-content .notice,
 .post-content .notice-info,
 .post-content .notice-success,
@@ -490,7 +492,7 @@ h6 {
 }
 
 .post-meta {
-	border-bottom: 1px dashed #dcdcdc;
+	border-bottom: 1px dashed #b3b5b8;
 	color: #798086;
 	display: block;
 	padding-bottom: 15px;
@@ -504,6 +506,10 @@ h6 {
 
 .post-meta a:hover {
 	color: #f17e01;
+}
+
+.post-content {
+	border-bottom: 1px dashed #b3b5b8;
 }
 
 .post-content a:link,
