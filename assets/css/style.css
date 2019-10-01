@@ -443,7 +443,12 @@ h6 {
 .main-content figcaption,
 .main-content blockquote,
 .main-content .highlight,
-.main-content .social-share {
+.main-content .social-share,
+.post-content .notice,
+.post-content .notice-info,
+.post-content .notice-success,
+.post-content .notice-warning,
+.post-content .notice-danger {
 	margin-bottom: 1.6em;
 }
 
@@ -654,6 +659,24 @@ h6 {
 
 .post-content .notice-danger {
 	background: #fdefef;
+}
+
+.post-content .notice ul:last-of-type,
+.post-content .notice ol:last-of-type,
+.post-content .notice p:last-of-type,
+.post-content .notice-info ul:last-of-type,
+.post-content .notice-info ul:last-of-type,
+.post-content .notice-info ul:last-of-type,
+.post-content .notice-success ul:last-of-type,
+.post-content .notice-success ol:last-of-type,
+.post-content .notice-success p:last-of-type,
+.post-content .notice-warning ol:last-of-type,
+.post-content .notice-warning p:last-of-type,
+.post-content .notice-warning ol:last-of-type,
+.post-content .notice-danger p:last-of-type,
+.post-content .notice-danger ol:last-of-type,
+.post-content .notice-danger p:last-of-type {
+	margin-bottom: 0;
 }
 
 .post-content p > code,
