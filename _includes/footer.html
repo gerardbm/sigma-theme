@@ -15,7 +15,7 @@
 		{% else %}
 			{% assign first_year = "" %}
 		{% endif %}
-		<span>&copy; {{ first_year }}{{ this_year }} {{ site.title | escape }}</span>
+		<span>&copy; {{ first_year }}{{ this_year }} {{ site.title }}</span>
 		{% if site.copyright %}
 			<span>{{ site.copyright | prepend: "- " }}</span>
 		{% endif %}
