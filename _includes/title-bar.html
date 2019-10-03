@@ -1,18 +1,36 @@
 {% assign t = site.data.translations %}
 <section class="title-bar">
 	<div class="wrap">
-	{% if page.layout == 'post' %}
-		<span>{{ t[site.lang]['post'] }}</span>
-	{%- endif %}
-	{% if page.layout == 'page' %}
-		<span>{{ t[site.lang]['page'] }}</span>
-	{%- endif %}
-	{% if page.layout == 'categories' %}
-		<span>{{ t[site.lang]['category'] }}</span>
-	{%- endif %}
-	{% if page.url == "/404.html" %}
-		<span>Error</span>
-	{%- endif %}
+		<div class="title-info">
+		{% if page.layout == 'post' %}
+			<p>
+				<span class="type">{{ t[site.lang]['post'] }}</span>
+				{% if page.read_time %}
+				<span> • </span>
+				<span class="read">{% include read-time.html %}</span>
+				{% endif %}
+			</p>
+		{%- endif %}
+		{% if page.layout == 'page' %}
+			<p>
+				<span class="type">{{ t[site.lang]['page'] }}</span>
+				{% if page.read_time %}
+				<span> • </span>
+				<span class="read">{% include read-time.html %}</span>
+				{% endif %}
+			</p>
+		{%- endif %}
+		{% if page.layout == 'categories' %}
+			<p>
+				<span>{{ t[site.lang]['category'] }}</span>
+			</p>
+		{%- endif %}
+		{% if page.url == "/404.html" %}
+			<p>
+				<span>Error</span>
+			</p>
+		{%- endif %}
+		</div>
 	</div>
 </section>
 

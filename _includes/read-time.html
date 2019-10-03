@@ -1,0 +1,18 @@
+{% assign words_per_minute = site.words_per_minute | default: 200 %}
+{% assign real_minute = words_per_minute | times: 2 %}
+{% assign t = site.data.translations %}
+
+{% if post.read_time %}
+	{% assign words = post.content | strip_html | number_of_words %}
+{% elsif page.read_time %}
+	{% assign words = page.content | strip_html | number_of_words %}
+{% endif %}
+
+{{ t[site.lang]['read'] }}:
+{% if words < words_per_minute %}
+	{{ t[site.lang]['less_than'] }}1 {{ t[site.lang]['minute'] }}
+{% elsif words >= words_per_minute and words < real_minute %}
+	1 {{ t[site.lang]['minute'] }}
+{% else %}
+	{{ words | divided_by:words_per_minute }} {{ t[site.lang]['minutes'] }}
+{% endif %}

@@ -376,10 +376,23 @@ header {
 	width: 100%;
 }
 
-.title-bar span {
+.title-bar p {
+	margin: 0;
+}
+
+.title-bar .title-info {
 	display: table-cell;
 	height: 89px;
 	vertical-align: middle;
+}
+
+.title-bar .type {
+	font-weight: bold;
+}
+
+.title-bar .read {
+	color: #798086;
+	font-style: italic;
 }
 
 .top-bar,
@@ -917,11 +930,11 @@ h6 {
 .social-share a:link,
 .social-share a:visited {
 	color: #fff;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
+	-webkit-transition: background .2s ease-in-out, color .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out, color .2s ease-in-out;
+	-ms-transition: background .2s ease-in-out, color .2s ease-in-out;
+	-o-transition: background .2s ease-in-out, color .2s ease-in-out;
+	transition: background .2s ease-in-out, color .2s ease-in-out;
 }
 
 .social-share a:last-of-type {
