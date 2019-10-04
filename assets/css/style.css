@@ -395,6 +395,25 @@ header {
 	font-style: italic;
 }
 
+.title-bar ol,
+.title-bar li {
+	display: inline-block;
+}
+
+.title-bar .breadcrumbs {
+	font-size: 0.813em;
+}
+
+.title-bar .breadcrumbs a:link,
+.title-bar .breadcrumbs a:visited {
+	color: #303336;
+	text-decoration: underline;
+}
+
+.title-bar .breadcrumbs a:hover {
+	color: #f17e01;
+}
+
 .top-bar,
 .menu-bar,
 .title-bar {
