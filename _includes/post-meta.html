@@ -33,7 +33,7 @@
 	{% if page.categories != empty -%}
 	<span> / {{ t[site.lang]['in'] }} </span>
 		{%- for category in page.categories -%}
-			<a href="/{{ category | slugify }}/">{{ category }}</a>
+			<a href="/{{ category | slugify }}/">{{ category | capitalize }}</a>
 			{%- unless forloop.last %}, {% endunless -%}
 		{%- endfor -%}
 	{%- endif %}

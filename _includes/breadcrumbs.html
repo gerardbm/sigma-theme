@@ -1,19 +1,24 @@
 {% assign t = site.data.translations %}
+{% assign i = 2 %}
 <nav class="breadcrumbs">
-	<span>{{ t[site.lang]['path'] }}: </span>
-
+	<span>{{ t[site.lang]['path'] }} » </span>
 	<ol itemscope itemtype="http://schema.org/BreadcrumbList">
 		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
 			<a itemprop="item" href="{{ "/" | relative_url }}">
 				<span itemprop="name">{{ site.title }}</span></a>
 			<meta itemprop="position" content="1" />
 		</li>
+		{% if page.categories != empty %}
+		{% for category in page.categories %}
 		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
 			<span> / </span>
-			<a itemprop="item" href="https://example.com/category_example">
-				<span itemprop="name">Category Example</span></a>
-			<meta itemprop="position" content="2" />
+			<a itemprop="item" href="/{{ category | slugify }}">
+				<span itemprop="name">{{ category | capitalize }}</span></a>
+			<meta itemprop="position" content="{{ i }}" />
+			{% assign i = i | plus: 1 %}
 		</li>
+		{% endfor %}
+		{% endif %}
 		<li>
 			<span> / </span>
 			<span itemprop="name">{{ page.title }}</span>

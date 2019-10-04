@@ -10,7 +10,9 @@
 				<span class="read">{% include read-time.html %}</span>
 				{% endif %}
 			</p>
-			{% include breadcrumbs.html %}
+			{% if page.breadcrumbs %}
+				{% include breadcrumbs.html %}
+			{% endif %}
 		{%- endif %}
 		{% if page.layout == 'page' %}
 			<p>
@@ -20,6 +22,9 @@
 				<span class="read">{% include read-time.html %}</span>
 				{% endif %}
 			</p>
+			{% if page.breadcrumbs %}
+				{% include breadcrumbs.html %}
+			{% endif %}
 		{%- endif %}
 		{% if page.layout == 'categories' %}
 			<p>

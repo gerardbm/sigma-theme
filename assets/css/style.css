@@ -401,7 +401,10 @@ header {
 }
 
 .title-bar .breadcrumbs {
+	color: #798086;
 	font-size: 0.813em;
+	line-height: normal;
+	margin-top: 3px;
 }
 
 .title-bar .breadcrumbs a:link,
@@ -933,9 +936,6 @@ h6 {
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
-	-webkit-box-shadow: inset 0 -12px 10px -3px rgba(0,0,0,.05);
-	-moz-box-shadow: inset 0 -12px 10px -3px rgba(0,0,0,.05);
-	box-shadow: inset 0 -12px 10px -3px rgba(0,0,0,.05);
 	box-sizing: border-box;
 	display: block;
 	float: left;
