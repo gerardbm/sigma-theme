@@ -256,11 +256,11 @@ a:hover {
 /*----------------------------------------------------------*/
 
 header {
-	border-top: 5px solid #555;
+	border-top: 5px solid #505356;
 }
 
 .top-bar {
-	background: #fff;
+	background: #f3f5f8;
 	border-bottom: 1px solid #dcdcdc;
 	display: block;
 	height: 34px;
@@ -283,7 +283,7 @@ header {
 
 .top-bar a {
 	border-left: 1px solid #dcdcdc;
-	color: #555;
+	color: #808386;
 	display: inline-block;
 	font-size: 1em;
 	line-height: 34px;
