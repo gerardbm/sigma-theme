@@ -429,7 +429,7 @@ header {
 
 .main-content {
 	background: #fff;
-	padding: 55px 0;
+	padding: 55px 0 29px;
 }
 
 h1,
@@ -444,7 +444,7 @@ h6 {
 }
 
 h1 {
-	font-size: 1.6em;
+	font-size: 1.625em;
 }
 
 h2 {
@@ -486,7 +486,7 @@ h6 {
 .post-content .notice-success,
 .post-content .notice-warning,
 .post-content .notice-danger {
-	margin-bottom: 1.6em;
+	margin-bottom: 1.625em;
 }
 
 .main-content ul li > ul,
@@ -543,10 +543,6 @@ h6 {
 	color: #f17e01;
 }
 
-.post-content {
-	border-bottom: 1px dashed #b3b5b8;
-}
-
 .post-content a:link,
 .post-content a:visited {
 	color: #095cae;
@@ -573,12 +569,12 @@ h6 {
 
 .post-content .align-left {
 	float: left;
-	padding: 5px 1.6em 5px 0;
+	padding: 5px 1.625em 5px 0;
 }
 
 .post-content .align-right {
 	float: right;
-	padding: 5px 0 5px 1.6em;
+	padding: 5px 0 5px 1.625em;
 }
 
 .post-content figure.align-center,
@@ -761,7 +757,7 @@ h6 {
 
 .post-content > table {
 	border: 1px solid #798086;
-	margin-bottom: 1.6em;
+	margin-bottom: 1.625em;
 	width: 100%;
 }
 
@@ -818,7 +814,7 @@ h6 {
 }
 
 .post-content > pre {
-	margin-bottom: 1.6em;
+	margin-bottom: 1.625em;
 	overflow: auto;
 }
 
@@ -920,6 +916,10 @@ h6 {
 
 .post-content .btn-x-large {
 	font-size: 1.25em;
+}
+
+.e-content {
+	border-bottom: 1px dashed #b3b5b8;
 }
 
 /*----------------------------------------------------------*/
