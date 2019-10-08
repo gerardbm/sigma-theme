@@ -26,9 +26,9 @@
 				{% include breadcrumbs.html %}
 			{% endif %}
 		{%- endif %}
-		{% if page.layout == 'categories' %}
+		{% if page.layout == 'category' %}
 			<p>
-				<span>{{ t[site.lang]['category'] }}</span>
+				<span class="type">{{ t[site.lang]['category'] }}</span>
 			</p>
 		{%- endif %}
 		{% if page.url == "/404.html" %}
