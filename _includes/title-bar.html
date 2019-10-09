@@ -29,6 +29,8 @@
 		{% if page.layout == 'category' %}
 			<p>
 				<span class="type">{{ t[site.lang]['category'] }}</span>
+				<span> • </span>
+				<span class="read">{% include count-posts-cat.html %}</span>
 			</p>
 		{%- endif %}
 		{% if page.url == "/404.html" %}

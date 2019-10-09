@@ -1,0 +1,8 @@
+{%- assign t = site.data.translations -%}
+{%- assign posts_cat = site.categories[page.title].size -%}
+
+{%- if posts_cat == 1 -%}
+{{ page.title }} ({{ posts_cat }} {{ t[site.lang]['article'] }})
+{%- else -%}
+{{ page.title }} ({{ posts_cat }} {{ t[site.lang]['articles'] }})
+{%- endif -%}

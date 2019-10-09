@@ -12,6 +12,8 @@ en:
   minutes: "minutes"
   read: "Read"
   path: "Path"
+  article: "Article"
+  articles: "Articles"
 es:
   post: "Artículo"
   page: "Página"
@@ -25,6 +27,8 @@ es:
   minutes: "minutos"
   read: "Lectura"
   path: "Ruta"
+  article: "Artículo"
+  articles: "Artículos"
 ca:
   post: "Article"
   page: "Pàgina"
@@ -38,3 +42,5 @@ ca:
   minutes: "minuts"
   read: "Lectura"
   path: "Ruta"
+  article: "Article"
+  articles: "Articles"
