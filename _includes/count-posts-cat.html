@@ -1,7 +1,7 @@
 {%- assign t = site.data.translations -%}
 {%- assign posts_cat = site.categories[page.title].size -%}
 
-{{ t[site.lang]['quantity'] }}: 
+{{ t[site.lang]['quantity'] }}:&nbsp;
 {%- if posts_cat == 1 -%}
 {{ posts_cat }} {{ t[site.lang]['post'] | downcase }}
 {%- elsif posts_cat == 0 -%}
