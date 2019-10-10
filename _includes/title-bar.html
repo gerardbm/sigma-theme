@@ -10,9 +10,7 @@
 				<span class="sub-type">{% include read-time.html %}</span>
 				{% endif %}
 			</p>
-			{% if page.breadcrumbs %}
-				{% include breadcrumbs.html %}
-			{% endif %}
+			{% include breadcrumbs.html %}
 		{%- endif %}
 		{% if page.layout == 'page' %}
 			<p>
@@ -22,9 +20,7 @@
 				<span class="sub-type">{% include read-time.html %}</span>
 				{% endif %}
 			</p>
-			{% if page.breadcrumbs %}
-				{% include breadcrumbs.html %}
-			{% endif %}
+			{% include breadcrumbs.html %}
 		{%- endif %}
 		{% if page.layout == 'category' %}
 			<p>
@@ -32,6 +28,7 @@
 				<span> • </span>
 				<span class="sub-type">{% include count-posts-cat.html %}</span>
 			</p>
+			{% include breadcrumbs.html %}
 		{%- endif %}
 		{% if page.url == "/404.html" %}
 			<p>
