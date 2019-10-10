@@ -941,9 +941,9 @@ h6 {
 	float: left;
 	height: 34px;
 	line-height: 33px;
-	margin-right: 1%;
+	margin-right: 8px;
 	text-align: center;
-	width: 19.2%;
+	width: 55px;
 }
 
 .social-share a:link,
@@ -957,7 +957,6 @@ h6 {
 }
 
 .social-share a:last-of-type {
-	float: right;
 	margin-right: 0;
 }
 
