@@ -1,6 +1,7 @@
 ---
 en:
   post: "Post"
+  posts: "Posts"
   page: "Page"
   category: "Category"
   by: "By"
@@ -12,10 +13,10 @@ en:
   minutes: "minutes"
   read: "Read"
   path: "Path"
-  article: "Article"
-  articles: "Articles"
+  quantity: "Quantity"
 es:
   post: "Artículo"
+  posts: "Artículos"
   page: "Página"
   category: "Categoría"
   by: "Por"
@@ -27,10 +28,10 @@ es:
   minutes: "minutos"
   read: "Lectura"
   path: "Ruta"
-  article: "Artículo"
-  articles: "Artículos"
+  quantity: "Cantidad"
 ca:
   post: "Article"
+  posts: "Articles"
   page: "Pàgina"
   category: "Categoria"
   by: "Per"
@@ -42,5 +43,4 @@ ca:
   minutes: "minuts"
   read: "Lectura"
   path: "Ruta"
-  article: "Article"
-  articles: "Articles"
+  quantity: "Quantitat"

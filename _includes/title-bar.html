@@ -7,7 +7,7 @@
 				<span class="type">{{ t[site.lang]['post'] }}</span>
 				{% if page.read_time %}
 				<span> • </span>
-				<span class="read">{% include read-time.html %}</span>
+				<span class="sub-type">{% include read-time.html %}</span>
 				{% endif %}
 			</p>
 			{% if page.breadcrumbs %}
@@ -19,7 +19,7 @@
 				<span class="type">{{ t[site.lang]['page'] }}</span>
 				{% if page.read_time %}
 				<span> • </span>
-				<span class="read">{% include read-time.html %}</span>
+				<span class="sub-type">{% include read-time.html %}</span>
 				{% endif %}
 			</p>
 			{% if page.breadcrumbs %}
@@ -30,7 +30,7 @@
 			<p>
 				<span class="type">{{ t[site.lang]['category'] }}</span>
 				<span> • </span>
-				<span class="read">{% include count-posts-cat.html %}</span>
+				<span class="sub-type">{% include count-posts-cat.html %}</span>
 			</p>
 		{%- endif %}
 		{% if page.url == "/404.html" %}
