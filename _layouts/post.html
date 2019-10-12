@@ -12,13 +12,12 @@ layout: default
 		{{ content }}
 	</div>
 
-	{% if page.share == true %}
-		{% include social-share.html %}
-	{% endif %}
+	{%- if page.share == true -%}
+	{%- include social-share.html -%}
+	{%- endif -%}
 
 	{%- if site.disqus.shortname -%}
 	{%- include disqus_comments.html -%}
 	{%- endif -%}
 
-	<a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
