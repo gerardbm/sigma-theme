@@ -152,28 +152,36 @@ img {
 	width: auto;
 }
 
-.sidebar-right {
-	float: left;
-	height: 100%;
-	margin: 55px 0 55px;
-	position: relative;
-	width: 601px;
-}
-.sidebar-left {
-	float: right;
-	height: 100%;
-	margin: 55px 0 55px 0;
-	position: relative;
-	width: 601px;
-}
-
-.one-column {
-	margin: 55px 0 55px 0;
-}
-
 .wrap {
 	margin: 0 auto;
 	width: 956px;
+}
+
+.sidebar-right .post {
+	float: left;
+	height: 100%;
+	position: relative;
+	width: 601px;
+}
+
+.sidebar-left .post {
+	float: right;
+	height: 100%;
+	position: relative;
+	width: 601px;
+}
+
+.sidebar {
+	position: relative;
+	width: 300px;
+}
+
+.sidebar-right .sidebar {
+	float: right;
+}
+
+.sidebar-left .sidebar {
+	float: left;
 }
 
 .clear {
@@ -478,6 +486,7 @@ h6 {
 .main-content address,
 .main-content figcaption,
 .main-content blockquote,
+.main-content .sidebar,
 .main-content .highlight,
 .main-content .social-share,
 .post-content,

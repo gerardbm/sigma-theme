@@ -5,10 +5,21 @@
 
 	<body>
 		{% include header.html %}
+		{%- if page.sidebar == "left" -%}
+			{%- assign side = " sidebar-left" -%}
+		{%- elsif page.sidebar == "right" -%}
+			{%- assign side = " sidebar-right" -%}
+		{%- elsif page.sidebar == false -%}
+			{%- assign side = "" -%}
+		{%- endif %}
 
-		<main class="main-content" aria-label="Content">
+		<main class="main-content{{ side }}" aria-label="Content">
 			<div class="wrap">
 				{{ content }}
+				{%- if page.sidebar -%}
+					{%- include sidebar.html -%}
+				{%- endif -%}
+				<hr class="clear" />
 			</div>
 		</main>
 
