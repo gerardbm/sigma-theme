@@ -829,7 +829,7 @@ h6 {
 
 .post-content hr {
 	border: 0;
-	border-bottom: 1px dashed #798086;
+	border-bottom: 1px dashed #b3b5b8;
 	margin-top: 0;
 }
 
@@ -1001,6 +1001,25 @@ h6 {
 .social-share .fa-icon-email {
 	background: #449a88;
 	border: 1px solid #449a88;
+}
+
+/*----------------------------------------------------------*/
+/* 9. Category page
+/*----------------------------------------------------------*/
+
+.loop-excerpt {
+	border-bottom: 1px dashed #b3b5b8;
+	margin-bottom: 1.625em;
+}
+
+.loop-excerpt:last-of-type {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.loop-excerpt a:link,
+.loop-excerpt a:visited {
+	text-decoration: none;
 }
 
 /*----------------------------------------------------------*/
