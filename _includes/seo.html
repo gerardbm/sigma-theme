@@ -1,0 +1,64 @@
+
+<!--Meta information-->
+{%- if page.title %}
+<title>{{ page.title }}</title>
+{%- endif -%}
+{%- if page.url %}
+<link rel="canonical" href="{{ page.url | absolute_url }}" />
+{%- endif %}
+
+{%- if page.robots %}
+<meta name="robots" content="{{ page.robots }}" />
+{%- endif -%}
+{%- if page.excerpt %}
+<meta name="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}" />
+{%- endif -%}
+{%- if page.keywords %}
+<meta name="keywords" content="{{ page.keywords | join: ', ' }}" />
+{%- endif -%}
+{%- if page.author %}
+<meta name="author" content="{{ page.author }}">
+{%- endif -%}
+{%- if page.date %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{%- endif -%}
+{%- if page.last_modified_at %}
+<meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
+{%- endif %}
+
+{%- if site.fb_admins and site.fb_app_id %}
+
+<!--Open Graph Protocol-->
+{%- if page.date -%}
+  {%- assign og_type = "article" -%}
+{%- else -%}
+  {%- assign og_type = "website" -%}
+{%- endif %}
+<meta property="fb:admins" content="{{ site.fb_admins }}" />
+<meta property="fb:app_id" content="{{ site:fb_app_id }}" />
+<meta property="og:locale" content="{{ site:og_locale }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
+<meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}" />
+<meta property="og:type" content="{{ og_type }}" />
+{%- endif %}
+
+{%- if site.twitter_username %}
+
+<!--Twitter Cards-->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@{{ site.twitter_username | replace: "@", "" }}">
+<meta name="twitter:creator" content="@{{ site.twitter_username | replace: "@", "" }}">
+{%- endif %}
+
+<!--Web Services-->
+{%- if site.google_sv %}
+<meta name="google-site-verification" content="{{ site.google_sv }}" />
+{%- endif -%}
+{%- if site.bing_sv %}
+<meta name="msvalidate.01" content="{{ site.bing_sv }}">
+{%- endif -%}
+{%- if site.alexa_sv %}
+<meta name="alexaVerifyID" content="{{ site.alexa_sv }}">
+{%- endif %}
