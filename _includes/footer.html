@@ -8,16 +8,18 @@
 		</ul>
 	</div>
 	{% endif %}
-	<div class="wrap">
-		{% assign this_year = site.time | date: '%Y' | plus: 0 %}
-		{% if site.first_year < this_year %}
-			{% assign first_year = site.first_year | append: "-" %}
-		{% else %}
-			{% assign first_year = "" %}
-		{% endif %}
-		<span>&copy; {{ first_year }}{{ this_year }} {{ site.title }}</span>
-		{% if site.copyright %}
-			<span>{{ site.copyright | prepend: "- " }}</span>
-		{% endif %}
+	<div class="copyright">
+		<div class="wrap">
+			{% assign this_year = site.time | date: '%Y' | plus: 0 %}
+			{% if site.first_year < this_year %}
+				{% assign first_year = site.first_year | append: "-" %}
+			{% else %}
+				{% assign first_year = "" %}
+			{% endif %}
+			<span>&copy; {{ first_year }}{{ this_year }} {{ site.title }}</span>
+			{% if site.copyright %}
+				<span>{{ site.copyright | prepend: "- " }}</span>
+			{% endif %}
+		</div>
 	</div>
 </footer>

@@ -1035,10 +1035,6 @@ footer {
 	text-align: center;
 }
 
-footer span {
-	line-height: 55px;
-}
-
 footer a {
 	color: #bcbfc2;
 }
@@ -1060,6 +1056,14 @@ footer a {
     content: "|";
     display: inline-block;
     margin: 0 8px;
+}
+
+.copyright {
+	min-height: 55px;
+}
+
+.copyright span {
+	line-height: 55px;
 }
 
 /*----------------------------------------------------------*/
@@ -1104,4 +1108,43 @@ footer a {
 
 .scrollup:hover {
 	background: #f17e01;
+}
+
+/*----------------------------------------------------------*/
+/* Z. Responsive
+/*----------------------------------------------------------*/
+/***** 1024
+/*----------------------------------------------------------*/
+
+@media only screen and (max-width : 1024px) {
+
+	/* Layout */
+
+	body {
+		width: 100%;
+	}
+
+	.wrap {
+		margin: 0 3%;
+		width: 94%;
+	}
+
+	.bottom-links,
+	.copyright {
+		min-height: 0;
+		padding: 13px 0;
+	}
+
+	.bottom-links ul li {
+		display: block;
+		line-height: 1.75em;
+	}
+
+	.bottom-links li + li::before {
+		content: none;
+	}
+
+	.copyright span {
+		line-height: 1.75em;
+	}
 }
