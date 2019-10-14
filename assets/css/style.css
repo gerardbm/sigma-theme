@@ -1143,6 +1143,13 @@ footer a {
 		width: 94%;
 	}
 
+	.sidebar-right .post,
+	.sidebar-left .post,
+	.sidebar {
+		float: none;
+		width: 100%;
+	}
+
 	.navigation select {
 		-webkit-appearance: button;
 		-moz-appearance: none;
