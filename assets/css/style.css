@@ -113,6 +113,10 @@ input[type="submit"] {
 	cursor: pointer;
 }
 
+select:focus {
+	outline: none;
+}
+
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -350,6 +354,16 @@ header {
 .navigation {
 	float: right;
 	font-size: 0.875em;
+	position: relative;
+}
+
+.navigation select,
+.navigation .icon-select {
+	display: none;
+}
+
+.navigation ul {
+	display: block;
 }
 
 .navigation ul li {
@@ -1127,6 +1141,90 @@ footer a {
 	.wrap {
 		margin: 0 3%;
 		width: 94%;
+	}
+
+	.navigation select {
+		-webkit-appearance: button;
+		-moz-appearance: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-webkit-padding-end: 20px;
+		-moz-padding-end: 20px;
+		-webkit-padding-start: 2px;
+		-moz-padding-start: 2px;
+		background: #fff;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		border: 1px solid #e4e6e7;
+		-webkit-box-shadow: inset 0 -12px 10px -3px rgba(0, 0, 0, 0.05);
+		-moz-box-shadow: inset 0 -12px 10px -3px rgba(0, 0, 0, 0.05);
+		box-shadow: inset 0 -12px 10px -3px rgba(0, 0, 0, 0.05);
+		cursor: pointer;
+		display: block;
+		height: 35px;
+		margin-top: 10px;
+		overflow: hidden;
+		padding: 4px 8px;
+		text-indent: 0.01px;
+		text-overflow: ellipsis;
+		-webkit-transition: background .2s ease-in-out;
+		-moz-transition: background .2s ease-in-out;
+		-ms-transition: background .2s ease-in-out;
+		-o-transition: background .2s ease-in-out;
+		transition: background .2s ease-in-out;
+		width: 144px;
+	}
+
+	.navigation select:hover {
+		background: #f3f5f8;
+		border-color: #798086;
+	}
+
+	.navigation select::-ms-expand {
+		display: none;
+	}
+
+	.navigation select option {
+		background: #fff;
+	}
+
+	.navigation .menu-selected {
+		display: none;
+		visibility: hidden;
+	}
+
+	.navigation .icon-select {
+		display: block;
+	}
+
+	.navigation .icon-select.not-visible {
+		display: none;
+	}
+
+	.navigation .icon-select:before {
+		content: "\f0c9";
+		font: 14px "FontAwesome";
+		left: 11px;
+		line-height: 35px;
+		pointer-events: none;
+		position: absolute;
+		top: 10px;
+	}
+
+	.navigation .icon-select:after {
+		content: "MENU";
+		font: 13px Arial, Helvetica, sans-serif;
+		left: 32px;
+		line-height: 35px;
+		pointer-events: none;
+		position: absolute;
+		top: 10px;
+	}
+
+	.navigation ul {
+		display: none;
 	}
 
 	.bottom-links,

@@ -13,6 +13,13 @@
 					<li><a title="{{ item.title | capitalize }}" href="{{ item.url | relative }}">{{ item.title }}</a></li>
 				{%- endfor %}
 				</ul>
+				<select id="goto" onclick="gotourl()">
+					<option selected="selected" value="#" class="menu-selected" hidden="hidden"></option>
+				{% for item in site.data.navigation.docs -%}
+					<option value="{{ item.url | absolute_url }}">{{ item.title }}</option>
+				{%- endfor %}
+				</select>
+				<span class="icon-select"></span>
 			</nav>
 			{% endif %}
 		</div>
