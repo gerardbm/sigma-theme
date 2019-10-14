@@ -1169,11 +1169,11 @@ footer a {
 		padding: 4px 8px;
 		text-indent: 0.01px;
 		text-overflow: ellipsis;
-		-webkit-transition: background .2s ease-in-out;
-		-moz-transition: background .2s ease-in-out;
-		-ms-transition: background .2s ease-in-out;
-		-o-transition: background .2s ease-in-out;
-		transition: background .2s ease-in-out;
+		-webkit-transition: background .2s ease-in-out, border-color .2s ease-in-out;
+		-moz-transition: background .2s ease-in-out, border-color .2s ease-in-out;
+		-ms-transition: background .2s ease-in-out, border-color .2s ease-in-out;
+		-o-transition: background .2s ease-in-out, border-color .2s ease-in-out;
+		transition: background .2s ease-in-out, border-color .2s ease-in-out;
 		width: 144px;
 	}
 
