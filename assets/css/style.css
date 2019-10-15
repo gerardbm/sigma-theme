@@ -343,6 +343,7 @@ header {
 	display: inline-block;
 	height: 55px;
 	line-height: 55px;
+	max-width: 300px;
 	vertical-align: top;
 }
 
@@ -462,6 +463,7 @@ h5,
 h6 {
 	font-family: "Oswald",Arial,Helvetica,sans-serif;
 	font-weight: 400;
+	line-height: normal;
 	margin-bottom: 15px;
 }
 
@@ -1127,12 +1129,8 @@ footer a {
 /*----------------------------------------------------------*/
 /* Z. Responsive
 /*----------------------------------------------------------*/
-/***** 1024
-/*----------------------------------------------------------*/
 
 @media only screen and (max-width : 1024px) {
-
-	/* Layout */
 
 	body {
 		width: 100%;
@@ -1141,6 +1139,10 @@ footer a {
 	.wrap {
 		margin: 0 3%;
 		width: 94%;
+	}
+
+	.logo {
+		max-width: 250px;
 	}
 
 	.sidebar-right .post,
@@ -1181,7 +1183,7 @@ footer a {
 		-ms-transition: background .2s ease-in-out, border-color .2s ease-in-out;
 		-o-transition: background .2s ease-in-out, border-color .2s ease-in-out;
 		transition: background .2s ease-in-out, border-color .2s ease-in-out;
-		width: 144px;
+		width: 180px;
 	}
 
 	.navigation select:hover {
@@ -1251,5 +1253,47 @@ footer a {
 
 	.copyright span {
 		line-height: 1.75em;
+	}
+}
+
+/*----------------------------------------------------------*/
+
+@media only screen and (max-width : 768px) {
+
+	.wrap {
+		margin: 0 4%;
+		width: 92%;
+	}
+
+	.logo {
+		max-width: 200px;
+	}
+}
+
+/*----------------------------------------------------------*/
+
+@media only screen and (max-width : 480px) {
+
+	.wrap {
+		margin: 0 5%;
+		width: 90%;
+	}
+
+	.logo {
+		max-width: 200px;
+	}
+}
+
+/*----------------------------------------------------------*/
+
+@media only screen and (max-width : 320px) {
+
+	.wrap {
+		margin: 0 6%;
+		width: 88%;
+	}
+
+	.logo {
+		max-width: 100px;
 	}
 }
