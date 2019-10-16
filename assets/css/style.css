@@ -276,7 +276,7 @@ header {
 	border-bottom: 1px solid #dcdcdc;
 	display: block;
 	height: 34px;
-	overflow: visible;
+	overflow: hidden;
 	position: relative;
 	text-align: right;
 }
@@ -327,7 +327,7 @@ header {
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.34);
 	display: block;
 	height: 55px;
-	overflow: visible;
+	overflow: hidden;
 	position: relative;
 }
 
@@ -1234,6 +1234,10 @@ footer a {
 
 	.navigation ul {
 		display: none;
+	}
+
+	.title-bar {
+		min-height: 89px;
 	}
 
 	.bottom-links,
