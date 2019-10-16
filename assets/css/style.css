@@ -1337,11 +1337,24 @@ footer a {
 	}
 
 	.title-bar {
+		display: block;
+		height: auto;
 		padding: 15px 0;
+	}
+
+	.title-bar .title-info {
+		display: block;
+		height: auto;
+		width: 100%;
 	}
 
 	.title-bar p {
 		text-align: center;
+	}
+
+	.title-bar ol,
+	.title-bar li {
+		display: block;
 	}
 
 	.title-bar li {
@@ -1354,7 +1367,6 @@ footer a {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-		display: inline-block;
 		margin-bottom: 5px;
 		padding: 5px 8px;
 		width: 100%;
