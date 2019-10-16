@@ -1335,6 +1335,16 @@ footer a {
 	.navigation select {
 		width: 150px;
 	}
+
+	.social-share a {
+		display: block;
+		margin-bottom: 8px;
+		width: 100%;
+	}
+
+	.social-share a:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 /*----------------------------------------------------------*/
