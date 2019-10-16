@@ -1,9 +1,9 @@
 {% assign t = site.data.translations %}
 {% assign i = 2 %}
 <nav class="breadcrumbs">
-	<span>{{ t[site.lang]['path'] }} » </span>
 	<ol itemscope itemtype="http://schema.org/BreadcrumbList">
 		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			<span>{{ t[site.lang]['path'] }}: </span>
 			<a itemprop="item" href="{{ "/" | relative_url }}">
 				<span itemprop="name">{{ site.title }}</span></a>
 			<meta itemprop="position" content="1" />

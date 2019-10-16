@@ -1336,6 +1336,38 @@ footer a {
 		width: 150px;
 	}
 
+	.title-bar {
+		padding: 15px 0;
+	}
+
+	.title-bar p {
+		text-align: center;
+	}
+
+	.title-bar li {
+		background: #e3e5e8;
+		border-bottom: 1px solid #b3b5b8;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		border-right: 1px solid #b3b5b8;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		display: inline-block;
+		margin-bottom: 5px;
+		padding: 5px 8px;
+		width: 100%;
+	}
+
+	.title-bar li:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.title-bar .breadcrumbs {
+		margin-top: 10px;
+	}
+
 	.social-share a {
 		display: block;
 		margin-bottom: 8px;
