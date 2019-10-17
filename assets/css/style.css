@@ -972,11 +972,11 @@ h6 {
 	box-sizing: border-box;
 	display: block;
 	float: left;
-	height: 34px;
-	line-height: 33px;
+	height: 33px;
+	line-height: 32px;
 	margin-right: 8px;
 	text-align: center;
-	width: 55px;
+	width: 54px;
 }
 
 .social-share a:link,
@@ -991,6 +991,10 @@ h6 {
 
 .social-share a:last-of-type {
 	margin-right: 0;
+}
+
+.social-share a:before {
+	font-size: 1.125em;
 }
 
 .social-share .fa-icon-twitter:hover,
