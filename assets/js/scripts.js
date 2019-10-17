@@ -10,9 +10,8 @@ function stickyMenu() {
 	}
 }
 
-var button = document.getElementsByClassName("scrollup")[0];
-
 function scrollToTop() {
+	var button = document.getElementsByClassName("scrollup")[0];
 	if (window.pageYOffset > 250) {
 		button.classList.add("is-visible");
 	} else {
@@ -40,6 +39,33 @@ function gotoUrl() {
 }
 
 function hideIcon() {
-	var icon_select = document.getElementsByClassName("icon-select")[0]
+	var icon_select = document.getElementsByClassName("icon-select")[0];
 	icon_select.classList.add("not-visible")
 }
+
+document.addEventListener("DOMContentLoaded", function(event) {
+	var rtime;
+	var delta = 250;
+	var timeout = false;
+	var element = document.getElementsByClassName("home")[0];
+
+	function resize() {
+		rtime = new Date();
+		if (timeout === false) {
+			timeout = true;
+			setTimeout(resize_end, delta);
+		}
+		element.classList.add('no-transition');
+	}
+
+	window.onresize = resize;
+
+	function resize_end() {
+		if (new Date() - rtime < delta) {
+			setTimeout(resize_end, delta);
+		} else {
+			timeout = false;
+			element.classList.remove('no-transition');
+		}
+	}
+});
