@@ -1360,24 +1360,32 @@ footer a {
 		text-align: center;
 	}
 
+	.title-bar .breadcrumbs .sep {
+		display: none;
+	}
+
+	.title-bar .breadcrumbs ol li {
+		display: list-item;
+		list-style-type: decimal;
+		margin-left: 15px;
+	}
+
 	.title-bar ol,
 	.title-bar li {
 		display: block;
 	}
 
 	.title-bar li {
-		background: #e3e5e8;
-		border-bottom: 1px solid #b3b5b8;
+		background: #fff;
+		border: 1px solid #dcdcdc;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
 		border-radius: 2px;
-		border-right: 1px solid #b3b5b8;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		margin-bottom: 5px;
 		padding: 5px 8px;
-		width: 100%;
 	}
 
 	.title-bar li:last-of-type {
