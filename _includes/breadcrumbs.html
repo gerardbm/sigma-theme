@@ -11,7 +11,7 @@
 		{% if page.categories != empty %}
 		{% for category in page.categories %}
 		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-			<span class="sep">{{ site.breadcrumbs.separator }}</span>
+			<span class="sep">{{ site.bc_sep }}</span>
 			<a itemprop="item" href="/{{ category | slugify }}/">
 				<span itemprop="name">{{ category | capitalize }}</span></a>
 			<meta itemprop="position" content="{{ i }}" />
@@ -20,7 +20,7 @@
 		{% endfor %}
 		{% endif %}
 		<li>
-			<span class="sep">{{ site.breadcrumbs.separator }}</span>
+			<span class="sep">{{ site.bc_sep }}</span>
 			<span itemprop="name">{{ page.title }}</span>
 		</li>
 	</ol>
