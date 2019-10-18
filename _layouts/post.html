@@ -8,9 +8,17 @@ layout: default
 		{% include post-meta.html %}
 	</section>
 
+	{%- if site.adsense.top == true -%}
+	{%- include adsense-top.html -%}
+	{%- endif -%}
+
 	<div class="post-content e-content" itemprop="articleBody">
 		{{ content }}
 	</div>
+
+	{%- if site.adsense.bottom == true -%}
+	{%- include adsense-bottom.html -%}
+	{%- endif -%}
 
 	{%- if page.share == true -%}
 	{%- include social-share.html -%}
