@@ -518,7 +518,8 @@ h6 {
 .post-content .notice-info,
 .post-content .notice-success,
 .post-content .notice-warning,
-.post-content .notice-danger {
+.post-content .notice-danger,
+.post .adsbygoogle {
 	margin-bottom: 1.625em;
 }
 
