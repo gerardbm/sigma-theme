@@ -12,7 +12,7 @@
 		{% for category in page.categories %}
 		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
 			<span class="sep">{{ site.bc_sep }}</span>
-			<a itemprop="item" href="/{{ category | slugify }}/">
+			<a itemprop="item" href="/{{ category | slugify: 'latin' }}/">
 				<span itemprop="name">{{ category | capitalize }}</span></a>
 			<meta itemprop="position" content="{{ i }}" />
 			{% assign i = i | plus: 1 %}
