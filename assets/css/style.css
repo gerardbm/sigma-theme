@@ -994,7 +994,7 @@ h6 {
 }
 
 .social-share a:before {
-	font-size: 1.125em;
+	font-size: 1em;
 }
 
 .social-share .fa-icon-twitter:hover,
@@ -1399,7 +1399,26 @@ footer a {
 	.social-share a {
 		display: block;
 		margin-bottom: 8px;
+		text-align: left;
 		width: 100%;
+	}
+
+	.social-share a .screen-reader-text {
+		clip: unset;
+		clip-path: none;
+		height: 33px;
+		left: 60px;
+		line-height: 33px;
+		margin-left: 10px;
+		position: absolute;
+		width: auto;
+	}
+
+	.social-share a:before {
+		background: rgba(0,0,0,0.1);
+		display: inline-block;
+		text-align: center;
+		width: 54px;
 	}
 
 	.social-share a:last-of-type {
