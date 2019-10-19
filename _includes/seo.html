@@ -40,7 +40,9 @@
 <meta property="og:site_name" content="{{ site.title }}" />
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
+{%- if page.excerpt %}
 <meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}" />
+{%- endif %}
 <meta property="og:type" content="{{ og_type }}" />
 {%- endif %}
 
