@@ -1,6 +1,6 @@
 # Sigma theme for Jekyll
 
-It's a work in progress!
+This theme is a subjective one focused on speed and SEO, taking care of a beautiful appearance.
 
 - Golden proportion header.
 - Modern and responsive design.
@@ -8,6 +8,16 @@ It's a work in progress!
 - Sticky menu + scroll up button.
 - Code blocks syntax highlighting.
 - LaTeX maths, MathJax integrated.
+- Layouts with sidebar right/left.
+- Loop posts in category pages.
+- Breadcrumbs with Schema.org.
+- User interface multilanguage.
+- A lot of web services available.
+	- Google Analytics
+	- Google AdSense
+	- Open Graph
+	- Twitter Cards
+	- Sites verification
 
 ## Installation
 
