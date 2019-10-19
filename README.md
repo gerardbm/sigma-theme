@@ -63,7 +63,7 @@ Top bar links, in `_config.yml`:
 
 Logo image, in `_config.yml`:
 
-- `logo`: The path of your logo image.
+- `logo`: The relative path of your logo image.
 
 Breadcrumbs, in `_config.yml`:
 
@@ -98,7 +98,10 @@ Open Graph, in `_config.yml`:
 - `fb_admins`: Your Facebook admin ID.
 - `fb_app_id`: Your Facebook app ID.
 - `og_locale`: The language locale. For example: en_US, es_CA, es_ES...
-- TODO: Add the default image of the website.
+
+In the post or page front matter:
+
+- `image`: Add the relative path of the post/page image.
 
 Twitter Cards, in `_config.yml`:
 

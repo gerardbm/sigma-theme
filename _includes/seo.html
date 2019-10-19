@@ -38,10 +38,15 @@
 <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
 <meta property="og:locale" content="{{ site.og_locale }}" />
 <meta property="og:site_name" content="{{ site.title }}" />
+{%- if page.title %}
 <meta property="og:title" content="{{ page.title }}" />
+{%- endif %}
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 {%- if page.excerpt %}
 <meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}" />
+{%- endif %}
+{%- if page.image %}
+<meta property="og:image" content="{{ page.image | absolute_url }}" />
 {%- endif %}
 <meta property="og:type" content="{{ og_type }}" />
 {%- endif %}
