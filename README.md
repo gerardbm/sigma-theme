@@ -197,6 +197,15 @@ Then include this line in the content:
 
 This will list all the posts of this category.
 
+### Layouts
+
+Define them in the front matter:
+
+- `home`: Use it in your index.md, it's empty (only content included).
+- `page`: Use it for your regular pages.
+- `post`: Use if for your posts.
+- `category`: Use it to create pages for categories.
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/gerardbm/sigma-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
