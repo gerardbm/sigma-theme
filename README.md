@@ -59,19 +59,6 @@ Breadcrumbs, in `_config.yml`:
 
 - `bc_sep`: The breadcrumbs separator.
 
-### Content config
-
-Google AdSense, in `_config.yml`:
-
-Create the files `adsense-sidebar.html`, `adsense-top.html` and `adsense-bottom.html` and paste there your ads codoe. Then enable or disable them with these options:
-
-```yaml
-adsense:
-  sidebar: true
-  top: true
-  bottom: true
-```
-
 ### Footer config
 
 Bottom links, in `_config.yml`:
@@ -113,6 +100,17 @@ Sites verification, in `_config.yml`:
 - `bing_sv`: Your Bing site verification.
 - `alexa_sv`: Your Alexa site verification.
 
+Google AdSense, in `_config.yml`:
+
+Create the files `adsense-sidebar.html`, `adsense-top.html` and `adsense-bottom.html` and paste there your ads code. Then enable or disable them with these options:
+
+```yaml
+adsense:
+  sidebar: true
+  top: true
+  bottom: true
+```
+
 ### SEO:
 
 - For the `title` tag, it will use the post/page title.
@@ -132,7 +130,7 @@ MathJax library, in post or page front matter:
 
 - `mathjax`: true or false to use MathJax.
 
-### Content
+### Misc
 
 Tools for the content, in post or page front matter:
 
