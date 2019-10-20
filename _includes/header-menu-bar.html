@@ -10,10 +10,9 @@
 			<nav class="navigation">
 				<ul>
 				{% for item in site.data.navigation.docs -%}
+					{%- assign current = nil -%}
 					{%- if page.url contains item.url -%}
 						{%- assign current = ' class="current"' -%}
-					{%- else -%}
-						{%- assign current = "" -%}
 					{%- endif -%}
 					<li{{ current }}><a href="{{ item.url | relative }}">{{ item.title }}</a></li>
 				{%- endfor %}
