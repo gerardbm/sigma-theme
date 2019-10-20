@@ -10,7 +10,7 @@
 			<nav class="navigation">
 				<ul>
 				{% for item in site.data.navigation.docs -%}
-					<li><a title="{{ item.title | capitalize }}" href="{{ item.url | relative }}">{{ item.title }}</a></li>
+					<li><a href="{{ item.url | relative }}">{{ item.title }}</a></li>
 				{%- endfor %}
 				</ul>
 				<select id="goto" onclick="gotoUrl()" onchange="hideIcon()">
