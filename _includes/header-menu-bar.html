@@ -10,7 +10,12 @@
 			<nav class="navigation">
 				<ul>
 				{% for item in site.data.navigation.docs -%}
-					<li><a href="{{ item.url | relative }}">{{ item.title }}</a></li>
+					{%- if page.url contains item.url -%}
+						{%- assign current = ' class="current"' -%}
+					{%- else -%}
+						{%- assign current = "" -%}
+					{%- endif -%}
+					<li{{ current }}><a href="{{ item.url | relative }}">{{ item.title }}</a></li>
 				{%- endfor %}
 				</ul>
 				<select id="goto" onclick="gotoUrl()" onchange="hideIcon()">

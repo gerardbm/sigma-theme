@@ -404,7 +404,8 @@ header {
 	z-index: -1;
 }
 
-.navigation ul li:hover:before {
+.navigation ul li:hover:before,
+.navigation ul li.current:before {
 	left: 0;
 	right: 0;
 }
@@ -419,7 +420,8 @@ header {
 	color: #303336;
 }
 
-.navigation ul li a:hover {
+.navigation ul li a:hover,
+.navigation ul li.current a {
 	color: #f17e01;
 }
 
@@ -430,6 +432,7 @@ header {
 .title-bar {
 	background: #f3f5f8;
 	border-bottom: 1px solid #dcdcdc;
+	box-sizing: border-box;
 	display: table;
 	height: 89px;
 	table-layout: fixed;
