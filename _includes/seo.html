@@ -10,8 +10,8 @@
 {%- if page.robots %}
 <meta name="robots" content="{{ page.robots }}" />
 {%- endif -%}
-{%- if page.excerpt %}
-<meta name="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}" />
+{%- if page.metadesc %}
+<meta name="description" content="{{ page.metadesc | markdownify | strip_html | strip_newlines | escape_once }}" />
 {%- endif -%}
 {%- if page.keywords %}
 <meta name="keywords" content="{{ page.keywords | join: ', ' }}" />
@@ -42,8 +42,8 @@
 <meta property="og:title" content="{{ page.title }}" />
 {%- endif %}
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
-{%- if page.excerpt %}
-<meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}" />
+{%- if page.metadesc %}
+<meta property="og:description" content="{{ page.metadesc | markdownify | strip_html | strip_newlines | escape_once }}" />
 {%- endif %}
 {%- if page.image %}
 <meta property="og:image" content="{{ page.image | absolute_url }}" />
