@@ -133,7 +133,7 @@ adsense:
 Meta tags, in post or page front matter:
 
 - `robots`: Must be a robots setup: `index,follow`, `noindex,follow`...
-- `excerpt`: A description of the page. Less than 160 characters is recommended.
+- `metadesc`: A description of the page. Less than 160 characters is recommended.
 - `kewyords`: A list of keywords.
 
 There is no prevision of using pagination in this theme at the moment, so `rel="prev"` and `rel="next"` are not included. This theme lists all posts of a category in the category page.
@@ -200,6 +200,8 @@ Then include this line in the content:
 ```
 
 This will list all the posts of this category.
+
+Use `excerpt:` in the front matter of posts to display posts description in the category page.
 
 ### Layouts
 
