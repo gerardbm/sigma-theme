@@ -1,0 +1,23 @@
+
+<!--Favicons-->
+{%- if site.favicon_ico %}
+<link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon_ico | relative_url }}" />
+{%- endif -%}
+{%- if site.apple_touch %}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple_touch | relative_url }}" />
+{%- endif -%}
+{%- if site.favicon_16 %}
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.favicon_16 | relative_url }}" />
+{%- endif -%}
+{%- if site.favicon_32 %}
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_32 | relative_url }}" />
+{%- endif -%}
+{%- if site.webmanifest %}
+<link rel="manifest" href="{{ site.webmanifest | relative_url }}" />
+{%- endif -%}
+{%- if site.mask_icon %}
+<link rel="mask-icon" color="{{ site.mask_color | default: '#ffffff' }}" href="{{ site.mask_icon | relative_url }}" />
+{%- endif -%}
+{%- if site.browserconfig %}
+<meta name="msapplication-config" content="{{ site.browserconfig | relative_url }}" />
+{%- endif -%}
