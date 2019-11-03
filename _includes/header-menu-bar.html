@@ -17,7 +17,7 @@
 					<li{{ current }}><a href="{{ item.url | relative }}">{{ item.title }}</a></li>
 				{%- endfor %}
 				</ul>
-				<select id="goto" onclick="gotoUrl()" onchange="hideIcon()">
+				<select id="goto" onchange="gotoUrl()" >
 					<option selected="selected" value="#" class="menu-selected" hidden="hidden"></option>
 				{% for item in site.data.navigation.docs -%}
 					<option value="{{ item.url | relative }}">{{ item.title }}</option>

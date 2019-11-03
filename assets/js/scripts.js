@@ -35,12 +35,9 @@ function topFunction(scrollDuration) {
 }
 
 function gotoUrl() {
-	window.location = document.getElementById("goto").value;
-}
-
-function hideIcon() {
 	var icon_select = document.getElementsByClassName("icon-select")[0];
 	icon_select.classList.add("not-visible")
+	window.location = document.getElementById("goto").value;
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
