@@ -4,7 +4,7 @@
 <title>{{ page.title }}</title>
 {%- endif -%}
 {%- if page.url %}
-<link rel="canonical" href="{{ page.url | absolute_url }}" />
+<link rel="canonical" href="{{ page.url | replace: "index.html", "" | absolute_url }}" />
 {%- endif %}
 
 {%- if page.robots %}
@@ -41,7 +41,7 @@
 {%- if page.title %}
 <meta property="og:title" content="{{ page.title }}" />
 {%- endif %}
-<meta property="og:url" content="{{ page.url | absolute_url }}" />
+<meta property="og:url" content="{{ page.url | replace: "index.html", "" | absolute_url }}" />
 {%- if page.metadesc %}
 <meta property="og:description" content="{{ page.metadesc | markdownify | strip_html | strip_newlines | escape_once }}" />
 {%- endif %}
