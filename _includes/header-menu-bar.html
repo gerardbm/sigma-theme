@@ -20,7 +20,7 @@
 				<select id="goto" onclick="gotoUrl()" onchange="hideIcon()">
 					<option selected="selected" value="#" class="menu-selected" hidden="hidden"></option>
 				{% for item in site.data.navigation.docs -%}
-					<option value="{{ item.url | absolute_url }}">{{ item.title }}</option>
+					<option value="{{ item.url | relative }}">{{ item.title }}</option>
 				{%- endfor %}
 				</select>
 				<span class="icon-select"></span>
