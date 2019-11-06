@@ -162,6 +162,7 @@ Tools for the content, in post or page front matter:
 - `breadcrumbs`: true or false to show the breadcrumbs.
 - `share`: true or false to show the share buttons.
 - `sidebar`: false to hide the sidebar, right or left to show it.
+- `rouge`: true to load the rouge CSS.
 
 ### Setting up default settings for all posts and pages, automatically
 
