@@ -13,6 +13,18 @@
 		url('../fonts/oswald-v29-latin-regular.svg#Oswald') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+	font-display: swap;
+	font-family: 'sigma-icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/sigma-icons.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/sigma-icons.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/sigma-icons.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/sigma-icons.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/sigma-icons.svg#Oswald') format('svg'); /* Legacy iOS */
+}
+
 /*----------------------------------------------------------*/
 /* 1. CSS Reset
 /*----------------------------------------------------------*/
@@ -232,57 +244,57 @@ a:hover {
 
 .fa-icon-sitemap:before {
 	content: "\f0e8";
-	font-family: "FontAwesome";
+	font-family: "sigma-icons";
 }
 
 .fa-icon-twitter:before {
 	content: "\f099";
-	font-family: "FontAwesome";
+	font-family: "sigma-icons";
 }
 
 .fa-icon-facebook:before {
 	content: "\f09a";
-	font-family: "FontAwesome";
+	font-family: "sigma-icons";
 }
 
 .fa-icon-linkedin:before {
 	content: "\f0e1";
-	font-family: "FontAwesome";
+	font-family: "sigma-icons";
 }
 
 .fa-icon-pinterest:before {
 	content: "\f231";
-	font-family: "FontAwesome";
+	font-family: "sigma-icons";
 }
 
 .fa-icon-instagram:before {
 	content: "\f16d";
-	font-family: "FontAwesome";
+	font-family: "sigma-icons";
 }
 
 .fa-icon-github:before {
 	content: "\f09b";
-	font-family: "FontAwesome";
+	font-family: "sigma-icons";
 }
 
 .fa-icon-youtube:before {
-	content: "\f166";
-	font-family: "FontAwesome";
+	content: "\f167";
+	font-family: "sigma-icons";
 }
 
 .fa-icon-whatsapp:before {
 	content: "\f232";
-	font-family: "FontAwesome";
+	font-family: "sigma-icons";
 }
 
 .fa-icon-email:before {
 	content: "\f003";
-	font-family: "FontAwesome";
+	font-family: "sigma-icons";
 }
 
 .fa-icon-rss:before {
 	content: "\f09e";
-	font-family: "FontAwesome";
+	font-family: "sigma-icons";
 }
 
 /*----------------------------------------------------------*/
@@ -1171,7 +1183,7 @@ footer a {
 	color: #fff;
 	content: "\f106";
 	display: inline-block;
-	font: 25px "FontAwesome";
+	font: 25px "sigma-icons";
 	line-height: 1;
 	opacity: 1;
 	padding-top: 4px;
@@ -1269,7 +1281,7 @@ footer a {
 
 	.navigation .icon-select:before {
 		content: "\f0c9";
-		font: 14px "FontAwesome";
+		font: 14px "sigma-icons";
 		left: 11px;
 		line-height: 35px;
 		pointer-events: none;
@@ -1376,7 +1388,7 @@ footer a {
 	.logo a:before {
 		content: "\f015";
 		display: block;
-		font-family: "FontAwesome";
+		font-family: "sigma-icons";
 		line-height: 33px;
 		position: absolute;
 		text-align: center;
