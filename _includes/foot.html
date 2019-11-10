@@ -1,5 +1,5 @@
 <div onclick="topFunction(1000)" class="scrollup"></div>
-<script type="text/javascript" src="{{ "/assets/js/scripts.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/scripts.js" | relative_url }}"></script>
 {% if page.mathjax == true -%}
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -9,5 +9,5 @@ MathJax.Hub.Config({
   }
 });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {%- endif %}
