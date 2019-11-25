@@ -12,9 +12,9 @@ This theme is a subjective one focused on speed and SEO, taking care of a beauti
 - Loop posts in category pages.
 - Breadcrumbs with Schema.org.
 - User interface multilanguage.
+- Advertisements zones.
 - A lot of web services available.
 	- Google Analytics
-	- Google AdSense
 	- Open Graph
 	- Twitter Cards
 	- Sites verification
@@ -126,12 +126,12 @@ Sites verification, in `_config.yml`:
 - `bing_sv`: Your Bing site verification.
 - `alexa_sv`: Your Alexa site verification.
 
-Google AdSense, in `_config.yml`:
+Advertisements, in `_config.yml`:
 
-Create the files `adsense-sidebar.html`, `adsense-top.html` and `adsense-bottom.html` and paste there your ads code. Then enable or disable them with these options:
+Create the files `ads-sidebar.html`, `ads-top.html` and `ads-bottom.html` and paste there your ads code. Then enable or disable them with these options:
 
 ```yaml
-adsense:
+ads:
   sidebar: true
   top: true
   bottom: true
