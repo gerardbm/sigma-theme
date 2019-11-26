@@ -1,4 +1,5 @@
-{%- for post in site.categories[include.cat] -%}
+{%- assign sorted_posts = site.categories[include.cat] | reverse -%}
+{%- for post in sorted_posts -%}
 <article class="loop-excerpt" itemscope itemtype="http://schema.org/Article">
 	<h2><a href="{{ post.url }}" itemprop="name headline">{{ post.title }}</a></h2>
 	<div itemprop="description">{{ post.excerpt | markdownify }}</div>
