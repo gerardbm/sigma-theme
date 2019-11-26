@@ -8,7 +8,7 @@ layout: default
 		{% include post-meta.html %}
 	</section>
 
-	{%- if site.ads.top == true -%}
+	{%- if page.ads.top == true -%}
 	{%- include ads-top.html -%}
 	{%- endif -%}
 
@@ -16,7 +16,7 @@ layout: default
 		{{ content }}
 	</div>
 
-	{%- if site.ads.bottom == true -%}
+	{%- if page.ads.bottom == true -%}
 	{%- include ads-bottom.html -%}
 	{%- endif -%}
 
@@ -24,7 +24,7 @@ layout: default
 	{%- include social-share.html -%}
 	{%- endif -%}
 
-	{%- if site.disqus.shortname -%}
+	{%- if page.disqus.shortname -%}
 	{%- include disqus_comments.html -%}
 	{%- endif -%}
 
