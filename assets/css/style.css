@@ -1360,6 +1360,7 @@ footer a {
 	}
 
 	.logo a {
+		background: #fff;
 		border: 1px solid #dcdcdc;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
