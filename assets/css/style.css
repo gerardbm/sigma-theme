@@ -480,7 +480,7 @@ header {
 }
 
 .title-bar .sub-type {
-	color: #798086;
+	color: #697076;
 	font-style: italic;
 }
 
@@ -490,7 +490,7 @@ header {
 }
 
 .title-bar .breadcrumbs {
-	color: #798086;
+	color: #697076;
 	font-size: 0.813em;
 	line-height: normal;
 	margin-top: 3px;
@@ -577,6 +577,10 @@ h6 {
 .post-content .notice-success,
 .post-content .notice-warning,
 .post-content .notice-danger,
+.post-content .align-right,
+.post-content .align-left,
+.loop-excerpt,
+.loop-excerpt div,
 .post .adsbygoogle {
 	margin-bottom: 1.625em;
 }
@@ -620,14 +624,14 @@ h6 {
 
 .post-meta {
 	border-bottom: 1px dashed #b3b5b8;
-	color: #798086;
+	color: #697076;
 	display: block;
 	padding-bottom: 15px;
 }
 
 .post-meta a:link,
 .post-meta a:visited {
-	color: #798086;
+	color: #697076;
 	text-decoration: underline;
 }
 
@@ -655,7 +659,7 @@ h6 {
 	margin-right: auto;
 }
 
-.post-content figure.align-center figcaption {
+.post-content figure figcaption {
 	text-align: center;
 }
 
@@ -676,7 +680,7 @@ h6 {
 }
 
 .post-content figcaption {
-	color: #798086;
+	color: #697076;
 	font-size: 0.875em;
 	font-style: italic;
 	margin-top: 5px;
@@ -738,7 +742,7 @@ h6 {
 
 .post-content blockquote {
 	background: #f3f5f8;
-	border-left: 4px solid #798086;
+	border-left: 4px solid #697076;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
@@ -848,7 +852,7 @@ h6 {
 }
 
 .post-content > table {
-	border: 1px solid #798086;
+	border: 1px solid #697076;
 	margin-bottom: 1.625em;
 	width: 100%;
 }
@@ -861,7 +865,7 @@ h6 {
 
 .post-content > table th,
 .post-content > table td {
-	border: 1px solid #798086;
+	border: 1px solid #697076;
 	padding: 3px 8px;
 	word-break: normal;
 }
@@ -1062,7 +1066,7 @@ h6 {
 .social-share .fa-icon-whatsapp:hover,
 .social-share .fa-icon-email:hover {
 	background: #f3f5f8;
-	border-color: #798086;
+	border-color: #697076;
 	color: #303336;
 }
 
@@ -1092,7 +1096,6 @@ h6 {
 
 .loop-excerpt {
 	border-bottom: 1px dashed #b3b5b8;
-	margin-bottom: 1.625em;
 }
 
 .loop-excerpt:last-of-type {
@@ -1255,7 +1258,7 @@ footer a {
 
 	.navigation select:hover {
 		background: #f3f5f8;
-		border-color: #798086;
+		border-color: #697076;
 	}
 
 	.navigation select::-ms-expand {
@@ -1383,7 +1386,7 @@ footer a {
 
 	.logo a:hover {
 		background: #f3f5f8;
-		border-color: #798086;
+		border-color: #697076;
 	}
 
 	.logo a:before {
