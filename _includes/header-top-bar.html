@@ -20,7 +20,7 @@
 		{% if site.rss_feed %}
 			<li><a target="_blank" rel="noopener noreferrer" class="fa-icon-rss" href="{{ site.rss_feed | escape }}" title="RSS"><span class="screen-reader-text">RSS</span></a></li>
 		{% else %}
-			<li><a target="_blank" class="fa-icon-rss" href="{{ 'feed.xml' | relative_url }}" title="RSS"><span class="screen-reader-text">RSS</span></a></li>{% endif %}
+			<li><a target="_blank" rel="noopener noreferrer" class="fa-icon-rss" href="{{ 'feed.xml' | relative_url }}" title="RSS"><span class="screen-reader-text">RSS</span></a></li>{% endif %}
 		</ul>
 	</div>
 </nav>
