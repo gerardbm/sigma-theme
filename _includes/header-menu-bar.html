@@ -11,7 +11,7 @@
 				<ul>
 				{% for item in site.data.navigation.docs -%}
 					{%- assign current = nil -%}
-					{%- if page.url contains item.url -%}
+					{%- if page.url == item.url -%}
 						{%- assign current = ' class="current"' -%}
 					{%- endif -%}
 					<li{{ current }}><a href="{{ item.url | relative }}">{{ item.title }}</a></li>
