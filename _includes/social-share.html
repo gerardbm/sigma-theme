@@ -3,10 +3,10 @@
 {%- assign title = page.title | url_encode -%}
 <section class="social-share">
 	<h4>{{ t[site.lang]['share'] }}:</h4>
-		<a class="fa-icon-twitter" title="Twitter" target="_blank" href="https://twitter.com/intent/tweet?text={{ title }}&nbsp;{{ url }}"><span class="screen-reader-text">Twitter</span></a>
-		<a class="fa-icon-facebook" title="Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><span class="screen-reader-text">Facebook</span></a>
-		<a class="fa-icon-linkedin" title="Linkedin" target="_blank" href="http://linkedin.com/shareArticle?mini=true&amp;url={{ url }}&amp;title={{ title }}"><span class="screen-reader-text">LinkedIn</span></a>
-		<a class="fa-icon-whatsapp" title="WhatsApp" target="_blank" href="whatsapp://send?text={{ url }}" data-action="share/whatsapp/share"><span class="screen-reader-text">Whatsapp</span></a>
+		<a class="fa-icon-twitter" title="Twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text={{ title }}&nbsp;{{ url }}"><span class="screen-reader-text">Twitter</span></a>
+		<a class="fa-icon-facebook" title="Facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><span class="screen-reader-text">Facebook</span></a>
+		<a class="fa-icon-linkedin" title="Linkedin" target="_blank" rel="noopener noreferrer" href="http://linkedin.com/shareArticle?mini=true&amp;url={{ url }}&amp;title={{ title }}"><span class="screen-reader-text">LinkedIn</span></a>
+		<a class="fa-icon-whatsapp" title="WhatsApp" target="_blank" rel="noopener noreferrer" href="whatsapp://send?text={{ url }}" data-action="share/whatsapp/share"><span class="screen-reader-text">Whatsapp</span></a>
 		<a class="fa-icon-email" title="Email" href="mailto:?subject={{ title }}&amp;body={{ url }}"><span class="screen-reader-text">Email</span></a>
 		<span class="clear"></span>
 </section>
