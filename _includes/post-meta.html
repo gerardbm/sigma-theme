@@ -1,7 +1,7 @@
 {%- assign t = site.data.translations -%}
 {%- assign z = site.data.months -%}
 <p class="post-meta">
-	<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+	<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
 		{%- if site.lang == 'en' -%}
 			{{- page.date | date: "%B %d, %Y" -}}
 		{%- else -%}
@@ -13,7 +13,7 @@
 
 	{% if page.last_modified_at -%}
 	<span>({{ t[site.lang]['upd'] }}: </span>
-	<time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">
+	<time datetime="{{ page.last_modified_at | date_to_xmlschema }}">
 		{%- if site.lang == 'en' -%}
 			{{- page.last_modified_at | date: "%B %d, %Y" -}}
 		{%- else -%}
@@ -27,7 +27,7 @@
 
 	{% if page.author -%}
 	<span> / {{ t[site.lang]['by'] }}</span>
-	<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="post-author" itemprop="name">{{ page.author }}</span></span>
+	<span><span class="post-author">{{ page.author }}</span></span>
 	{%- endif %}
 
 	{% if page.categories != empty -%}

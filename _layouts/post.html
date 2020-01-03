@@ -1,10 +1,45 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/Article">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "name": {{ page.title | jsonify }},
+  "headline": {{ page.title | jsonify }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ page.author | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "width": 32,
+      "height": 32,
+      "url": "{{ site.url }}{{ site.favicon_32 }}"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}/{{ page.image }}"
+  }
+}
+</script>
+
+<article class="post h-entry">
 
 	<section class="post-header">
-		<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+		<h1 class="post-title">{{ page.title }}</h1>
 		{% include post-meta.html %}
 	</section>
 
@@ -12,7 +47,7 @@ layout: default
 	{%- include ads-top.html -%}
 	{%- endif -%}
 
-	<div class="post-content" itemprop="articleBody">
+	<div class="post-content">
 		{{ content }}
 	</div>
 

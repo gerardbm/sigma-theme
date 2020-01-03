@@ -1,6 +1,25 @@
 ---
 layout: default
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ page.title | jsonify }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "inLanguage": "es-ES",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "{{ site.url }}",
+    "name": {{ site.title | jsonify }}
+  },
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}/{{ page.image }}"
+  }
+}
+</script>
+
 <article class="post">
 
 	<section class="post-header">

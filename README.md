@@ -11,6 +11,7 @@ This theme is a subjective one focused on speed and SEO, taking care of a beauti
 - Layouts with sidebar right/left.
 - Loop posts in category pages.
 - Breadcrumbs with Schema.org.
+- Schema.org for posts and categories.
 - User interface multilanguage.
 - Advertisements zones.
 - A lot of web services available.
