@@ -7,9 +7,17 @@ layout: default
 		<h1 class="post-title">{{ page.title }}</h1>
 	</section>
 
+	{%- if page.ads.top == true -%}
+	{%- include ads-top.html -%}
+	{%- endif -%}
+
 	<div class="post-content">
 		{{ content }}
 	</div>
+
+	{%- if page.ads.bottom == true -%}
+	{%- include ads-bottom.html -%}
+	{%- endif -%}
 
 	{%- if page.share == true -%}
 	{%- include social-share.html -%}
