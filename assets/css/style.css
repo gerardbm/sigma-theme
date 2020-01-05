@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @font-face {
-	font-display: swap;
+	font-display: auto;
 	font-family: 'Oswald';
 	font-style: normal;
 	font-weight: 400;
@@ -14,7 +14,7 @@
 }
 
 @font-face {
-	font-display: swap;
+	font-display: auto;
 	font-family: 'sigma-icons';
 	font-style: normal;
 	font-weight: 400;
@@ -1033,9 +1033,9 @@ h6 {
 	float: left;
 	height: 33px;
 	line-height: 32px;
-	margin-right: 8px;
+	margin-right: 2%;
 	text-align: center;
-	width: 54px;
+	width: calc(92%/5);
 }
 
 .social-share a:link,
@@ -1058,6 +1058,11 @@ h6 {
 
 .social-share a:before {
 	font-size: 1em;
+}
+
+.social-share a span {
+	display: none;
+	visibility: hidden;
 }
 
 .social-share .fa-icon-twitter:hover,
@@ -1462,17 +1467,6 @@ footer a {
 		width: 100%;
 	}
 
-	.social-share a .screen-reader-text {
-		clip: unset;
-		clip-path: none;
-		height: 33px;
-		left: 60px;
-		line-height: 33px;
-		margin-left: 10px;
-		position: absolute;
-		width: auto;
-	}
-
 	.social-share a:before {
 		background: rgba(0,0,0,0.1);
 		display: inline-block;
@@ -1482,6 +1476,12 @@ footer a {
 
 	.social-share a:last-of-type {
 		margin-bottom: 0;
+	}
+
+	.social-share a span {
+		display: inline-block;
+		margin-left: 15px;
+		visibility: visible;
 	}
 }
 
