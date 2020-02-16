@@ -344,11 +344,6 @@ header {
 	color: #f17e01;
 }
 
-.sticky {
-	height: 55px;
-	position: relative;
-}
-
 /*----------------------------------------------------------*/
 /* 4. Header (menu bar)
 /*----------------------------------------------------------*/
@@ -364,12 +359,24 @@ header {
 	position: relative;
 }
 
-.fixed-menu .menu-bar {
+.fixed-menu {
 	left: 0;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 9999;
+}
+
+section {
+	padding-top: 0;
+}
+
+.fixed-menu + .title-bar {
+	padding-top: 55px;
+}
+
+.fixed-menu + .home-title-bar {
+	padding-top: 110px;
 }
 
 .logo {
@@ -509,6 +516,35 @@ header {
 .menu-bar,
 .title-bar {
 	clear: both;
+}
+
+/* --- */
+
+.home-title-bar {
+	background: #f3f5f8;
+	border-bottom: 1px solid #dcdcdc;
+	color: #303336;
+	display: block;
+	max-width: 100%;
+	padding: 55px 0;
+	text-align: center;
+}
+
+.home-title-bar h1 {
+	color: #303336;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 2em;
+	margin-bottom: 0;
+}
+
+.home-title-bar p {
+	font-size: 18px;
+	margin-top: 1.625em;
+}
+
+.home-title-bar span {
+	color: #ff7f2a;
+	font-weight: bold;
 }
 
 /*----------------------------------------------------------*/

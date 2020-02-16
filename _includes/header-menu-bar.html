@@ -1,31 +1,29 @@
-<div class="sticky">
-	<div class="menu-bar">
-		<div class="wrap">
-			<div class="logo">
-				<a class="home" rel="home" title="{{ site.title }}" href="{{ "/" | relative_url }}">
-					<img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" title="{{ site.title }}">
-				</a>
-			</div>
-			{% if site.data.navigation %}
-			<nav class="navigation">
-				<ul>
-				{% for item in site.data.navigation.docs -%}
-					{%- assign current = nil -%}
-					{%- if page.url == item.url -%}
-						{%- assign current = ' class="current"' -%}
-					{%- endif -%}
-					<li{{ current }}><a href="{{ item.url | relative }}">{{ item.title }}</a></li>
-				{%- endfor %}
-				</ul>
-				<select id="goto" onchange="gotoUrl()" >
-					<option selected="selected" value="#" class="menu-selected" hidden="hidden">&nbsp;</option>
-				{% for item in site.data.navigation.docs -%}
-					<option value="{{ item.url | relative }}">{{ item.title }}</option>
-				{%- endfor %}
-				</select>
-				<span class="icon-select"></span>
-			</nav>
-			{% endif %}
+<div class="menu-bar">
+	<div class="wrap">
+		<div class="logo">
+			<a class="home" rel="home" title="{{ site.title }}" href="{{ "/" | relative_url }}">
+				<img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" title="{{ site.title }}">
+			</a>
 		</div>
+		{% if site.data.navigation %}
+		<nav class="navigation">
+			<ul>
+			{% for item in site.data.navigation.docs -%}
+				{%- assign current = nil -%}
+				{%- if page.url == item.url -%}
+					{%- assign current = ' class="current"' -%}
+				{%- endif -%}
+				<li{{ current }}><a href="{{ item.url | relative }}">{{ item.title }}</a></li>
+			{%- endfor %}
+			</ul>
+			<select id="goto" onchange="gotoUrl()" >
+				<option selected="selected" value="#" class="menu-selected" hidden="hidden">&nbsp;</option>
+			{% for item in site.data.navigation.docs -%}
+				<option value="{{ item.url | relative }}">{{ item.title }}</option>
+			{%- endfor %}
+			</select>
+			<span class="icon-select"></span>
+		</nav>
+		{% endif %}
 	</div>
 </div>

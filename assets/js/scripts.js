@@ -1,8 +1,10 @@
 window.onscroll = function() { stickyMenu(); scrollToTop(); }
+window.onload = function() { stickyMenu(); scrollToTop(); }
+
+var menu = document.getElementsByClassName("menu-bar")[0];
+var sticky = menu.offsetTop;
 
 function stickyMenu() {
-	var menu = document.getElementsByClassName("sticky")[0];
-	var sticky = menu.offsetTop;
 	if (window.pageYOffset > sticky) {
 		menu.classList.add("fixed-menu");
 	} else {
@@ -10,8 +12,9 @@ function stickyMenu() {
 	}
 }
 
+var button = document.getElementsByClassName("scrollup")[0];
+
 function scrollToTop() {
-	var button = document.getElementsByClassName("scrollup")[0];
 	if (window.pageYOffset > 250) {
 		button.classList.add("is-visible");
 	} else {

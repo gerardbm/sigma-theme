@@ -1,0 +1,8 @@
+<section class="home-title-bar">
+	<div class="wrap">
+		<h1>{{ site.home.header.title | default: site.title }}</h1>
+		{% if site.home.header.text -%}
+			<p>{{ site.home.header.text }}</p>
+		{%- endif %}
+	</div>
+</section>

@@ -1,7 +1,9 @@
 <header>
 	{% include header-top-bar.html %}
 	{% include header-menu-bar.html %}
-	{% if page.layout != 'home' %}
+	{% if page.layout == 'home' %}
+	{% include home-title-bar.html %}
+	{% else %}
 	{% include title-bar.html %}
 	{% endif %}
 </header>
