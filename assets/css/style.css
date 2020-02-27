@@ -1101,7 +1101,7 @@ h6 {
 .social-share .fa-icon-twitter:hover,
 .social-share .fa-icon-facebook:hover,
 .social-share .fa-icon-linkedin:hover,
-.social-share .fa-icon-whatsapp:hover,
+.social-share .fa-icon-pinterest:hover,
 .social-share .fa-icon-email:hover {
 	background: #f3f5f8;
 	border-color: #697076;
@@ -1120,8 +1120,8 @@ h6 {
 	color: #0976b4;
 }
 
-.social-share .fa-icon-whatsapp {
-	color: #25d366;
+.social-share .fa-icon-pinterest {
+	color: #bb312b;
 }
 
 .social-share .fa-icon-email {
