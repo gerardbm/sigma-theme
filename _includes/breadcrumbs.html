@@ -6,15 +6,15 @@
 			<span>{{ t[site.lang]['path'] }}: </span>
 			<a itemprop="item" href="{{ "/" | relative_url }}">
 				<span itemprop="name">{{ site.title }}</span></a>
-			<meta itemprop="position" content="1" />
+			<meta itemprop="position" content="1"/>
 		</li>
 		{% if page.categories != empty %}
 		{% for category in page.categories %}
 		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
 			<span class="sep">{{ site.bc_sep }}</span>
-			<a itemprop="item" href="/{{ category | slugify: 'latin' }}/">
+			<a itemprop="item" href="{{ category | slugify: 'latin' | relative_url }}/">
 				<span itemprop="name">{{ category | capitalize }}</span></a>
-			<meta itemprop="position" content="{{ i }}" />
+			<meta itemprop="position" content="{{ i }}"/>
 			{% assign i = i | plus: 1 %}
 		</li>
 		{% endfor %}

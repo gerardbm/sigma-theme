@@ -13,13 +13,13 @@
 				{%- if page.url == item.url -%}
 					{%- assign current = ' class="current"' -%}
 				{%- endif -%}
-				<li{{ current }}><a href="{{ item.url | relative }}">{{ item.title }}</a></li>
+				<li{{ current }}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
 			{%- endfor %}
 			</ul>
 			<select id="goto" onchange="gotoUrl()" >
 				<option selected="selected" value="#" class="menu-selected" hidden="hidden">&nbsp;</option>
 			{% for item in site.data.navigation.docs -%}
-				<option value="{{ item.url | relative }}">{{ item.title }}</option>
+				<option value="{{ item.url | relative_url }}">{{ item.title }}</option>
 			{%- endfor %}
 			</select>
 			<span class="icon-select"></span>
