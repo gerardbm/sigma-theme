@@ -111,6 +111,13 @@ sidenav:
   posts: true
 ```
 
+Then, in the post or page front matter:
+
+```yml
+sidebar: true
+sidenav: true
+```
+
 ### Web services
 
 Google Analytics, in `_config.yml`:
@@ -175,6 +182,7 @@ Tools for the content, in post or page front matter:
 - `breadcrumbs`: true or false to show the breadcrumbs.
 - `share`: true or false to show the share buttons.
 - `sidebar`: false to hide the sidebar, right or left to show it.
+- `sidenav`: true or false to show the sidebar navigation menus.
 - `rouge`: true to load the rouge CSS.
 - `order`: customize the posts order in the loops.
 
@@ -193,6 +201,7 @@ defaults:
       breadcrumbs: true
       share: true
       sidebar: right
+      sidenav: true
       mathjax: true
   -
     scope:
@@ -203,6 +212,7 @@ defaults:
       breadcrumbs: true
       share: false
       sidebar: false
+      sidenav: false
       robots: noindex,nofollow
 ```
 
