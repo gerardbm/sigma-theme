@@ -101,6 +101,16 @@ Copyright information, in `_config.yml`:
 - `first_year`: Type here an integer, it should be the first year of your site. For example: 2012, it will output "2012-2019" (current year), automatically. If it's the same year as the current year, it will output simply "2019".
 - `copyright`: Type here your copyright text. For example: «All rights reserved».
 
+### Sidebar config
+
+Display a navigation menu in the sidebar. Navigate between posts in the same category, and navigate between other categories in the category pages. In `_config.yml`:
+
+```yml
+sidenav:
+  categories: true
+  posts: true
+```
+
 ### Web services
 
 Google Analytics, in `_config.yml`:
