@@ -1,4 +1,7 @@
 <aside class="sidebar">
+{%- if page.sidenav == true -%}
+{%- include sidenav.html -%}
+{%- endif -%}
 {%- if page.ads.sidebar == true -%}
 {%- include ads-sidebar.html -%}
 {%- endif -%}

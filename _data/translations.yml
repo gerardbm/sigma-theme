@@ -14,6 +14,8 @@ en:
   read: "Read"
   path: "Path"
   quantity: "Quantity"
+  morecats: "More categories"
+  morearts: "More articles"
 es:
   post: "Artículo"
   posts: "Artículos"
@@ -29,6 +31,8 @@ es:
   read: "Lectura"
   path: "Ruta"
   quantity: "Cantidad"
+  morecats: "Más categorías"
+  morearts: "Más artículos"
 ca:
   post: "Article"
   posts: "Articles"
@@ -44,3 +48,5 @@ ca:
   read: "Lectura"
   path: "Ruta"
   quantity: "Quantitat"
+  morecats: "Més categories"
+  morearts: "Més articles"

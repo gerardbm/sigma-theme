@@ -1,0 +1,35 @@
+<nav class="sidenav">
+{%- assign t = site.data.translations -%}
+	{%- if site.sidenav.categories == true -%}
+		{%- if page.layout == 'category' -%}
+		<h3>{{ t[site.lang]['morecats'] }}</h3>
+		<ul>
+			{%- for category in site.categories -%}
+				{%- assign current = nil -%}
+				{%- assign catslug = category[0] | slugify | relative_url | append: '/' -%}
+				{%- if page.url == catslug -%}
+				{%- assign current = ' class="current"' -%}
+				{%- endif -%}
+				<li{{ current }}><a href="{{ category[0] | slugify | relative_url }}/">{{ category[0] }}</a></li>
+			{%- endfor -%}
+		</ul>
+		{%- endif -%}
+	{%- endif -%}
+	{%- if site.sidenav.posts == true -%}
+		{%- if page.layout == 'post' -%}
+		<h3>{{ t[site.lang]['morearts'] }}</h3>
+		<ul>
+			{%- for category in page.categories -%}
+			{%- assign posts = site.categories[category] -%}
+			{%- endfor -%}
+			{%- for post in posts -%}
+				{%- assign current = nil -%}
+				{%- if page.url == post.url -%}
+				{%- assign current = ' class="current"' -%}
+				{%- endif -%}
+				<li{{ current }}><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+			{%- endfor -%}
+		</ul>
+		{%- endif -%}
+	{%- endif -%}
+</nav>
