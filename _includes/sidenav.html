@@ -1,5 +1,6 @@
 <nav class="sidenav">
 {%- assign t = site.data.translations -%}
+{%- capture the_cat -%}{{ page.categories | first }}{%- endcapture -%}
 	{%- if site.sidenav.categories == true -%}
 		{%- if page.layout == 'category' -%}
 		<h3>{{ t[site.lang]['morecats'] }}</h3>
@@ -19,9 +20,7 @@
 		{%- if page.layout == 'post' -%}
 		<h3>{{ t[site.lang]['morearts'] }}</h3>
 		<ul>
-			{%- for category in page.categories -%}
-			{%- assign posts = site.categories[category] -%}
-			{%- endfor -%}
+			{%- assign posts = site.categories[the_cat] | sort: 'order' -%}
 			{%- for post in posts -%}
 				{%- assign current = nil -%}
 				{%- if page.url == post.url -%}
