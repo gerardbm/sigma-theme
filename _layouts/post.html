@@ -51,6 +51,10 @@ layout: default
 		{{ content }}
 	</div>
 
+	{%- if page.nextprev == true -%}
+	{%- include next-prev.html -%}
+	{%- endif -%}
+
 	{%- if page.ads.bottom == true -%}
 	{%- include ads-bottom.html -%}
 	{%- endif -%}

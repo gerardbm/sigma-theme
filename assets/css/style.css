@@ -605,6 +605,7 @@ h6 {
 .main-content blockquote,
 .main-content .highlight,
 .main-content .social-share,
+.main-content .next-prev,
 .post-content,
 .post-content .notice,
 .post-content .notice-info,
@@ -1200,6 +1201,41 @@ h6 {
 }
 
 /*----------------------------------------------------------*/
+/* 11. Next/prev buttons
+/*----------------------------------------------------------*/
+
+.next-prev {
+	border-bottom: 1px dashed #b3b5b8;
+	border-top: 1px dashed #b3b5b8;
+	display: block;
+	padding: 15px 0;
+}
+
+.next-prev .np-prev {
+	float: left;
+	margin-right: 2%;
+	text-align: left;
+	width: 49%;
+}
+
+.next-prev .np-next {
+	float: right;
+	margin-right: 0;
+	text-align: right;
+	width: 49%;
+}
+
+.next-prev a:link,
+.next-prev a:visited {
+	color: #095cae;
+	text-decoration: underline;
+}
+
+.next-prev a:hover {
+	color: #f17e01;
+}
+
+/*----------------------------------------------------------*/
 /* X. Footer
 /*----------------------------------------------------------*/
 
@@ -1432,6 +1468,24 @@ footer a {
 
 	.logo {
 		max-width: 200px;
+	}
+
+	.next-prev .np-prev {
+		float: none;
+		margin-right: 0;
+		text-align: left;
+		width: 100%;
+	}
+
+	.next-prev .np-next {
+		float: none;
+		margin-right: 0;
+		text-align: left;
+		width: 100%;
+	}
+
+	.next-prev div:nth-last-of-type(1) {
+		padding-top: 20px;
 	}
 }
 

@@ -16,6 +16,8 @@ en:
   quantity: "Quantity"
   morecats: "More categories"
   morearts: "More articles"
+  nextart: "Next article"
+  prevart: "Previous article"
 es:
   post: "Artículo"
   posts: "Artículos"
@@ -33,6 +35,8 @@ es:
   quantity: "Cantidad"
   morecats: "Más categorías"
   morearts: "Más artículos"
+  nextart: "Artículo siguiente"
+  prevart: "Artículo anterior"
 ca:
   post: "Article"
   posts: "Articles"
@@ -50,3 +54,5 @@ ca:
   quantity: "Quantitat"
   morecats: "Més categories"
   morearts: "Més articles"
+  nextart: "Article següent"
+  prevart: "Article anterior"
