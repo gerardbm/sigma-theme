@@ -1,13 +1,17 @@
 {%- if page.sticky == true -%}
-	{%- assign sticky = " sidebar-sticky" -%}
+{%- assign sticky = " sidebar-sticky" -%}
 {%- endif -%}
 
 <aside class="sidebar{{ sticky }}">
-{%- if page.sidenav == true -%}
-	{%- include sidenav.html -%}
+{%- if page.zone.sidebar_top == true -%}
+{%- include zone-sidebar-top.html -%}
 {%- endif -%}
 
-{%- if page.ads.sidebar == true -%}
-	{%- include ads-sidebar.html -%}
+{%- if page.sidenav.categories == true or page.sidenav.posts == true or page.sidenav.pages == true -%}
+{%- include sidenav.html -%}
+{%- endif -%}
+
+{%- if page.zone.sidebar_bottom == true -%}
+{%- include zone-sidebar-bottom.html -%}
 {%- endif -%}
 </aside>

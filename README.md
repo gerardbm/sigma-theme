@@ -105,20 +105,46 @@ Copyright information, in `_config.yml`:
 
 ### Sidebar config
 
-Display a navigation menu in the sidebar. Navigate between posts in the same category, and navigate between other categories in the category pages. In `_config.yml`:
+First of all, in the post or page front matter:
+
+```yml
+sidebar: true / false / right / left
+```
+
+Display a navigation menu in the sidebar. Navigate between posts in the same category (layout = `post`), navigate between other categories in the category pages (layout = `category`) and navigate between pages in the pages itself (layout = `page`). Use it in the post or page front matter:
 
 ```yml
 sidenav:
   categories: true
   posts: true
+  pages: true
 ```
 
-Then, in the post or page front matter:
+### Sidebar zones
 
-```yml
-sidebar: true
-sidenav: true
+You can display zones for advertisements in the top or the bottom of your sidebar.
+
+Create the files `zone-sidebar-top.html`, `zone-sidebar-bottom.html` into your `_includes` folder and paste there your ads code. Then enable or disable them with these options in the post or page front matter:
+
+```yaml
+zone:
+  sidebar_top: true
+  sidebar_bottom: true
 ```
+
+### Content zones
+
+You can also display zones in the top or the bottom of your content.
+
+Create the files `zone-top.html` and `zone-bottom.html` into your `_includes` folder and paste there your ads code. Then enable or disable them with these options in the post or page front matter:
+
+```yaml
+zone:
+  content_top: true
+  content_bottom: true
+```
+
+For the sidebar, first it must be displayed.
 
 ### Web services
 
@@ -146,17 +172,6 @@ Sites verification, in `_config.yml`:
 - `bing_sv`: Your Bing site verification.
 - `alexa_sv`: Your Alexa site verification.
 
-Advertisements, in `_config.yml`:
-
-Create the files `ads-sidebar.html`, `ads-top.html` and `ads-bottom.html` and paste there your ads code. Then enable or disable them with these options:
-
-```yaml
-ads:
-  sidebar: true
-  top: true
-  bottom: true
-```
-
 ### SEO:
 
 - For the `title` tag, it will use the post/page title.
@@ -166,9 +181,11 @@ Meta tags, in post or page front matter:
 
 - `robots`: Must be a robots setup: `index,follow`, `noindex,follow`...
 - `metadesc`: A description of the page. Less than 160 characters is recommended.
-- `kewyords`: A list of keywords.
+- `kewyords`: A list of keywords. Google does not use them, though.
 
 There is no prevision of using pagination in this theme at the moment, so `rel="prev"` and `rel="next"` are not included. This theme lists all posts of a category in the category page.
+
+TODO: Make the pagination customizable.
 
 ### Maths
 
@@ -186,7 +203,6 @@ Tools for the content, in post or page front matter:
 - `share`: true or false to show the share buttons.
 - `sidebar`: false to hide the sidebar, right or left to show it.
 - `sticky`: true or false to make the sidebar sticky on scroll.
-- `sidenav`: true or false to enable the sidebar navigation menus.
 - `rouge`: true to load the rouge CSS.
 - `order`: customize the posts order in the loops.
 
@@ -205,10 +221,16 @@ defaults:
       breadcrumbs: true
       nextprev: true
       share: true
+      mathjax: true
       sidebar: right
       sticky: true
-      sidenav: true
-      mathjax: true
+      sidenav:
+        posts: true
+      zone:
+        content_top: true
+        content_bottom: false
+        sidebar_top: true
+        sidebar_bottom: false
   -
     scope:
       path: ""
@@ -218,7 +240,9 @@ defaults:
       breadcrumbs: true
       share: false
       sidebar: false
-      sidenav: false
+      sidenav:
+        pages: true
+        categories: true
       robots: noindex,nofollow
 ```
 

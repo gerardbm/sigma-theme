@@ -43,8 +43,8 @@ layout: default
 		{% include post-meta.html %}
 	</section>
 
-	{%- if page.ads.top == true -%}
-	{%- include ads-top.html -%}
+	{%- if page.zone.content_top == true -%}
+	{%- include zone-top.html -%}
 	{%- endif -%}
 
 	<div class="post-content">
@@ -55,8 +55,8 @@ layout: default
 	{%- include next-prev.html -%}
 	{%- endif -%}
 
-	{%- if page.ads.bottom == true -%}
-	{%- include ads-bottom.html -%}
+	{%- if page.zone.content_bottom == true -%}
+	{%- include zone-bottom.html -%}
 	{%- endif -%}
 
 	{%- if page.share == true -%}

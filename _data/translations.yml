@@ -16,6 +16,7 @@ en:
   quantity: "Quantity"
   morecats: "More categories"
   morearts: "More articles"
+  morepags: "More pages"
   nextart: "Next article"
   prevart: "Previous article"
 es:
@@ -35,6 +36,7 @@ es:
   quantity: "Cantidad"
   morecats: "Más categorías"
   morearts: "Más artículos"
+  morepags: "Más páginas"
   nextart: "Artículo siguiente"
   prevart: "Artículo anterior"
 ca:
@@ -54,5 +56,6 @@ ca:
   quantity: "Quantitat"
   morecats: "Més categories"
   morearts: "Més articles"
+  morepags: "Més pàgines"
   nextart: "Article següent"
   prevart: "Article anterior"

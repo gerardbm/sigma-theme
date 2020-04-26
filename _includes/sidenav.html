@@ -1,6 +1,6 @@
 {%- assign t = site.data.translations -%}
 
-{%- if site.sidenav.categories == true -%}
+{%- if page.sidenav.categories == true -%}
 	{%- if page.layout == 'category' -%}
 	<nav class="sidenav">
 		<h3>{{ t[site.lang]['morecats'] }}</h3>
@@ -18,7 +18,7 @@
 	{%- endif -%}
 {%- endif -%}
 
-{%- if site.sidenav.posts == true -%}
+{%- if page.sidenav.posts == true -%}
 	{%- if page.layout == 'post' -%}
 	<nav class="sidenav">
 		<h3>{{ t[site.lang]['morearts'] }}</h3>
@@ -31,6 +31,26 @@
 					{%- assign current = ' class="current"' -%}
 				{%- endif -%}
 				<li{{ current }}><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+			{%- endfor -%}
+		</ul>
+	</nav>
+	{%- endif -%}
+{%- endif -%}
+
+{%- if page.sidenav.pages == true -%}
+	{%- if page.layout == 'page' -%}
+	<nav class="sidenav">
+		<h3>{{ t[site.lang]['morepags'] }}</h3>
+		<ul>
+			{%- assign pages = site.pages -%}
+			{%- for item in pages -%}
+				{%- if item.layout == 'page' -%}
+					{%- assign current = nil -%}
+					{%- if item.url == page.url -%}
+						{%- assign current = ' class="current"' -%}
+					{%- endif -%}
+					<li{{ current }}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+				{%- endif -%}
 			{%- endfor -%}
 		</ul>
 	</nav>
