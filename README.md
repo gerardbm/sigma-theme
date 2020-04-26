@@ -6,10 +6,12 @@ This theme is a subjective one focused on speed and SEO, taking care of a beauti
 - Modern and responsive design.
 - SEO friendly, fully optimized.
 - Sticky menu + scroll up button.
+- Sticky sidebar with sidenavs.
+- Layouts with sidebar right/left.
 - Code blocks syntax highlighting.
 - LaTeX maths, MathJax integrated.
-- Layouts with sidebar right/left.
 - Loop posts in category pages.
+- Links to next/previous posts.
 - Breadcrumbs with Schema.org.
 - Schema.org for posts and categories.
 - User interface multilanguage.
@@ -180,15 +182,17 @@ Tools for the content, in post or page front matter:
 
 - `read_time`: true or false to show the read time of a page/post.
 - `breadcrumbs`: true or false to show the breadcrumbs.
+- `nextprev`: true or false to show links for the next/previous posts.
 - `share`: true or false to show the share buttons.
 - `sidebar`: false to hide the sidebar, right or left to show it.
-- `sidenav`: true or false to show the sidebar navigation menus.
+- `sticky`: true or false to make the sidebar sticky on scroll.
+- `sidenav`: true or false to enable the sidebar navigation menus.
 - `rouge`: true to load the rouge CSS.
 - `order`: customize the posts order in the loops.
 
 ### Setting up default settings for all posts and pages, automatically
 
-You can configure default settings for all posts or pages. If then you configure an option in the post/page front matter, this will be the option used, overriding the default setting.
+You can configure default settings for all posts or pages. If then you configure an option in the post/page front matter, this will be the option used, overriding the default setting. Example with random values:
 
 ```yaml
 defaults:
@@ -199,8 +203,10 @@ defaults:
     values:
       read_time: true
       breadcrumbs: true
+      nextprev: true
       share: true
       sidebar: right
+      sticky: true
       sidenav: true
       mathjax: true
   -

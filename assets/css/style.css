@@ -221,6 +221,13 @@ img {
 	float: left;
 }
 
+.sidebar-sticky {
+	margin-bottom: 1.625em;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 76px;
+}
+
 .clear {
 	background: none;
 	border: 0;
