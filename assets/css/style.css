@@ -1491,7 +1491,7 @@ footer a {
 		width: 100%;
 	}
 
-	.next-prev div:nth-last-of-type(1) {
+	.next-prev div:nth-child(2) {
 		padding-top: 20px;
 	}
 }
