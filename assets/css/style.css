@@ -1084,6 +1084,11 @@ h6 {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	-webkit-transition: background .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out;
+	-ms-transition: background .2s ease-in-out;
+	-o-transition: background .2s ease-in-out;
+	transition: background .2s ease-in-out;
 }
 
 .sidenav ul li:last-of-type {
