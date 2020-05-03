@@ -11,16 +11,18 @@ This theme is a subjective one focused on speed and SEO, taking care of a beauti
 - Code blocks syntax highlighting.
 - LaTeX maths, MathJax integrated.
 - Loop posts in category pages.
-- Links to next/previous posts.
+- Links to next/previous posts (same category).
 - Breadcrumbs with Schema.org.
 - Schema.org for posts and categories.
 - User interface multilanguage.
-- Advertisements zones.
+- Advertisements zones (content and sidebar).
 - A lot of web services available.
 	- Google Analytics
 	- Open Graph
 	- Twitter Cards
 	- Sites verification
+
+Check the [Sigma theme unit test](https://github.com/gerardbm/sigma-theme-unit-test) repository to test it.
 
 ## Installation
 
@@ -276,6 +278,10 @@ Define them in the front matter:
 - `page`: Use it for your regular pages.
 - `post`: Use if for your posts.
 - `category`: Use it to create pages for categories.
+
+### Tips
+
+- `nextprev` will link to the next/prev posts within the same category. It will use the last category assigned, because it's the subcategory. For example: `categories: [vehicles, cars]` will only navigate between `cars`. Therefore, it's a good idea to have the same level of categories in a project.
 
 ## Contributing
 
