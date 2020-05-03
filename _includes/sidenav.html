@@ -24,7 +24,7 @@
 	<nav class="sidenav">
 		<h3>{{ t[site.lang]['morearts'] }}</h3>
 		<ul>
-			{%- capture the_cat -%}{{ page.categories | first }}{%- endcapture -%}
+			{%- capture the_cat -%}{{ page.categories | last }}{%- endcapture -%}
 			{%- assign posts = site.categories[the_cat] | sort: 'order' -%}
 			{%- for post in posts -%}
 				{%- assign current = nil -%}

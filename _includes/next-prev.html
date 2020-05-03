@@ -1,6 +1,6 @@
 {%- assign t = site.data.translations -%}
 	
-{%- capture the_cat -%}{{page.categories | first}}{%- endcapture -%}
+{%- capture the_cat -%}{{ page.categories | last }}{%- endcapture -%}
 {%- assign sorted_posts = site.categories[the_cat] | sort: 'order' -%}
 
 {%- for post in sorted_posts -%}
