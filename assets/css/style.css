@@ -683,6 +683,16 @@ h6 {
 	color: #f17e01;
 }
 
+.post-content h2 {
+	border-bottom: 1px dotted #b3b5b8;
+	padding-bottom: 15px;
+}
+
+.post-content .loop-excerpt h2 {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
 .post-content a:link,
 .post-content a:visited {
 	color: #095cae;
