@@ -556,6 +556,16 @@ section {
 	font-weight: bold;
 }
 
+.home-title-bar a:link,
+.home-title-bar a:visited {
+	color: #095cae;
+	text-decoration: underline;
+}
+
+.home-title-bar a:hover {
+	color: #f17e01;
+}
+
 /*----------------------------------------------------------*/
 /* 6. Main content
 /*----------------------------------------------------------*/
