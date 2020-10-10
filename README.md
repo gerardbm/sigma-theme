@@ -81,6 +81,10 @@ Favicons, in `_config.yml`:
 - `mask_icon`: The relative path of the SVG icon mask file for Safari.
 - `mask_color`: An HEX color. The fill color needs to be defined.
 
+Theme color, in `_config.yml`:
+
+- `theme_color`: An HEX color. The fill color needs to be defined.
+
 This [script](https://github.com/gerardbm/dotfiles/blob/master/bin/.local/bin/faviconer) generates the favicons.
 
 Breadcrumbs, in `_config.yml`:
