@@ -38,10 +38,9 @@ layout: default
 
 <article class="post h-entry">
 
-	<section class="post-header">
-		<h1 class="post-title">{{ page.title }}</h1>
-		{% include post-meta.html %}
-	</section>
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  {% include post-meta.html %}
 
 	{%- if page.zone.content_top == true -%}
 	{%- include zone-top.html -%}

@@ -9,7 +9,7 @@ This theme is a subjective one focused on speed and SEO, taking care of a beauti
 - Sticky sidebar with sidenavs.
 - Layouts with sidebar right/left.
 - Code blocks syntax highlighting.
-- LaTeX maths, MathJax integrated.
+- LaTeX maths, Katex integrated.
 - Loop posts in category pages.
 - Links to next/previous posts (same category).
 - Breadcrumbs with Schema.org.
@@ -191,9 +191,9 @@ TODO: Make the pagination customizable.
 
 ### Maths
 
-MathJax library, in post or page front matter:
+Katex library, in post or page front matter:
 
-- `mathjax`: true or false to use MathJax.
+- `latex`: true or false to use Katex.
 
 ### Misc
 
@@ -223,7 +223,7 @@ defaults:
       breadcrumbs: true
       nextprev: true
       share: true
-      mathjax: true
+      latex: true
       sidebar: right
       sticky: true
       sidenav:

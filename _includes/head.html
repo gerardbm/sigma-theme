@@ -1,22 +1,27 @@
 <head>
 
-	<link rel="preload" href="{{ "/assets/fonts/sigma-icons.woff2" | relative_url }}" as="font" crossorigin="anonymous"/>
-	<link rel="preload" href="{{ "/assets/fonts/oswald-v29-latin-regular.woff2" | relative_url }}" as="font" crossorigin="anonymous"/>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-	{% include seo.html %}
-	{% include favicons.html %}
+
+	<link rel="preload" href="{{ "/assets/fonts/sigma-icons.woff2" | relative_url }}" as="font" crossorigin="anonymous"/>
+	<link rel="preload" href="{{ "/assets/fonts/oswald-v29-latin-regular.woff2" | relative_url }}" as="font" crossorigin="anonymous"/>
 
 	<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}" type="text/css" media="all" />
-	{% if page.rouge -%}
+	{% if page.rouge %}
 	<link rel="stylesheet" href="{{ "/assets/css/github.css" | relative_url }}" type="text/css" media="all" />
-	{%- endif %}
+	{% endif %}
+
+	{% include seo.html %}
+	{% include favicons.html %}
+	{% if site.theme_color %}
+	<meta name="theme-color" content="{{ site.theme_color }}">
+	{% endif %}
 
 	{% feed_meta %}
 
-	{% if site.google_analytics -%}
-	{%- include google-analytics.html -%}
-	{%- endif %}
+	{% if site.google_analytics %}
+	{% include google-analytics.html %}
+	{% endif %}
 
 </head>
