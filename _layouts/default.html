@@ -9,8 +9,6 @@
 			{%- assign side = " sidebar-left" -%}
 		{%- elsif page.sidebar == "right" -%}
 			{%- assign side = " sidebar-right" -%}
-		{%- elsif page.sidebar == false -%}
-			{%- assign side = "" -%}
 		{%- endif %}
 
 		<main class="main-content{{ side }}" aria-label="Content">

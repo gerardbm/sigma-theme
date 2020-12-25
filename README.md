@@ -114,10 +114,20 @@ Copyright information, in `_config.yml`:
 First of all, in the post or page front matter:
 
 ```yml
-sidebar: true / false / right / left
+sidebar: right / left
 ```
 
-Display a navigation menu in the sidebar. Navigate between posts in the same category (layout = `post`), navigate between other categories in the category pages (layout = `category`) and navigate between pages in the pages itself (layout = `page`). Use it in the post or page front matter:
+Sidebar structure:
+
+1. Zone: sidebar top
+2. Sidenav:
+  - Categories list in category pages
+  - Posts list in posts (same category)
+  - Pages list in pages
+3. Custom layout for specific pages
+4. Zone: sidebar bottom
+
+Display a navigation menu in the sidebar (**sidenav**). Navigate between posts in the same category (layout = `post`), navigate between other categories in the category pages (layout = `category`) and navigate between pages in the pages itself (layout = `page`). Use it in the post or page front matter:
 
 ```yml
 sidenav:
@@ -126,7 +136,13 @@ sidenav:
   pages: true
 ```
 
-### Sidebar zones
+Use a custom layout in the sidebar for specific pages:
+
+```yml
+sidebar_custom: my-custom-menu-for-this-awesome-category.html
+```
+
+### Advertisements zones: sidebar
 
 You can display zones for advertisements in the top or the bottom of your sidebar.
 
@@ -138,9 +154,9 @@ zone:
   sidebar_bottom: true
 ```
 
-### Content zones
+### Advertisements zones: content
 
-You can also display zones in the top or the bottom of your content.
+You can also display zones for advertisements in the top or the bottom of your content.
 
 Create the files `zone-top.html` and `zone-bottom.html` into your `_includes` folder and paste there your ads code. Then enable or disable them with these options in the post or page front matter:
 
@@ -207,7 +223,7 @@ Tools for the content, in post or page front matter:
 - `breadcrumbs`: true or false to show the breadcrumbs.
 - `nextprev`: true or false to show links for the next/previous posts.
 - `share`: true or false to show the share buttons.
-- `sidebar`: false to hide the sidebar, right or left to show it.
+- `sidebar`: right or left to show the sidebar.
 - `sticky`: true or false to make the sidebar sticky on scroll.
 - `rouge`: true to load the rouge CSS.
 - `order`: customize the posts order in the loops.

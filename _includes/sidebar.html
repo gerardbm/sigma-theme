@@ -11,6 +11,10 @@
 {%- include sidenav.html -%}
 {%- endif -%}
 
+{%- if page.sidebar_custom -%}
+{%- include {{ page.sidebar_custom }} -%}
+{%- endif -%}
+
 {%- if page.zone.sidebar_bottom == true -%}
 {%- include zone-sidebar-bottom.html -%}
 {%- endif -%}
