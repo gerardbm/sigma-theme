@@ -83,15 +83,11 @@ Favicons, in `_config.yml`:
 - `mask_icon`: The relative path of the SVG icon mask file for Safari.
 - `mask_color`: An HEX color. The fill color needs to be defined.
 
+This [script](https://github.com/gerardbm/dotfiles/blob/master/bin/.local/bin/faviconer) generates the favicons.
+
 Theme color, in `_config.yml`:
 
 - `theme_color`: An HEX color. The fill color needs to be defined.
-
-Set a version for `style.css` and `scripts.js`, to clean cache:
-
-- `version`: Any value, version number or date.
-
-This [script](https://github.com/gerardbm/dotfiles/blob/master/bin/.local/bin/faviconer) generates the favicons.
 
 Breadcrumbs, in `_config.yml`:
 
@@ -233,6 +229,8 @@ Tools for the content, in post or page front matter:
 - `sticky`: true or false to make the sidebar sticky on scroll.
 - `rouge`: true to load the rouge CSS.
 - `order`: customize the posts order in the loops.
+- `cookies`: the html filename.
+- `version`: any value, version number or date for CSS/JS files.
 
 ### Setting up default settings for all posts and pages, automatically
 
