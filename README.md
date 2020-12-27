@@ -87,6 +87,10 @@ Theme color, in `_config.yml`:
 
 - `theme_color`: An HEX color. The fill color needs to be defined.
 
+Set a version for `style.css` and `scripts.js`, to clean cache:
+
+- `version`: Any value, version number or date.
+
 This [script](https://github.com/gerardbm/dotfiles/blob/master/bin/.local/bin/faviconer) generates the favicons.
 
 Breadcrumbs, in `_config.yml`:
