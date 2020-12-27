@@ -4,6 +4,11 @@
 	{% include head.html %}
 
 	<body>
+		<script>
+			if (window.localStorage.toggled) {
+				document.body.classList.add(window.localStorage.toggled);
+			}
+		</script>
 		{% include header.html %}
 		{%- if page.sidebar == "left" -%}
 			{%- assign side = " sidebar-left" -%}

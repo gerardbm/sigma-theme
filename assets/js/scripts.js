@@ -1,33 +1,37 @@
-window.onscroll = function() { stickyMenu(); scrollToTop(); }
-window.onload = function() { stickyMenu(); scrollToTop(); }
+window.onscroll = function() { stickyMenu(); displayScrollButton(); }
+window.onload = function() { stickyMenu(); displayScrollButton(); }
 
-var menu = document.getElementsByClassName("menu-bar")[0];
+// Make the menu sticky
+var menu = document.getElementsByClassName('menu-bar')[0];
 var sticky = menu.offsetTop;
 
 function stickyMenu() {
 	if (window.pageYOffset > sticky) {
-		menu.classList.add("fixed-menu");
+		menu.classList.add('fixed-menu');
 	} else {
-		menu.classList.remove("fixed-menu");
+		menu.classList.remove('fixed-menu');
 	}
 }
 
-var button = document.getElementsByClassName("scrollup")[0];
+// Display the scroll button
+var buttonScroll = document.getElementById('button-scrollup');
 
-function scrollToTop() {
+function displayScrollButton() {
 	if (window.pageYOffset > 250) {
-		button.classList.add("is-visible");
+		buttonScroll.classList.add('is-visible');
 	} else {
-		button.classList.remove("is-visible");
+		buttonScroll.classList.remove('is-visible');
 	}
 }
 
-function topFunction(scrollDuration) {
+// Click and scroll to top
+buttonScroll.onclick = function topFunction() {
 	var cosParameter = window.pageYOffset / 2,
 		scrollCount = 0,
 		oldTimestamp = performance.now();
+
 	function step (newTimestamp) {
-		scrollCount += Math.PI / (scrollDuration / (newTimestamp - oldTimestamp));
+		scrollCount += Math.PI / (1000 / (newTimestamp - oldTimestamp));
 		if (scrollCount >= Math.PI) window.scrollTo(0, 0);
 		if (window.pageYOffset === 0) return;
 		window.scrollTo(0, Math.round(cosParameter + cosParameter * Math.cos(scrollCount)));
@@ -37,17 +41,37 @@ function topFunction(scrollDuration) {
 	window.requestAnimationFrame(step);
 }
 
-function gotoUrl() {
-	var icon_select = document.getElementsByClassName("icon-select")[0];
-	icon_select.classList.add("not-visible")
-	window.location = document.getElementById("goto").value;
+// Select menu: go to url
+var buttonGoto = document.getElementById('button-goto');
+
+buttonGoto.onchange = function gotoUrl() {
+	var icon_select = document.getElementsByClassName('icon-select')[0];
+	icon_select.classList.add('not-visible')
+	window.location = document.getElementById('button-goto').value;
 }
 
-document.addEventListener("DOMContentLoaded", function(event) {
+// Toggle light/dark modes
+var buttonColors = document.getElementById('button-colors')
+var colorized = document.body;
+
+buttonColors.onclick = function colorMode() {
+	if (window.localStorage.toggled != 'dark' ) {
+		colorized.classList.add('dark');
+		colorized.classList.remove('default');
+		window.localStorage.toggled = 'dark';
+	} else {
+		colorized.classList.add('default');
+		colorized.classList.remove('dark');
+		window.localStorage.toggled = 'default';
+	}
+}
+
+// No transitions
+function noTr() {
 	var rtime;
 	var delta = 250;
 	var timeout = false;
-	var element = document.getElementsByClassName("home")[0];
+	var element = document.getElementsByClassName('no-tr')[0];
 
 	function resize() {
 		rtime = new Date();
@@ -68,4 +92,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			element.classList.remove('no-transition');
 		}
 	}
-});
+}
+
+noTr()

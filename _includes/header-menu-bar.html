@@ -1,7 +1,7 @@
 <div class="menu-bar">
 	<div class="wrap">
 		<div class="logo">
-			<a class="home" rel="home" title="{{ site.title }}" href="{{ "/" | relative_url }}">
+			<a class="no-tr" rel="home" title="{{ site.title }}" href="{{ "/" | relative_url }}">
 				<img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" title="{{ site.title }}">
 			</a>
 		</div>
@@ -16,7 +16,7 @@
 				<li{{ current }}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
 			{%- endfor %}
 			</ul>
-			<select id="goto" onchange="gotoUrl()" >
+			<select id="button-goto">
 				<option selected="selected" value="#" class="menu-selected" hidden="hidden">&nbsp;</option>
 			{% for item in site.data.navigation.docs -%}
 				<option value="{{ item.url | relative_url }}">{{ item.title }}</option>
