@@ -41,6 +41,14 @@
 				<span>Error</span>
 			</p>
 		{%- endif %}
+		{% if page.layout == 'search' %}
+			<p>
+				<span class="type">{{ t[site.lang]['search_page'] }}</span>
+			</p>
+			{% if page.breadcrumbs %}
+				{% include breadcrumbs.html %}
+			{% endif %}
+		{%- endif %}
 		</div>
 	</div>
 </div>

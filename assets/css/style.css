@@ -172,6 +172,27 @@ select:focus {
 	transition: none !important;
 }
 
+.top-bar,
+.menu-bar,
+.title-bar,
+.home-title-bar,
+.main-content,
+.sidenav {
+	-webkit-transition: background-color .2s ease-in-out, border .2s ease-in-out;
+	-moz-transition: background-color .2s ease-in-out, border .2s ease-in-out;
+	-ms-transition: background-color .2s ease-in-out, border .2s ease-in-out;
+	-o-transition: background-color .2s ease-in-out, border .2s ease-in-out;
+	transition: background-color .2s ease-in-out, border .2s ease-in-out;
+}
+
+.body {
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
 /*----------------------------------------------------------*/
 /* 2. Layout
 /*----------------------------------------------------------*/
@@ -1498,10 +1519,6 @@ footer a {
 		display: none;
 	}
 
-	.title-bar {
-		min-height: 89px;
-	}
-
 	.bottom-links,
 	.copyright {
 		min-height: 0;
@@ -1618,12 +1635,12 @@ footer a {
 	.title-bar {
 		display: block;
 		height: auto;
-		padding: 15px 0;
 	}
 
 	.title-bar .title-info {
 		display: block;
 		height: auto;
+		padding: 15px 0;
 		width: 100%;
 	}
 

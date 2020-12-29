@@ -1,0 +1,168 @@
+<script src="/assets/js/lunr.js"></script>
+
+<script>
+{% assign counter = 0 %}
+{% assign t = site.data.translations %}
+
+var documents = [{% for page in site.posts %}
+	{
+		"id": {{ counter }},
+		"url": "{{ page.url | replace: 'index.html', '' | absolute_url }}",
+		"title": "{{ page.title }}",
+		"metadesc": "{{ page.metadesc }}",
+		{% assign counter = counter | plus: 1 %}
+	} {% unless forloop.last %},{% endunless %}
+{% endfor %}];
+
+var idx = lunr(function () {
+	this.ref('id')
+	this.field('title')
+	this.field('metadesc')
+
+	documents.forEach(function (doc) {
+		this.add(doc)
+	}, this)
+});
+
+function lunr_search(term) {
+	document.getElementById('searchresults').innerHTML = '<ol></ol>';
+	if(term) {
+		document.getElementById('searchresults').innerHTML = "<p>{{ t[site.lang]['search_results'] }}: '" + term + "'</p>" + document.getElementById('searchresults').innerHTML;
+
+		var results = idx.search(term);
+		if(results.length>0){
+			for (var i = 0; i < results.length; i++) {
+				var ref = results[i]['ref'];
+				var url = documents[ref]['url'];
+				var title = documents[ref]['title'];
+				var metadesc = documents[ref]['metadesc'];
+				document.querySelectorAll('#searchresults ol')[0].innerHTML = document.querySelectorAll('#searchresults ol')[0].innerHTML + "<li class='searchresult'><a target='_blank' class='title' href='" + url + "'>" + title + "</a><br /><span class='metadesc'>" + metadesc + "</span><br /><a target='_blank' class='url' href='" + url + "'>"+ url +"</a></li>";
+			}
+		} else {
+			document.querySelectorAll('#searchresults ol')[0].innerHTML = "<li class='searchresult'>{{ t[site.lang]['no_results'] }}</li>";
+		}
+	}
+	return false;
+}
+</script>
+<style>
+.search-form {
+	display: table;
+	margin-bottom: 1.625em;
+	width: 100%;
+}
+.input-field,
+.button-field {
+	display: table-cell;
+	vertical-align: top;
+}
+.button-field {
+	width: 50px;
+}
+.search-input {
+	background: #f3f5f8;
+	border: 1px solid #dcdcdc;
+	-webkit-border-radius: 15px 0 0 15px;
+	-moz-border-radius: 15px 0 0 15px;
+	border-radius: 15px 0 0 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #303336;
+	font-size: 1em;
+	height: 45px;
+	padding: 15px;
+	width: 100%;
+}
+.search-input:focus {
+	border: 1px solid #f17e01;
+	outline: none;
+}
+.search-button {
+	background: #f3f5f8;
+	border: 1px solid #dcdcdc;
+	border-left: none;
+	-webkit-border-radius: 0 15px 15px 0;
+	-moz-border-radius: 0 15px 15px 0;
+	border-radius: 0 15px 15px 0;
+	color: #303336;
+	font-size: 1em;
+	height: 45px;
+	outline: none;
+	position: relative;
+	width: 55px;
+}
+.search-button:hover {
+	color: #f17e01;
+}
+.search-button,
+.search-input {
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+.searchresult {
+	margin-bottom: 1.625em;
+}
+.post-content .searchresult a.title:link,
+.post-content .searchresult a.title:visited {
+	color: #095cae;
+	font-weight: bold;
+	text-decoration: none;
+}
+.post-content .searchresult a.url:link,
+.post-content .searchresult a.url:visited {
+	color: green;
+	font-style: italic;
+}
+.post-content .searchresult a.title:hover,
+.post-content .searchresult a.url:hover {
+	color: #f17e01;
+}
+
+.dark .search-input {
+	background: #141618;
+	border: 1px solid #343638;
+	color: #bcbfc2;
+}
+.dark .search-input:focus {
+	border: 1px solid #f17e01;
+}
+.dark .search-button {
+	background: #141618;
+	border: 1px solid #343638;
+	border-left: none;
+	color: #bcbfc2;
+}
+.dark .search-button:hover {
+	color: #f17e01;
+}
+.dark .post-content .searchresult a.title:link,
+.dark .post-content .searchresult a.title:visited {
+	color: #58a6ff;
+}
+.dark .post-content .searchresult a.url:link,
+.dark .post-content .searchresult a.url:visited {
+	color: lightgreen;
+}
+.dark .post-content .searchresult a.title:hover,
+.dark .post-content .searchresult a.url:hover {
+	color: #f17e01;
+}
+</style>
+
+<form class="search-form" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+	<div class="input-field">
+		<input type="text" class="search-input" id="lunrsearch" name="q" maxlength="255" value="" placeholder="{{ t[site.lang]['search'] }}" />
+	</div>
+	<div class="button-field">
+	<button type="submit" class="search-button"><span class="si-icon-search"></span></button>
+	</div>
+</form>
+
+<div id="searchresults">
+<p></p>
+	<ol></ol>
+</div>
