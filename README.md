@@ -10,6 +10,7 @@ This theme is a subjective one focused on speed and SEO, taking care of a beauti
 - Sticky menu + scroll up button.
 - Sticky sidebar with sidenavs.
 - Layouts with sidebar right/left.
+- Set custom sidebar for every page.
 - Code blocks syntax highlighting.
 - LaTeX maths, Katex integrated.
 - Loop posts in category pages.
@@ -72,7 +73,12 @@ Top bar links, in `_config.yml`:
 
 Logotype, in `_config.yml`:
 
-- `logo`: The relative path of your logo image.
+```yml
+logo:
+  path: relative path
+  width: an integer value
+  height: an integer value
+```
 
 Favicons, in `_config.yml`:
 

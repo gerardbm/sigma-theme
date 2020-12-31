@@ -1,8 +1,8 @@
 <div class="menu-bar">
 	<div class="wrap">
 		<div class="logo">
-			<a class="no-tr" rel="home" title="{{ site.title }}" href="{{ "/" | relative_url }}">
-				<img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" title="{{ site.title }}">
+			<a rel="home" title="{{ site.title }}" href="{{ "/" | relative_url }}">
+				<img width="{{ site.logo.width }}" height="{{ site.logo.height }}" src="{{ site.logo.path | relative_url }}" alt="{{ site.title }}" title="{{ site.title }}">
 			</a>
 		</div>
 		{% if site.data.navigation %}

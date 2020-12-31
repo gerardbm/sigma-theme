@@ -51,7 +51,7 @@ buttonGoto.onchange = function gotoUrl() {
 }
 
 // Toggle light/dark modes
-var buttonColors = document.getElementById('button-colors')
+var buttonColors = document.getElementById('button-colors');
 var colorized = document.body;
 
 buttonColors.onclick = function colorMode() {
@@ -67,31 +67,27 @@ buttonColors.onclick = function colorMode() {
 }
 
 // No transitions
-function noTr() {
-	var rtime;
-	var delta = 250;
-	var timeout = false;
-	var element = document.getElementsByClassName('no-tr')[0];
+var rtime;
+var delta = 250;
+var timeout = false;
+var element = document.getElementsByClassName('no-tr')[0];
 
-	function resize() {
-		rtime = new Date();
-		if (timeout === false) {
-			timeout = true;
-			setTimeout(resize_end, delta);
-		}
-		element.classList.add('no-transition');
+function resize() {
+	rtime = new Date();
+	if (timeout === false) {
+		timeout = true;
+		setTimeout(resize_end, delta);
 	}
-
-	window.onresize = resize;
-
-	function resize_end() {
-		if (new Date() - rtime < delta) {
-			setTimeout(resize_end, delta);
-		} else {
-			timeout = false;
-			element.classList.remove('no-transition');
-		}
-	}
+	element.classList.add('no-transition');
 }
 
-noTr()
+window.onresize = resize;
+
+function resize_end() {
+	if (new Date() - rtime < delta) {
+		setTimeout(resize_end, delta);
+	} else {
+		timeout = false;
+		element.classList.remove('no-transition');
+	}
+}
