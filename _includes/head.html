@@ -11,6 +11,11 @@
 	{% if page.rouge %}
 	<link rel="stylesheet" href="{{ "/assets/css/syntax.css?ver=" | relative_url }}{{ site.version }}" type="text/css" media="all" />
 	{% endif %}
+	{% if site.custom_css %}
+		<style>
+			{% include {{ site.custom_css }} %}
+		</style>
+	{% endif %}
 
 	{% include seo.html %}
 	{% include favicons.html %}

@@ -101,6 +101,10 @@ Breadcrumbs, in `_config.yml`:
 
 - `bc_sep`: The breadcrumbs separator.
 
+Custom CSS directly in the head:
+
+- `custom_css`: The relative path of the CSS file, that must be in `_includes` folder.
+
 ### Footer config
 
 Bottom links, in `_config.yml`:
