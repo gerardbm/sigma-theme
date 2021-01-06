@@ -6,8 +6,10 @@
 			</a>
 		</div>
 		{% if site.data.navigation %}
-		<nav class="navigation">
-			<ul>
+		<div class="button-nav" id="button-nav"></div>
+		<nav class="navigation" id="navigation">
+			<div class="close-nav" id="close-nav"></div>
+			<ul class="list-nav">
 			{% for item in site.data.navigation.docs -%}
 				{%- assign current = nil -%}
 				{%- if page.url == item.url -%}
@@ -16,13 +18,6 @@
 				<li{{ current }}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
 			{%- endfor %}
 			</ul>
-			<select id="button-goto">
-				<option selected="selected" value="#" class="menu-selected" hidden="hidden">&nbsp;</option>
-			{% for item in site.data.navigation.docs -%}
-				<option value="{{ item.url | relative_url }}">{{ item.title }}</option>
-			{%- endfor %}
-			</select>
-			<span class="icon-select"></span>
 		</nav>
 		{% endif %}
 	</div>

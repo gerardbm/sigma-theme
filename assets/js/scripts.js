@@ -41,15 +41,6 @@ buttonScroll.onclick = function topFunction() {
 	window.requestAnimationFrame(step);
 }
 
-// Select menu: go to url
-var buttonGoto = document.getElementById('button-goto');
-
-buttonGoto.onchange = function gotoUrl() {
-	var icon_select = document.getElementsByClassName('icon-select')[0];
-	icon_select.classList.add('not-visible')
-	window.location = document.getElementById('button-goto').value;
-}
-
 // Toggle light/dark modes
 var buttonColors = document.getElementById('button-colors');
 var colorized = document.body;
@@ -66,28 +57,22 @@ buttonColors.onclick = function colorMode() {
 	}
 }
 
-// No transitions
-var rtime;
-var delta = 250;
-var timeout = false;
-var element = document.getElementsByClassName('no-tr')[0];
+// Responsive menu
+var buttonNav = document.getElementById('button-nav');
+var closeNav = document.getElementById('close-nav');
+var listNav = document.getElementById('navigation');
 
-function resize() {
-	rtime = new Date();
-	if (timeout === false) {
-		timeout = true;
-		setTimeout(resize_end, delta);
+buttonNav.onclick = function toggleMenu() {
+	if (listNav.classList.contains("menu-visible")) {
+		listNav.classList.remove('menu-visible');
+		buttonNav.classList.remove('is-open');
+	} else {
+		listNav.classList.add('menu-visible');
+		buttonNav.classList.add('is-open');
 	}
-	element.classList.add('no-transition');
 }
 
-window.onresize = resize;
-
-function resize_end() {
-	if (new Date() - rtime < delta) {
-		setTimeout(resize_end, delta);
-	} else {
-		timeout = false;
-		element.classList.remove('no-transition');
-	}
+closeNav.onclick = function closeMenu() {
+	listNav.classList.remove('menu-visible');
+	buttonNav.classList.remove('is-open');
 }
