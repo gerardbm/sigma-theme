@@ -1654,8 +1654,8 @@ footer a {
 
 	.close-nav:before {
 		content: "\00d7";
-		font: 28px "sigma-icons";
-		line-height: 27px;
+		font: 23px "sigma-icons";
+		line-height: 24px;
 	}
 
 	.navigation ul {
