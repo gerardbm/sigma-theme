@@ -5,7 +5,7 @@ layout: default
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": {{ page.title | jsonify }},
+  "name": {{ page.h1 | jsonify }},
   "url": "{{ site.url }}{{ page.url }}",
   "inLanguage": "es-ES",
   "isPartOf": {
@@ -21,7 +21,11 @@ layout: default
 </script>
 <div class="post">
 
-	<h1 class="post-title">{{ page.title }}</h1>
+	{%- if page.h1 -%}
+		<h1 class="post-title">{{ page.h1 }}</h1>
+	{%- else -%}
+		<h1 class="post-title">{{ page.title }}</h1>
+	{%- endif -%}
 
 	<div class="post-content">
 		{{ content }}

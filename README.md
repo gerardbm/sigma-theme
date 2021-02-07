@@ -235,6 +235,7 @@ Tools for the content, in post or page front matter:
 
 - `read_time`: true or false to show the read time of a page/post.
 - `breadcrumbs`: true or false to show the breadcrumbs.
+- `postmeta`: true or false to show the 'post meta' under the h1.
 - `nextprev`: true or false to show links for the next/previous posts.
 - `share`: true or false to show the share buttons.
 - `sidebar`: right or left to show the sidebar.
@@ -291,10 +292,14 @@ Create a markdown page in your root site, with this minimal front matter:
 ```yaml
 ---
 layout: category
-title: Awesome category
+title: An awesome category and more things!
+cat: Awesome category
+h1: The Awesome Category
 permalink: /awesome-category/
 ---
 ```
+
+The `cat` must be the same of the `category` in posts: it will be used to show the total posts of a category.
 
 Then include this line in the content:
 
@@ -318,6 +323,26 @@ Define them in the front matter:
 ### Tips
 
 - `nextprev` will link to the next/prev posts within the same category. It will use the last category assigned, because it's the subcategory. For example: `categories: [vehicles, cars]` will only navigate between `cars`. Therefore, it's a good idea to have the same level of categories in a project.
+
+### General front matter for posts
+
+```
+---
+layout: post
+title: A nice title for this post
+h1: The heading of the post
+author: An expert
+last_modified_at: 2020-10-20
+permalink: /the-post/
+order: 55
+category: "Awesome category"
+metadesc: This is for the meta description
+excerpt: >-
+  This is the excerpt text of the post
+image: images/whatever.jpg
+sidebar_custom: original-sidebar.html
+---
+```
 
 ## Contributing
 

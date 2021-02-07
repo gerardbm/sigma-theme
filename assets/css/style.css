@@ -359,7 +359,7 @@ img {
 /* 3. Header (top bar)
 /*----------------------------------------------------------*/
 
-header {
+.site-header {
 	border-top: 5px solid #505356;
 }
 
@@ -1884,7 +1884,7 @@ footer a {
 	color: #bcbfc2;
 }
 
-.dark header {
+.dark .site-header {
 	border-top: 5px solid #343638;
 }
 

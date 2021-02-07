@@ -5,7 +5,7 @@ layout: default
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": {{ page.title | jsonify }},
+  "name": {{ page.h1 | jsonify }},
   "url": "{{ site.url }}{{ page.url }}",
   "inLanguage": "es-ES",
   "isPartOf": {
@@ -20,24 +20,32 @@ layout: default
 }
 </script>
 
-<article class="post">
+<div class="post">
 
-	<h1 class="post-title">{{ page.title }}</h1>
+	<article>
+		<header>
+		{%- if page.h1 -%}
+			<h1 class="post-title">{{ page.h1 }}</h1>
+		{%- else -%}
+			<h1 class="post-title">{{ page.title }}</h1>
+		{%- endif -%}
+		</header>
 
-	{%- if page.zone.content_top == true -%}
-	{%- include zone-top.html -%}
-	{%- endif -%}
+		{%- if page.zone.content_top == true -%}
+		{%- include zone-top.html -%}
+		{%- endif -%}
 
-	<div class="post-content">
-		{{ content }}
-	</div>
+		<div class="post-content">
+			{{ content }}
+		</div>
 
-	{%- if page.zone.content_bottom == true -%}
-	{%- include zone-bottom.html -%}
-	{%- endif -%}
+		{%- if page.zone.content_bottom == true -%}
+		{%- include zone-bottom.html -%}
+		{%- endif -%}
+	</article>
 
 	{%- if page.share == true -%}
 	{%- include social-share.html -%}
 	{%- endif -%}
 
-</article>
+</div>

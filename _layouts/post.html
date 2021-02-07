@@ -5,8 +5,8 @@ layout: default
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "name": {{ page.title | jsonify }},
-  "headline": {{ page.title | jsonify }},
+  "name": {{ page.h1 | jsonify }},
+  "headline": {{ page.h1 | jsonify }},
   "url": "{{ site.url }}{{ page.url }}",
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
   "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},
@@ -36,26 +36,36 @@ layout: default
 }
 </script>
 
-<article class="post h-entry">
+<div class="post h-entry">
 
-  <h1 class="post-title">{{ page.title }}</h1>
+	<article>
+		<header>
+		{%- if page.h1 -%}
+			<h1 class="post-title">{{ page.h1 }}</h1>
+		{%- else -%}
+			<h1 class="post-title">{{ page.title }}</h1>
+		{%- endif -%}
 
-  {% include post-meta.html %}
+		{%- if page.postmeta -%}
+			{% include post-meta.html %}
+		{%- endif -%}
+		</header>
 
-	{%- if page.zone.content_top == true -%}
-	{%- include zone-top.html -%}
-	{%- endif -%}
+		{%- if page.zone.content_top == true -%}
+		{%- include zone-top.html -%}
+		{%- endif -%}
 
-	<div class="post-content">
-		{{ content }}
-	</div>
+		<div class="post-content">
+			{{ content }}
+		</div>
+
+		{%- if page.zone.content_bottom == true -%}
+		{%- include zone-bottom.html -%}
+		{%- endif -%}
+	</article>
 
 	{%- if page.nextprev == true -%}
 	{%- include next-prev.html -%}
-	{%- endif -%}
-
-	{%- if page.zone.content_bottom == true -%}
-	{%- include zone-bottom.html -%}
 	{%- endif -%}
 
 	{%- if page.share == true -%}
@@ -66,4 +76,4 @@ layout: default
 	{%- include disqus_comments.html -%}
 	{%- endif -%}
 
-</article>
+</div>

@@ -21,7 +21,11 @@
 		{% endif %}
 		<li>
 			<span class="sep">{{ site.bc_sep }}</span>
+			{% if page.h1 %}
+			<span itemprop="name">{{ page.h1 }}</span>
+			{% else %}
 			<span itemprop="name">{{ page.title }}</span>
+			{% endif %}
 		</li>
 	</ol>
 </nav>
