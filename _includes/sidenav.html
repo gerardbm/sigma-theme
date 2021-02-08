@@ -31,7 +31,11 @@
 				{%- if page.url == post.url -%}
 					{%- assign current = ' class="current"' -%}
 				{%- endif -%}
+				{%- if post.h1 -%}
+				<li{{ current }}><a href="{{ post.url | relative_url }}">{{ post.h1 }}</a></li>
+				{%- else -%}
 				<li{{ current }}><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+				{%- endif -%}
 			{%- endfor -%}
 		</ul>
 	</nav>
@@ -50,7 +54,11 @@
 					{%- if item.url == page.url -%}
 						{%- assign current = ' class="current"' -%}
 					{%- endif -%}
+					{%- if item.h1 -%}
+					<li{{ current }}><a href="{{ item.url | relative_url }}">{{ item.h1 }}</a></li>
+					{%- else -%}
 					<li{{ current }}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+					{%- endif -%}
 				{%- endif -%}
 			{%- endfor -%}
 		</ul>
