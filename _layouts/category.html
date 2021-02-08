@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{%- if page.ldjson == true %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -19,6 +20,8 @@ layout: default
   }
 }
 </script>
+{% endif -%}
+
 <div class="post">
 
 	{%- if page.h1 -%}
