@@ -8,8 +8,8 @@ layout: default
   "name": {{ page.h1 | jsonify }},
   "headline": {{ page.h1 | jsonify }},
   "url": "{{ site.url }}{{ page.url }}",
-  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
-  "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},{%- if page.last_modified_at %}
+  "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},{%- endif %}
   "author": {
     "@type": "Person",
     "name": {{ page.author | jsonify }}
