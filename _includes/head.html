@@ -25,8 +25,10 @@
 
 	{% feed_meta %}
 
+	{% if jekyll.environment == "production" %}
 	{% if site.google_analytics %}
 	{% include google-analytics.html %}
+	{% endif %}
 	{% endif %}
 
 </head>
