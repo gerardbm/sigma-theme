@@ -1336,7 +1336,6 @@ footer {
 	background: #242628;
 	border-top: 8px solid #b3b5b8;
 	color: #bcbfc2;
-	font-size: 0.875em;
 	overflow: hidden;
 	text-align: center;
 }
@@ -1716,13 +1715,23 @@ footer a {
 		padding: 13px 0;
 	}
 
-	.bottom-links ul li {
-		display: block;
-		line-height: 1.75em;
-	}
-
 	.bottom-links li + li::before {
 		content: none;
+	}
+
+	.bottom-links ul li {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.bottom-links ul li:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.bottom-links ul li a {
+		background: #141618;
+		display: block;
+		line-height: 36px;
 	}
 
 	.copyright span {
