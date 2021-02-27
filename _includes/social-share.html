@@ -2,7 +2,7 @@
 {%- assign url = page.url | absolute_url | url_encode -%}
 {%- assign title = page.title | url_encode -%}
 <div class="social-share">
-	<h4>{{ t[site.lang]['share'] }}:</h4>
+	<p>{{ t[site.lang]['share'] }}:</p>
 		<a class="si-icon-twitter" title="Twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text={{ title }}&nbsp;{{ url }}"><span>Twitter</span></a>
 		<a class="si-icon-facebook" title="Facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><span>Facebook</span></a>
 		<a class="si-icon-linkedin" title="Linkedin" target="_blank" rel="noopener noreferrer" href="http://linkedin.com/shareArticle?mini=true&amp;url={{ url }}&amp;title={{ title }}"><span>LinkedIn</span></a>

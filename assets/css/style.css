@@ -1208,40 +1208,38 @@ h6 {
 /* 9. Social share buttons
 /*----------------------------------------------------------*/
 
-.social-share h4 {
-	width: 100%;
+.social-share p {
+	font-weight: bold;
+	margin-bottom: 12px;
 }
 
 .social-share a {
-	background: #fff;
-	border: 1px solid #dcdcdc;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
 	display: block;
 	float: left;
-	height: 33px;
+	height: 32px;
 	line-height: 32px;
 	margin-right: 2%;
 	text-align: center;
+	text-shadow: 1px 1px 3px #303336;
 	width: calc(92%/5);
 }
 
 .social-share a:link,
 .social-share a:visited {
-	background: #fff;
-	border-color: #dcdcdc;
-	-webkit-box-shadow: inset 0 -12px 10px -3px rgba(0, 0, 0, 0.05);
-	-moz-box-shadow: inset 0 -12px 10px -3px rgba(0, 0, 0, 0.05);
-	box-shadow: inset 0 -12px 10px -3px rgba(0, 0, 0, 0.05);
-	-webkit-transition: background .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out;
-	-moz-transition: background .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out;
-	-ms-transition: background .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out;
-	-o-transition: background .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out;
-	transition: background .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out;
+	color: #fff;
+	-webkit-transition: background .2s ease-in-out, color .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out, color .2s ease-in-out;
+	-ms-transition: background .2s ease-in-out, color .2s ease-in-out;
+	-o-transition: background .2s ease-in-out, color .2s ease-in-out;
+	transition: background .2s ease-in-out, color .2s ease-in-out;
+}
+
+.social-share a:hover {
+	background: #c3c5c8;
+	color: #303336;
 }
 
 .social-share a:last-of-type {
@@ -1257,34 +1255,24 @@ h6 {
 	visibility: hidden;
 }
 
-.social-share .si-icon-twitter:hover,
-.social-share .si-icon-facebook:hover,
-.social-share .si-icon-linkedin:hover,
-.social-share .si-icon-pinterest:hover,
-.social-share .si-icon-email:hover {
-	background: #f3f5f8;
-	border-color: #697076;
-	color: #303336;
-}
-
 .social-share .si-icon-twitter {
-	color: #55acee;
+	background: #55acee;
 }
 
 .social-share .si-icon-facebook {
-	color: #3b5998;
+	background: #3b5998;
 }
 
 .social-share .si-icon-linkedin {
-	color: #0976b4;
+	background: #0976b4;
 }
 
 .social-share .si-icon-pinterest {
-	color: #bb312b;
+	background: #bb312b;
 }
 
 .social-share .si-icon-email {
-	color: #449a88;
+	background: #449a88;
 }
 
 /*----------------------------------------------------------*/
@@ -1842,16 +1830,21 @@ footer a {
 
 	.social-share a {
 		display: block;
-		margin-bottom: 8px;
+		height: 36px;
+		line-height: 36px;
+		margin: 0 0 10px 0;
 		text-align: left;
 		width: 100%;
 	}
 
 	.social-share a:before {
-		background: rgba(0,0,0,0.1);
+		background: rgba(0,0,0,0.15);
+		-webkit-border-radius: 16px;
+		-moz-border-radius: 16px;
+		border-radius: 16px;
 		display: inline-block;
 		text-align: center;
-		width: 54px;
+		width: 36px;
 	}
 
 	.social-share a:last-of-type {
@@ -1860,7 +1853,10 @@ footer a {
 
 	.social-share a span {
 		display: inline-block;
+		font-size: 0.813em;
+		height: 32px;
 		margin-left: 15px;
+		text-transform: uppercase;
 		visibility: visible;
 	}
 }
@@ -2121,25 +2117,14 @@ footer a {
 	background: #343638;
 }
 
-.dark .social-share a {
-	background: #242628;
-	border: 1px solid #343638;
-}
-
 .dark .social-share a:link,
 .dark .social-share a:visited {
-	background: #242628;
-	border: 1px solid #343638;
+	color: #fff;
 }
 
-.dark .social-share .si-icon-twitter:hover,
-.dark .social-share .si-icon-facebook:hover,
-.dark .social-share .si-icon-linkedin:hover,
-.dark .social-share .si-icon-pinterest:hover,
-.dark .social-share .si-icon-email:hover {
+.dark .social-share a:hover {
 	background: #141618;
-	border-color: #545658;
-	color: #bcbfc2;
+	color: #fff;
 }
 
 .dark .loop-excerpt {
