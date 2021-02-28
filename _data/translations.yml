@@ -23,6 +23,7 @@ en:
   search: "Search..."
   search_results: "Search results for"
   no_results: "No results found..."
+  source: "Source:"
 es:
   post: "Artículo"
   posts: "Artículos"
@@ -47,6 +48,7 @@ es:
   search: "Buscar..."
   search_results: "Resultados de búsqueda de"
   no_results: "No se han encontrado resultados..."
+  source: "Fuente:"
 ca:
   post: "Article"
   posts: "Articles"
@@ -71,3 +73,4 @@ ca:
   search: "Cercar..."
   search_results: "Resultats de cerca de"
   no_results: "No s'han trobat resultats..."
+  source: "Font:"

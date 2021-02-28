@@ -1,0 +1,14 @@
+{%- assign t = site.data.translations -%}
+	
+<script>
+	document.addEventListener('copy', (event) => {
+	var s = "{{ t[site.lang]['source'] }}";
+	var h = "{{ page.h1 }}";
+	if (h == "") {
+		var h = "{{ site.title }}"
+	};
+	const pagelink = `\n\n` + s + ` <a href="${document.location.href}" title="` + h + `">` + h + `</a>`;
+	event.clipboardData.setData('text', document.getSelection() + pagelink);
+	event.preventDefault();
+});
+</script>
