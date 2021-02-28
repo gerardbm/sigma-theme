@@ -167,6 +167,7 @@ input[type="submit"] {
 .top-bar,
 .menu-bar,
 .title-bar,
+.title-bar .breadcrumbs ol li,
 .home-title-bar,
 .main-content,
 .sidenav {
@@ -1712,7 +1713,14 @@ footer a {
 	.bottom-links,
 	.copyright {
 		min-height: 0;
+	}
+	
+	.copyright {
 		padding: 13px 0;
+	}
+
+	.bottom-links {
+		padding: 30px 0;
 	}
 
 	.bottom-links li + li::before {
