@@ -223,6 +223,10 @@ There is no prevision of using pagination in this theme at the moment, so `rel="
 
 TODO: Make the pagination customizable.
 
+Insert backlink to the copied text when someone decides to copy text:
+
+- `linking`: true or false.
+
 ### Maths
 
 Katex library, in post or page front matter:
