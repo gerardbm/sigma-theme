@@ -1,7 +1,12 @@
+{%- if page.suffix == true -%}
+{%- assign the_title = page.title | append: ' | ' | append: site.title -%}
+{%- else -%}
+{%- assign the_title = page.title -%}
+{%- endif %}
 
 <!--Meta information-->
 {%- if page.title %}
-<title>{{ page.title }}</title>
+<title>{{ the_title }}</title>
 {%- endif %}
 {%- if page.url %}
 <link rel="canonical" href="{{ page.url | replace: "index.html", "" | absolute_url }}" />

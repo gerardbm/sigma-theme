@@ -248,6 +248,7 @@ Tools for the content, in post or page front matter:
 - `order`: customize the posts order in the loops.
 - `cookies`: the html filename.
 - `version`: any value, version number or date for CSS/JS files.
+- `suffix`: true or false to add a suffix to the post/page: `" | MySite"` with the title site.
 
 ### Setting up default settings for all posts and pages, automatically
 
