@@ -1337,6 +1337,7 @@ footer {
 	background: #242628;
 	border-top: 8px solid #b3b5b8;
 	color: #bcbfc2;
+	font-size: 0.875em;
 	overflow: hidden;
 	text-align: center;
 }
@@ -1708,6 +1709,10 @@ footer a {
 	.navigation.menu-visible ul li a:hover,
 	.navigation.menu-visible ul li.current a {
 		color: #f17e01;
+	}
+
+	footer {
+		font-size: 1em;
 	}
 
 	.bottom-links,
