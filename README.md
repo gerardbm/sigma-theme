@@ -160,24 +160,24 @@ sidebar_custom: my-custom-menu-for-this-awesome-category.html
 
 You can display zones for advertisements in the top or the bottom of your sidebar.
 
-Create the files `zone-sidebar-top.html`, `zone-sidebar-bottom.html` into your `_includes` folder and paste there your ads code. Then enable or disable them with these options in the post or page front matter:
+Create html files into your `_includes` folder and use the filename as value in the post or page front matter:
 
 ```yaml
 zone:
-  sidebar_top: true
-  sidebar_bottom: true
+  sidebar_top: ads-sidebar-top.html
+  sidebar_bottom: ads-sidebar-bottom.html
 ```
 
 ### Advertisements zones: content
 
 You can also display zones for advertisements in the top or the bottom of your content.
 
-Create the files `zone-top.html` and `zone-bottom.html` into your `_includes` folder and paste there your ads code. Then enable or disable them with these options in the post or page front matter:
+Create html files into your `_includes` folder and use the filename as value in the post or page front matter:
 
 ```yaml
 zone:
-  content_top: true
-  content_bottom: true
+  content_top: ads-above-h1.html
+  content_bottom: ads-below-content.html
 ```
 
 For the sidebar, first it must be displayed.
@@ -207,6 +207,7 @@ Sites verification, in `_config.yml`:
 - `google_sv`: Your Google site verification.
 - `bing_sv`: Your Bing site verification.
 - `alexa_sv`: Your Alexa site verification.
+- `adsense`: Verify your site for Google AdSense (format: `ca-pub-nnnnnnnnnnnnnnnn`).
 
 ### SEO:
 
@@ -271,10 +272,10 @@ defaults:
       sidenav:
         posts: true
       zone:
-        content_top: true
-        content_bottom: false
-        sidebar_top: true
-        sidebar_bottom: false
+        content_top: content-top.html
+        content_bottom: content-bottom.html
+        sidebar_top: ads-sidebar-top.html
+        sidebar_bottom: ads-sidebar-bottom.html
   -
     scope:
       path: ""
