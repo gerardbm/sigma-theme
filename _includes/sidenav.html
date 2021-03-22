@@ -8,11 +8,11 @@
 			{%- assign sorted_cats = site.categories | sort -%}
 			{%- for category in sorted_cats -%}
 				{%- assign current = nil -%}
-				{%- assign catslug = category[0] | slugify | relative_url | append: '/' -%}
+				{%- assign catslug = category[0] | slugify: 'latin' | relative_url | append: '/' -%}
 				{%- if page.url == catslug -%}
 					{%- assign current = ' class="current"' -%}
 				{%- endif -%}
-				<li{{ current }}><a href="{{ category[0] | slugify | relative_url }}/">{{ category[0] | capitalize }}</a></li>
+				<li{{ current }}><a href="{{ category[0] | slugify: 'latin' | relative_url }}/">{{ category[0] | capitalize }}</a></li>
 			{%- endfor -%}
 		</ul>
 	</nav>
