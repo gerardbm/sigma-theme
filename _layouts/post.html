@@ -41,6 +41,10 @@ layout: default
 <div class="post h-entry">
 
 	<article>
+		{%- if page.zone.content_top -%}
+		{%- include {{ page.zone.content_top }} -%}
+		{%- endif -%}
+
 		<header>
 		{%- if page.h1 -%}
 			<h1 class="post-title">{{ page.h1 }}</h1>
@@ -53,16 +57,12 @@ layout: default
 		{%- endif -%}
 		</header>
 
-		{%- if page.zone.content_top == true -%}
-		{%- include zone-top.html -%}
-		{%- endif -%}
-
 		<div class="post-content">
 			{{ content }}
 		</div>
 
-		{%- if page.zone.content_bottom == true -%}
-		{%- include zone-bottom.html -%}
+		{%- if page.zone.content_bottom -%}
+		{%- include {{ page.zone.content_bottom }} -%}
 		{%- endif -%}
 	</article>
 

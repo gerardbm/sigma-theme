@@ -3,8 +3,8 @@
 {%- endif -%}
 
 <aside class="sidebar{{ sticky }}">
-{%- if page.zone.sidebar_top == true -%}
-{%- include zone-sidebar-top.html -%}
+{%- if page.zone.sidebar_top -%}
+{%- include {{ page.zone.sidebar_top }} -%}
 {%- endif -%}
 
 {%- if page.sidenav.categories == true or page.sidenav.posts == true or page.sidenav.pages == true -%}
@@ -15,7 +15,7 @@
 {%- include {{ page.sidebar_custom }} -%}
 {%- endif -%}
 
-{%- if page.zone.sidebar_bottom == true -%}
-{%- include zone-sidebar-bottom.html -%}
+{%- if page.zone.sidebar_bottom -%}
+{%- include {{ page.zone.sidebar_bottom }} -%}
 {%- endif -%}
 </aside>
