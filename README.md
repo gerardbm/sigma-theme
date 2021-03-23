@@ -128,7 +128,7 @@ Copyright information, in `_config.yml`:
 First of all, in the post or page front matter:
 
 ```yml
-sidebar: right / left
+sidebar: right / left / false
 ```
 
 Sidebar structure:
