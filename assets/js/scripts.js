@@ -25,35 +25,39 @@ function displayScrollButton() {
 }
 
 // Click and scroll to top
-buttonScroll.onclick = function topFunction() {
-	var cosParameter = window.pageYOffset / 2,
-		scrollCount = 0,
-		oldTimestamp = performance.now();
+if (buttonScroll) {
+	buttonScroll.onclick = function topFunction() {
+		var cosParameter = window.pageYOffset / 2,
+			scrollCount = 0,
+			oldTimestamp = performance.now();
 
-	function step (newTimestamp) {
-		scrollCount += Math.PI / (1000 / (newTimestamp - oldTimestamp));
-		if (scrollCount >= Math.PI) window.scrollTo(0, 0);
-		if (window.pageYOffset === 0) return;
-		window.scrollTo(0, Math.round(cosParameter + cosParameter * Math.cos(scrollCount)));
-		oldTimestamp = newTimestamp;
+		function step (newTimestamp) {
+			scrollCount += Math.PI / (1000 / (newTimestamp - oldTimestamp));
+			if (scrollCount >= Math.PI) window.scrollTo(0, 0);
+			if (window.pageYOffset === 0) return;
+			window.scrollTo(0, Math.round(cosParameter + cosParameter * Math.cos(scrollCount)));
+			oldTimestamp = newTimestamp;
+			window.requestAnimationFrame(step);
+		}
 		window.requestAnimationFrame(step);
 	}
-	window.requestAnimationFrame(step);
 }
 
 // Toggle light/dark modes
 var buttonColors = document.getElementById('button-colors');
 var colorized = document.body;
 
-buttonColors.onclick = function colorMode() {
-	if (window.localStorage.toggled != 'dark' ) {
-		colorized.classList.add('dark');
-		colorized.classList.remove('default');
-		window.localStorage.toggled = 'dark';
-	} else {
-		colorized.classList.add('default');
-		colorized.classList.remove('dark');
-		window.localStorage.toggled = 'default';
+if (buttonColors) {
+	buttonColors.onclick = function colorMode() {
+		if (window.localStorage.toggled != 'dark' ) {
+			colorized.classList.add('dark');
+			colorized.classList.remove('default');
+			window.localStorage.toggled = 'dark';
+		} else {
+			colorized.classList.add('default');
+			colorized.classList.remove('dark');
+			window.localStorage.toggled = 'default';
+		}
 	}
 }
 
@@ -62,17 +66,21 @@ var buttonNav = document.getElementById('button-nav');
 var closeNav = document.getElementById('close-nav');
 var listNav = document.getElementById('navigation');
 
-buttonNav.onclick = function toggleMenu() {
-	if (listNav.classList.contains("menu-visible")) {
-		listNav.classList.remove('menu-visible');
-		buttonNav.classList.remove('is-open');
-	} else {
-		listNav.classList.add('menu-visible');
-		buttonNav.classList.add('is-open');
+if (buttonNav) {
+	buttonNav.onclick = function toggleMenu() {
+		if (listNav.classList.contains("menu-visible")) {
+			listNav.classList.remove('menu-visible');
+			buttonNav.classList.remove('is-open');
+		} else {
+			listNav.classList.add('menu-visible');
+			buttonNav.classList.add('is-open');
+		}
 	}
 }
 
-closeNav.onclick = function closeMenu() {
-	listNav.classList.remove('menu-visible');
-	buttonNav.classList.remove('is-open');
+if (closeNav) {
+	closeNav.onclick = function closeMenu() {
+		listNav.classList.remove('menu-visible');
+		buttonNav.classList.remove('is-open');
+	}
 }
