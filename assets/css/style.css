@@ -361,7 +361,7 @@ img {
 /*----------------------------------------------------------*/
 
 .site-header {
-	border-top: 5px solid #505356;
+	border-top: 5px solid #ff7f2a;
 }
 
 .top-bar {
@@ -477,7 +477,7 @@ section {
 }
 
 .navigation ul li:before {
-	background: #f17e01;
+	background: #ff7f2a;
 	bottom: 0;
 	content: "";
 	height: 2px;
@@ -511,7 +511,7 @@ section {
 
 .navigation ul li a:hover,
 .navigation ul li.current a {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 /*----------------------------------------------------------*/
@@ -568,7 +568,7 @@ section {
 }
 
 .title-bar .breadcrumbs a:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 .top-bar,
@@ -600,7 +600,7 @@ section {
 }
 
 .home-title-bar span {
-	color: #f17e01;
+	color: #ff7f2a;
 	font-weight: bold;
 }
 
@@ -611,7 +611,7 @@ section {
 }
 
 .home-title-bar a:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 /*----------------------------------------------------------*/
@@ -743,7 +743,7 @@ h6 {
 }
 
 .post-meta a:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 .post-content h2 {
@@ -763,7 +763,7 @@ h6 {
 }
 
 .post-content a:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 .post-content img {
@@ -1326,7 +1326,7 @@ h6 {
 }
 
 .next-prev a:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 /*----------------------------------------------------------*/
@@ -1450,7 +1450,7 @@ footer a {
 }
 
 .search-input:focus {
-	border: 1px solid #f17e01;
+	border: 1px solid #ff7f2a;
 	outline: none;
 }
 
@@ -1470,7 +1470,7 @@ footer a {
 }
 
 .search-button:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 .search-button,
@@ -1501,7 +1501,7 @@ footer a {
 
 .post-content .searchresult a.title:hover,
 .post-content .searchresult a.url:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 /*----------------------------------------------------------*/
@@ -1708,7 +1708,7 @@ footer a {
 
 	.navigation.menu-visible ul li a:hover,
 	.navigation.menu-visible ul li.current a {
-		color: #f17e01;
+		color: #ff7f2a;
 	}
 
 	footer {
@@ -1902,10 +1902,6 @@ footer a {
 	color: #bcbfc2;
 }
 
-.dark .site-header {
-	border-top: 5px solid #343638;
-}
-
 .dark .top-bar {
 	background: #141618;
 	border-bottom: 1px solid #343638;
@@ -1928,7 +1924,7 @@ footer a {
 }
 
 .dark .navigation ul li:before {
-	background: #f17e01;
+	background: #ff7f2a;
 }
 
 .dark .navigation ul li a:link,
@@ -1938,7 +1934,7 @@ footer a {
 
 .dark .navigation ul li a:hover,
 .dark .navigation ul li.current a {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 .dark .title-bar {
@@ -1961,7 +1957,7 @@ footer a {
 }
 
 .dark .title-bar .breadcrumbs a:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 .dark .home-title-bar {
@@ -1970,7 +1966,7 @@ footer a {
 }
 
 .dark .home-title-bar span {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 .dark .home-title-bar a:link,
@@ -1980,7 +1976,7 @@ footer a {
 }
 
 .dark .home-title-bar a:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 .dark .main-content {
@@ -1998,7 +1994,7 @@ footer a {
 }
 
 .dark .post-meta a:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 .dark .post-content h2 {
@@ -2017,7 +2013,7 @@ footer a {
 }
 
 .dark .post-content a:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 .dark .post-content figcaption {
@@ -2175,7 +2171,7 @@ footer a {
 }
 
 .dark .next-prev a:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 .dark footer {
@@ -2189,7 +2185,7 @@ footer a {
 }
 
 .dark .search-input:focus {
-	border: 1px solid #f17e01;
+	border: 1px solid #ff7f2a;
 }
 
 .dark .search-button {
@@ -2200,7 +2196,7 @@ footer a {
 }
 
 .dark .search-button:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 .dark .post-content .searchresult a.title:link,
@@ -2215,7 +2211,7 @@ footer a {
 
 .dark .post-content .searchresult a.title:hover,
 .dark .post-content .searchresult a.url:hover {
-	color: #f17e01;
+	color: #ff7f2a;
 }
 
 @media only screen and (max-width : 1024px) {
@@ -2260,7 +2256,7 @@ footer a {
 
 	.dark .navigation.menu-visible ul li a:hover,
 	.dark .navigation.menu-visible ul li.current a {
-		color: #f17e01;
+		color: #ff7f2a;
 	}
 }
 
@@ -2275,18 +2271,18 @@ footer a {
 @media (hover: hover) and (pointer: fine) {
 
 	a:hover {
-		color: #f17e01;
+		color: #ff7f2a;
 	}
 	.top-bar a:hover {
-		color: #f17e01;
+		color: #ff7f2a;
 	}
 	.scrollup:hover {
-		background: #f17e01;
+		background: #ff7f2a;
 	}
 	.dark a:hover {
-		color: #f17e01;
+		color: #ff7f2a;
 	}
 	.dark .top-bar a:hover {
-		color: #f17e01;
+		color: #ff7f2a;
 	}
 }
