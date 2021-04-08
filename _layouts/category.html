@@ -24,6 +24,10 @@ layout: default
 
 <div class="post">
 
+  {%- if page.zone.content_top -%}
+  {%- include {{ page.zone.content_top }} -%}
+  {%- endif -%}
+
 	{%- if page.h1 -%}
 		<h1 class="post-title">{{ page.h1 }}</h1>
 	{%- else -%}
@@ -33,6 +37,10 @@ layout: default
 	<div class="post-content">
 		{{ content }}
 	</div>
+
+  {%- if page.zone.content_bottom -%}
+  {%- include {{ page.zone.content_bottom }} -%}
+  {%- endif -%}
 
 	{%- if page.share == true -%}
 	{%- include social-share.html -%}
