@@ -13,7 +13,7 @@
 		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
 			<span class="sep">{{ site.bc_sep }}</span>
 			<a itemprop="item" href="{{ category | slugify: 'latin' | relative_url }}/">
-				<span itemprop="name">{{ category | capitalize }}</span></a>
+				<span itemprop="name">{{ category }}</span></a>
 			<meta itemprop="position" content="{{ i }}"/>
 			{% assign i = i | plus: 1 %}
 		</li>
@@ -21,7 +21,9 @@
 		{% endif %}
 		<li>
 			<span class="sep">{{ site.bc_sep }}</span>
-			{% if page.h1 %}
+			{% if page.cat %}
+			<span itemprop="name">{{ page.cat }}</span>
+			{% elsif page.h1 %}
 			<span itemprop="name">{{ page.h1 }}</span>
 			{% else %}
 			<span itemprop="name">{{ page.title }}</span>
