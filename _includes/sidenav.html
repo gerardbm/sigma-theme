@@ -12,7 +12,7 @@
 				{%- if page.url == catslug -%}
 					{%- assign current = ' class="current"' -%}
 				{%- endif -%}
-				<li{{ current }}><a href="{{ category[0] | slugify: 'latin' | relative_url }}/">{{ category[0] | capitalize }}</a></li>
+				<li{{ current }}><a href="{{ category[0] | slugify: 'latin' | relative_url }}/">{{ category[0] }}</a></li>
 			{%- endfor -%}
 		</ul>
 	</nav>
