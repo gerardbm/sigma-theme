@@ -33,7 +33,9 @@
 	{% if page.categories != empty -%}
 	<span> / {{ t[site.lang]['in'] }} </span>
 		{%- for category in page.categories -%}
-			<a href="{{ category | slugify: 'latin' | relative_url }}/">{{ category | capitalize }}</a>
+			{% assign slug = category | slugify: 'latin' %}
+			{% assign path = path | append: '/' | append: slug %}
+			<a href="{{ path }}/">{{ category }}</a>
 			{%- unless forloop.last %}, {% endunless -%}
 		{%- endfor -%}
 	{%- endif %}

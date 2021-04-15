@@ -10,9 +10,11 @@
 		</li>
 		{% if page.categories != empty %}
 		{% for category in page.categories %}
+			{% assign slug = category | slugify: 'latin' %}
+			{% assign path = path | append: '/' | append: slug %}
 		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
 			<span class="sep">{{ site.bc_sep }}</span>
-			<a itemprop="item" href="{{ category | slugify: 'latin' | relative_url }}/">
+			<a itemprop="item" href="{{ path }}/">
 				<span itemprop="name">{{ category }}</span></a>
 			<meta itemprop="position" content="{{ i }}"/>
 			{% assign i = i | plus: 1 %}

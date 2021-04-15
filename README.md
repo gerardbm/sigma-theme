@@ -317,6 +317,14 @@ This will list all the posts of this category.
 
 Use `excerpt:` in the front matter of posts to display posts description in the category page.
 
+You can use many categories as subcategories (i.e., `/category/another/onemore/`), and the breadcrumbs will show the links with the right path leveled → `/` (1), `/category/` (2), `/category/another/` (3) and `/category/another/onemore/` (4). That means you must create category pages with this permalinks to avoid a 404 error.
+
+If you wanted, you could create automatic permalinks with this: `/:categories/:title/`, however, if a category contains spaces it will not be correctly slugified, you should set permalinks manually in the front-matter or use `/:slugified_categories/:title/`, feature added in Jekyll version 4.1.
+
+For posts, it doesn't matter if the permalink contains the categories or not, because after all, levels are present in the breadcrumbs using the Schema.org. So, for posts you still can use `/:title/`, without the categories.
+
+I applied this philosophy since I'm not in favor of having multiple categories for a single post. Every post should have only one category, so having several categories becomes a leveled path of subcategories; that makes more sense to me.
+
 ### Layouts
 
 Define them in the front matter:
