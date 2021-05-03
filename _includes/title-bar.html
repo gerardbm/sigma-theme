@@ -17,7 +17,7 @@
 		{% if page.layout == 'page' %}
 			<p>
 				<span class="type">{{ t[site.lang]['page'] }}</span>
-				{% if page.read_time %}
+				{% if page.read_time != false %}
 				<span> • </span>
 				<span class="sub-type">{% include read-time.html %}</span>
 				{% endif %}
@@ -29,8 +29,10 @@
 		{% if page.layout == 'category' %}
 			<p>
 				<span class="type">{{ t[site.lang]['category'] }}</span>
+				{% if page.count_posts != false %}
 				<span> • </span>
 				<span class="sub-type">{% include count-posts-cat.html %}</span>
+				{% endif %}
 			</p>
 			{% if page.breadcrumbs %}
 				{% include breadcrumbs.html %}
