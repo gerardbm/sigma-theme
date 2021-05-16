@@ -129,6 +129,16 @@ a:focus {
 	text-decoration: none;
 }
 
+ins {
+	color: #346900;
+	text-decoration: underline;
+}
+
+del {
+	color: #c11c1c;
+	text-decoration: line-through;
+}
+
 .aligncenter {
 	display: block;
 	margin: 0 auto;
@@ -344,11 +354,6 @@ img {
 
 .si-icon-toggle:before {
 	content: "\f186";
-	font-family: "sigma-icons";
-}
-
-.dark .si-icon-toggle:before {
-	content: "\f185";
 	font-family: "sigma-icons";
 }
 
@@ -669,10 +674,8 @@ h6 {
 .main-content ol,
 .main-content dl,
 .main-content hr,
-.main-content abbr,
 .main-content iframe,
 .main-content figure,
-.main-content address,
 .main-content figcaption,
 .main-content blockquote,
 .main-content .highlight,
@@ -874,7 +877,7 @@ h6 {
 	transition: background .2s ease-in-out;
 }
 
-.post-content blockquote p {
+.post-content blockquote p:last-of-type {
 	margin: 0;
 }
 
@@ -935,6 +938,8 @@ h6 {
 }
 
 .post-content p > code,
+.post-content td > code,
+.post-content th > code,
 .post-content li > code {
 	background: #f3f5f8;
 	border: 1px solid #dcdcdc;
@@ -1719,7 +1724,7 @@ footer a {
 	.copyright {
 		min-height: 0;
 	}
-	
+
 	.copyright {
 		padding: 13px 0;
 	}
@@ -1902,6 +1907,14 @@ footer a {
 	color: #bcbfc2;
 }
 
+.dark ins {
+	color: #5da517;
+}
+
+.dark del {
+	color: #ec5252;
+}
+
 .dark .top-bar {
 	background: #141618;
 	border-bottom: 1px solid #343638;
@@ -1910,6 +1923,11 @@ footer a {
 .dark .top-bar a {
 	border-left: 1px solid #343638;
 	color: #848688;
+}
+
+.dark .si-icon-toggle:before {
+	content: "\f185";
+	font-family: "sigma-icons";
 }
 
 .dark .top-bar ul li:last-of-type a {
@@ -2059,6 +2077,8 @@ footer a {
 }
 
 .dark .post-content p > code,
+.dark .post-content td > code,
+.dark .post-content th > code,
 .dark .post-content li > code {
 	background: #141618;
 	border: 1px solid #343638;
