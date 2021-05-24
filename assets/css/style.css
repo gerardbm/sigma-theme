@@ -93,12 +93,6 @@ img {
 	border: 0;
 }
 
-ol,
-ul,
-li {
-	list-style: none;
-}
-
 strong {
 	font-weight: 700;
 }
@@ -385,6 +379,7 @@ img {
 
 .top-bar ul li {
 	float: left;
+	list-style: none;
 }
 
 .top-bar a {
@@ -471,6 +466,7 @@ section {
 
 .navigation ul li {
 	display: inline-block;
+	list-style: none;
 	margin-left: 21px;
 	-webkit-transform: translateZ(0);
 	-ms-transform: translateZ(0);
@@ -702,22 +698,6 @@ h6 {
 	margin: 8px 0;
 }
 
-.main-content ul li {
-	list-style: disc;
-}
-
-.main-content ul li > ul li {
-	list-style: circle;
-}
-
-.main-content ul li > ul li > ul li {
-	list-style: square;
-}
-
-.main-content ol li {
-	list-style: decimal;
-}
-
 .main-content ul,
 .main-content ol {
 	padding-left: 30px;
@@ -877,7 +857,10 @@ h6 {
 	transition: background .2s ease-in-out;
 }
 
-.post-content blockquote p:last-of-type {
+.post-content blockquote p:last-of-type,
+.post-content blockquote ul:last-of-type,
+.post-content blockquote ol:last-of-type,
+.post-content blockquote dl:last-of-type {
 	margin: 0;
 }
 
