@@ -73,7 +73,6 @@ form,
 label,
 p,
 figure,
-fieldset,
 input,
 blockquote {
 	direction: ltr;
@@ -88,7 +87,6 @@ table {
 	overflow-x: auto;
 }
 
-fieldset,
 img {
 	border: 0;
 }
@@ -133,6 +131,19 @@ del {
 	text-decoration: line-through;
 }
 
+fieldset {
+	margin: 0 0 10px 0;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	cursor: pointer;
+}
+
 .aligncenter {
 	display: block;
 	margin: 0 auto;
@@ -144,15 +155,6 @@ del {
 
 .alignright {
 	float: right;
-}
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	-webkit-appearance: button;
-	-moz-appearance: button;
-	cursor: pointer;
 }
 
 .screen-reader-text {
@@ -859,6 +861,8 @@ h6 {
 }
 
 .post-content blockquote p:last-of-type,
+.post-content blockquote form:last-of-type,
+.post-content blockquote fieldset:last-of-type,
 .post-content blockquote ul:last-of-type,
 .post-content blockquote ol:last-of-type,
 .post-content blockquote dl:last-of-type {
