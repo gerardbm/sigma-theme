@@ -956,8 +956,11 @@ h6 {
 	box-shadow: 4px 4px 12px rgba(0,0,0,0.34);
 	font-size: 1.15em;
 	line-height: normal;
-	overflow: auto;
 	padding: 15px;
+}
+
+.post-content .highlight pre {
+	overflow: auto;
 	white-space: pre-wrap;
 }
 
