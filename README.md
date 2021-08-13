@@ -101,9 +101,21 @@ Breadcrumbs, in `_config.yml`:
 
 - `bc_sep`: The breadcrumbs separator.
 
-Custom CSS directly in the head:
+Insert custom CSS directly in the head:
 
-- `custom_css`: The relative path of the CSS file, that must be in `_includes` folder.
+- `custom_css`: The relative path of the `.css` file, that must be in `_includes` folder. It must be a CSS file, so you don't need to include the `<style>` tags.
+
+Insert custom HTML directly in the head:
+
+- `custom_head`: The relative path of the `.html` file, that must be in `_includes` folder. It must be an HTML file, so you will have to include the HTML tags.
+
+Insert custom JS directly in the head:
+
+- `custom_js_top`: The relative path of the `.js` file, that must be in `_includes` folder. It must be a JS file, so you don't need to include the `<script>` tags.
+
+Insert custom JS directly in the foot:
+
+- `custom_js_foot`: The relative path of the `.js` file, that must be in `_includes` folder. It must be a JS file, so you don't need to include the `<script>` tags.
 
 ### Footer config
 
@@ -207,7 +219,6 @@ Sites verification, in `_config.yml`:
 - `google_sv`: Your Google site verification.
 - `bing_sv`: Your Bing site verification.
 - `alexa_sv`: Your Alexa site verification.
-- `adsense`: Verify your site for Google AdSense (format: `ca-pub-nnnnnnnnnnnnnnnn`).
 
 ### SEO:
 
@@ -216,7 +227,7 @@ Sites verification, in `_config.yml`:
 
 Meta tags, in post or page front matter:
 
-- `robots`: Must be a robots setup: `index,follow`, `noindex,follow`...
+- `robots`: Must be a robots setup: `index,follow`, `noindex,follow`…
 - `metadesc`: A description of the page. Less than 160 characters is recommended.
 - `kewyords`: A list of keywords. Google does not use them, though.
 

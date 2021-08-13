@@ -14,3 +14,9 @@
 {% if site.linking %}
 {% include linking.html %}
 {% endif %}
+
+{% if site.custom_js_foot %}
+<script>
+  {% include {{ site.custom_js_foot }} %}
+</script>
+{% endif %}

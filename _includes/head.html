@@ -11,10 +11,19 @@
 	{% if page.rouge %}
 	<link rel="stylesheet" href="{{ "/assets/css/syntax.css?ver=" | relative_url }}{{ site.version }}" type="text/css" media="all" />
 	{% endif %}
+
+	{% if site.custom_head %}
+		{% include {{ site.custom_head }} %}
+	{% endif %}
 	{% if site.custom_css %}
-		<style>
-			{% include {{ site.custom_css }} %}
-		</style>
+	<style>
+		{% include {{ site.custom_css }} %}
+	</style>
+	{% endif %}
+	{% if site.custom_js_top %}
+	<script>
+		{% include {{ site.custom_js_top }} %}
+	</script>
 	{% endif %}
 
 	{% include seo.html %}
@@ -28,9 +37,6 @@
 	{% if jekyll.environment == "production" %}
 	{% if site.google_analytics %}
 	{% include google-analytics.html %}
-	{% endif %}
-	{% if site.adsense %}
-	<script data-ad-client="{{ site.adsense }}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	{% endif %}
 	{% endif %}
 
