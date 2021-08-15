@@ -8,8 +8,8 @@ var documents = [{% for page in site.posts %}
 	{
 		"id": {{ counter }},
 		"url": "{{ page.url | replace: 'index.html', '' | absolute_url }}",
-		"title": "{{ page.title }}",
-		"metadesc": "{{ page.metadesc }}",
+		"title": "{{ page.title | escape }}",
+		"metadesc": "{{ page.metadesc | escape }}",
 		{% assign counter = counter | plus: 1 %}
 	} {% unless forloop.last %},{% endunless %}
 {% endfor %}];
