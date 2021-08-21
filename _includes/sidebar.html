@@ -3,7 +3,7 @@
 {%- endif -%}
 {%- if page.sticky_side == true and site.sticky_menu == true -%}
 {%- assign ss_top = " ss-top-76" -%}
-{%- else -%}
+{%- elsif page.sticky_side == true -%}
 {%- assign ss_top = " ss-top-21" -%}
 {%- endif -%}
 
