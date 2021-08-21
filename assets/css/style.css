@@ -260,10 +260,17 @@ img {
 	float: left;
 }
 
-.sidebar-sticky {
+.sticky-sidebar {
 	margin-bottom: 1.625em;
 	position: sticky;
 	position: -webkit-sticky;
+}
+
+.ss-top-21 {
+	top: 21px;
+}
+
+.ss-top-76 {
 	top: 76px;
 }
 

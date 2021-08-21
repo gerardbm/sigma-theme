@@ -1,8 +1,13 @@
-{%- if page.sticky == true -%}
-{%- assign sticky = " sidebar-sticky" -%}
+{%- if page.sticky_side == true -%}
+{%- assign sticky = " sticky-sidebar" -%}
+{%- endif -%}
+{%- if page.sticky_side == true and site.sticky_menu == true -%}
+{%- assign ss_top = " ss-top-76" -%}
+{%- else -%}
+{%- assign ss_top = " ss-top-21" -%}
 {%- endif -%}
 
-<aside class="sidebar{{ sticky }}">
+<aside class="sidebar{{ sticky }}{{ ss_top }}">
 {%- if page.zone.sidebar_top -%}
 {%- include {{ page.zone.sidebar_top }} -%}
 {%- endif -%}

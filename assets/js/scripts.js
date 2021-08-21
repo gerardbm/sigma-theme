@@ -3,13 +3,16 @@ window.onload = function() { stickyMenu(); displayScrollButton(); }
 
 // Make the menu sticky
 var menu = document.getElementsByClassName('menu-bar')[0];
-var sticky = menu.offsetTop;
+var sticky_menu = document.getElementsByClassName('sticky-menu')[0];
+var offTop = menu.offsetTop;
 
 function stickyMenu() {
-	if (window.pageYOffset > sticky) {
-		menu.classList.add('fixed-menu');
-	} else {
-		menu.classList.remove('fixed-menu');
+	if (sticky_menu) {
+		if (window.pageYOffset > offTop) {
+			menu.classList.add('fixed-menu');
+		} else {
+			menu.classList.remove('fixed-menu');
+		}
 	}
 }
 

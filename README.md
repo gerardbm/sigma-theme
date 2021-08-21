@@ -80,6 +80,10 @@ logo:
   height: an integer value
 ```
 
+Sticky menu, in `_config.yml`:
+
+- `sticky_menu`: true or false to make the menu sticky on scroll.
+
 Favicons, in `_config.yml`:
 
 - `favicon_ico`: The relative path of your favicon.
@@ -255,7 +259,7 @@ Tools for the content, in post or page front matter:
 - `nextprev`: true or false to show links for the next/previous posts.
 - `share`: true or false to show the share buttons.
 - `sidebar`: right or left to show the sidebar.
-- `sticky`: true or false to make the sidebar sticky on scroll.
+- `sticky_side`: true or false to make the sidebar sticky on scroll.
 - `rouge`: true to load the rouge CSS.
 - `order`: customize the posts order in the loops.
 - `cookies`: the html filename.
@@ -279,7 +283,7 @@ defaults:
       share: true
       latex: true
       sidebar: right
-      sticky: true
+      sticky_side: true
       sidenav:
         posts: true
       zone:

@@ -1,4 +1,8 @@
-<div class="menu-bar">
+{%- if site.sticky_menu == true -%}
+{%- assign sticky = " sticky-menu" -%}
+{%- endif -%}
+
+<div class="menu-bar{{ sticky }}">
 	<div class="wrap">
 		<div class="logo">
 			<a rel="home" title="{{ site.title }}" href="{{ "/" | relative_url }}">
