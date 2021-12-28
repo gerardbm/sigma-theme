@@ -13,7 +13,7 @@
 			{% assign slug = category | slugify: 'latin' %}
 			{% assign path = path | append: '/' | append: slug %}
 		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-			<span class="sep"> {{ site.bc_sep }} </span>
+			<span class="sep">&nbsp;{{ site.bc_sep }}&nbsp;</span>
 			<a itemprop="item" href="{{ path }}/">
 				<span itemprop="name">{{ category }}</span></a>
 			<meta itemprop="position" content="{{ i }}"/>
@@ -22,7 +22,7 @@
 		{% endfor %}
 		{% endif %}
 		<li>
-			<span class="sep"> {{ site.bc_sep }} </span>
+			<span class="sep">&nbsp;{{ site.bc_sep }}&nbsp;</span>
 			{% if page.cat %}
 			<span itemprop="name">{{ page.cat }}</span>
 			{% elsif page.h1 %}
