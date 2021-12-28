@@ -581,6 +581,10 @@ section {
 	color: #ff7f2a;
 }
 
+.title-bar .breadcrumbs .sep {
+	padding: 0 5px;
+}
+
 .top-bar,
 .menu-bar,
 .title-bar {
