@@ -697,7 +697,6 @@ h6 {
 .main-content .social-share,
 .main-content .next-prev,
 .post-content,
-.post-content .notice,
 .post-content .notice-info,
 .post-content .notice-success,
 .post-content .notice-warning,
@@ -889,43 +888,43 @@ h6 {
 	margin: 15px 0 0;
 }
 
-.post-content .notice,
 .post-content .notice-info,
 .post-content .notice-success,
 .post-content .notice-warning,
 .post-content .notice-danger {
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
 	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
 	-moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
 	padding: 10px 15px;
 }
 
-.post-content .notice {
-	background: #f3f5f8;
-}
-
 .post-content .notice-info {
-	background: #ebf5f8;
+	background: #d3ebfa;
+	border-top: 2px solid #54ace7;
+	color: #1a3a4e;
 }
 
 .post-content .notice-success {
-	background: #ecf6ec;
+	background: #d4f7ba;
+	border-top: 2px solid #65ca1d;
+	color: #273f15;
 }
 
 .post-content .notice-warning {
-	background: #fbf2e6;
+	background: #f7e7b8;
+	border-top: 2px solid #c49a1c;
+	color: #3e3415;
 }
 
 .post-content .notice-danger {
-	background: #fdefef;
+	background: #fad1d1;
+	border-top: 2px solid #e96363;
+	color: #602020;
 }
 
-.post-content .notice ul:last-of-type,
-.post-content .notice ol:last-of-type,
-.post-content .notice p:last-of-type,
 .post-content .notice-info ul:last-of-type,
 .post-content .notice-info ol:last-of-type,
 .post-content .notice-info p:last-of-type,
@@ -2087,7 +2086,6 @@ footer a {
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
 }
 
-.dark .post-content .notice,
 .dark .post-content .notice-info,
 .dark .post-content .notice-success,
 .dark .post-content .notice-warning,
@@ -2097,24 +2095,28 @@ footer a {
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.55);
 }
 
-.dark .post-content .notice {
-	background: #141618;
-}
-
 .dark .post-content .notice-info {
-	background: #203d46;
+	background: #1a3a4e;
+	border-top: 2px solid #1b7bbb;
+	color: #d3ebfa;
 }
 
 .dark .post-content .notice-success {
-	background: #204629;
+	background: #273f15;
+	border-top: 2px solid #458a14;
+	color: #d4f7ba;
 }
 
 .dark .post-content .notice-warning {
-	background: #463f20;
+	background: #3e3415;
+	border-top: 2px solid #846713;
+	color: #f7e7b8;
 }
 
 .dark .post-content .notice-danger {
-	background: #462020;
+	background: #602020;
+	border-top: 2px solid #e23232;
+	color: #fad1d1;
 }
 
 .dark .post-content p > code,
