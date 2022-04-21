@@ -38,7 +38,11 @@ layout: default
 </script>
 {% endif -%}
 
-<div class="post h-entry">
+{%- if site.sticky_menu == true -%}
+{%- assign scroll = " scroll-55" -%}
+{%- elsif page.sticky_side == true -%}
+
+  <div class="post h-entry{{ scroll }}">
 
 	<article>
 		{%- if page.zone.content_top -%}

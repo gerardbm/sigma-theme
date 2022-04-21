@@ -272,6 +272,14 @@ img {
 	top: 76px;
 }
 
+.scroll-55 > h2[id],
+.scroll-55 > h3[id],
+.scroll-55 > h4[id],
+.scroll-55 > h5[id],
+.scroll-55 > h6[id] {
+	scroll-margin-top: 55px;
+}
+
 .clear {
 	background: none;
 	border: 0;
