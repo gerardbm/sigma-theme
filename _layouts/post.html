@@ -70,8 +70,12 @@ layout: default
 		{%- endif -%}
 	</article>
 
-	{%- if page.nextprev == true -%}
-	{%- include next-prev.html -%}
+	{%- if page.nextprev == "cat" -%}
+	{%- include next-prev-cat.html -%}
+	{%- endif -%}
+
+	{%- if page.nextprev == "tag" -%}
+	{%- include next-prev-tag.html -%}
 	{%- endif -%}
 
 	{%- if page.share == true -%}

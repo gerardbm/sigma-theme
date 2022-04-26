@@ -15,6 +15,7 @@ This theme is a subjective one focused on speed and SEO, taking care of a beauti
 - LaTeX maths, Katex integrated.
 - Loop posts in category pages.
 - Links to next/previous posts (same category).
+- Links to next/previous posts (same tag).
 - Breadcrumbs with Schema.org.
 - Schema.org for posts and categories.
 - User interface multilanguage.
@@ -256,7 +257,7 @@ Tools for the content, in post or page front matter:
 - `read_time`: true or false to show the read time of a page/post.
 - `breadcrumbs`: true or false to show the breadcrumbs.
 - `postmeta`: true or false to show the 'post meta' under the h1.
-- `nextprev`: true or false to show links for the next/previous posts.
+- `nextprev`: "category" or "tag" to show links for the next/previous posts by category/tag.
 - `share`: true or false to show the share buttons.
 - `sidebar`: right or left to show the sidebar.
 - `sticky_side`: true or false to make the sidebar sticky on scroll.
@@ -279,7 +280,7 @@ defaults:
     values:
       read_time: true
       breadcrumbs: true
-      nextprev: true
+      nextprev: "category"
       share: true
       latex: true
       sidebar: right
@@ -351,7 +352,8 @@ Define them in the front matter:
 
 ### Tips
 
-- `nextprev` will link to the next/prev posts within the same category. It will use the last category assigned, because it's the subcategory. For example: `categories: [vehicles, cars]` will only navigate between `cars`. Therefore, it's a good idea to have the same level of categories in a project.
+- `nextprev="category"` will link to the next/prev posts within the same category. It will use the last category assigned, because it's the subcategory. For example: `categories: [vehicles, cars]` will only navigate between `cars`. Therefore, it's a good idea to have the same level of categories in a project.
+- `nextprev="tag"` will link to the next/prev posts within the same tag. Use only one keyword to agroup posts for next/prev navigation.
 
 ### General front matter for posts
 
@@ -370,6 +372,8 @@ excerpt: >-
   This is the excerpt text of the post
 image: images/whatever.jpg
 sidebar_custom: original-sidebar.html
+nextprev: "tag"
+tag: Art
 ---
 ```
 
