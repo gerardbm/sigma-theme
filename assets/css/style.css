@@ -699,6 +699,8 @@ h6 {
 .main-content picture,
 .main-content embed,
 .main-content details,
+.main-content canvas,
+.main-content address,
 .main-content .highlight,
 .main-content .social-share,
 .main-content .next-prev,
@@ -892,6 +894,15 @@ h6 {
 
 .post-content blockquote p + blockquote {
 	margin: 15px 0 0;
+}
+
+.post-content canvas {
+	border: 1px solid #b3b5b8;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	max-width: 100%;
 }
 
 .post-content .notice-info,
@@ -2102,6 +2113,10 @@ footer a {
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
 }
 
+.dark .post-content canvas {
+	border: 1px solid #545658;
+}
+
 .dark .post-content .notice-info,
 .dark .post-content .notice-success,
 .dark .post-content .notice-warning,
@@ -2186,6 +2201,11 @@ footer a {
 
 .dark .post-content hr {
 	border-bottom: 1px dashed #545658;
+}
+
+.dark .post-content a.btn:link,
+.dark .post-content a.btn:visited {
+	text-decoration: none;
 }
 
 .dark .sidenav {
