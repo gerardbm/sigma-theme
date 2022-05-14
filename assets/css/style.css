@@ -976,6 +976,7 @@ h6 {
 	-ms-transition: background .2s ease-in-out, border .2s ease-in-out, color 0.2s ease-in-out;
 	-o-transition: background .2s ease-in-out, border .2s ease-in-out, color 0.2s ease-in-out;
 	transition: background .2s ease-in-out, border .2s ease-in-out, color 0.2s ease-in-out;
+	white-space: pre;
 }
 
 .post-content .highlight {
