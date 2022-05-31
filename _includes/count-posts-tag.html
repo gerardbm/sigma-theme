@@ -1,5 +1,5 @@
 {%- assign t = site.data.translations -%}
-{%- assign posts_tag = site.categories[page.tag].size | plus: 0 -%}
+{%- assign posts_tag = site.tags[page.tag].size | plus: 0 -%}
 
 {{ t[site.lang]['quantity'] }}:&nbsp;
 {%- if posts_tag == 1 -%}
