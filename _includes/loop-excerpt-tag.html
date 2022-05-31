@@ -1,0 +1,15 @@
+{%- assign sorted_posts = site.tags[include.tag] | sort: 'order' -%}
+{%- assign psize = site.posts | size -%}
+
+{%- if psize != 0 -%}
+  {%- for post in sorted_posts -%}
+  <article class="loop-excerpt">
+    {%- if post.h1 -%}
+    <h2><a href="{{ post.url | relative_url }}">{{ post.h1 }}</a></h2>
+    {%- else -%}
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    {%- endif -%}
+    <div>{{ post.excerpt | markdownify }}</div>
+  </article>
+  {%- endfor -%}
+{%- endif -%}

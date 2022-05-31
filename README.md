@@ -323,13 +323,23 @@ permalink: /awesome-category/
 
 The `cat` must be the same of the `category` in posts: it will be used to show the total posts of a category.
 
-Then include this line in the content:
+About the total posts (counter):
+
+- By default, it will count posts by category.
+- To count posts by tag, use: `counter: tag`
+- Don't show the total posts: `counter: false`
+
+Include this line in the content to list all the posts of a category:
 
 ```liquid
-{% include loop-excerpt.html cat="Awesome category" %}
+{% include loop-excerpt-cat.html cat="Awesome category" %}
 ```
 
-This will list all the posts of this category.
+Include this line in the content to list all the posts of a tag:
+
+```liquid
+{% include loop-excerpt-tag.html tag="Beautiful tag" %}
+```
 
 Use `excerpt:` in the front matter of posts to display posts description in the category page.
 

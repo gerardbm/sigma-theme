@@ -29,9 +29,14 @@
 		{% if page.layout == 'category' %}
 			<p>
 				<span class="type">{{ t[site.lang]['category'] }}</span>
-				{% if page.count_posts != false %}
-				<span> • </span>
-				<span class="sub-type">{% include count-posts-cat.html %}</span>
+				{% if page.counter != false %}
+					{% if page.counter == "tag" %}
+					<span> • </span>
+					<span class="sub-type">{% include count-posts-tag.html %}</span>
+					{% else %}
+					<span> • </span>
+					<span class="sub-type">{% include count-posts-cat.html %}</span>
+					{% endif %}
 				{% endif %}
 			</p>
 			{% if page.breadcrumbs %}

@@ -1,0 +1,9 @@
+{%- assign t = site.data.translations -%}
+{%- assign posts_tag = site.categories[page.tag].size | plus: 0 -%}
+
+{{ t[site.lang]['quantity'] }}:&nbsp;
+{%- if posts_tag == 1 -%}
+{{ posts_tag }} {{ t[site.lang]['post'] | downcase }}
+{%- else -%}
+{{ posts_tag }} {{ t[site.lang]['posts'] | downcase }}
+{%- endif -%}
