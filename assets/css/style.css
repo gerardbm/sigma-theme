@@ -1208,7 +1208,6 @@ h6 {
 }
 
 .sidenav ul li {
-	border-bottom: 1px solid #dcdcdc;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -1217,10 +1216,6 @@ h6 {
 	-ms-transition: background .2s ease-in-out, border .2s ease-in-out;
 	-o-transition: background .2s ease-in-out, border .2s ease-in-out;
 	transition: background .2s ease-in-out, border .2s ease-in-out;
-}
-
-.sidenav ul li:last-of-type {
-	border-bottom: none;
 }
 
 .sidenav ul li:hover {
@@ -1236,7 +1231,8 @@ h6 {
 }
 
 .sidenav ul li.current {
-	background: #d3d5d8;
+	background: #e3e5e8;
+	border-right: 2px solid #ff7f2a;
 }
 
 /*----------------------------------------------------------*/
@@ -1367,12 +1363,12 @@ h6 {
 }
 
 .np-prev {
-	border-left: 4px solid #ff7f2a;
+	border-left: 2px solid #ff7f2a;
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .np-next {
-	border-right: 4px solid #ff7f2a;
+	border-right: 2px solid #ff7f2a;
 	box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
 }
 
@@ -2247,14 +2243,6 @@ footer a {
 	border: 1px solid #343638;
 }
 
-.dark .sidenav ul li {
-	border-bottom: 1px solid #343638;
-}
-
-.sidenav ul li:last-of-type {
-	border-bottom: none;
-}
-
 .dark .sidenav ul li:hover {
 	background: #242628;
 }
@@ -2265,7 +2253,8 @@ footer a {
 }
 
 .dark .sidenav ul li.current {
-	background: #343638;
+	background: #242628;
+	border-right: 2px solid #ff7f2a;
 }
 
 .dark .social-share a:link,
