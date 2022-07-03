@@ -257,7 +257,7 @@ Tools for the content, in post or page front matter:
 - `read_time`: true or false to show the read time of a page/post.
 - `breadcrumbs`: true or false to show the breadcrumbs.
 - `postmeta`: true or false to show the 'post meta' under the h1.
-- `nextprev`: "category" or "tag" to show links for the next/previous posts by category/tag.
+- `nextprev`: "cat" or "tag" to show links for the next/previous posts by category/tag.
 - `share`: true or false to show the share buttons.
 - `sidebar`: right or left to show the sidebar.
 - `sticky_side`: true or false to make the sidebar sticky on scroll.
@@ -273,14 +273,13 @@ You can configure default settings for all posts or pages. If then you configure
 
 ```yaml
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       read_time: true
       breadcrumbs: true
-      nextprev: "category"
+      nextprev: cat
       share: true
       latex: true
       sidebar: right
@@ -292,8 +291,7 @@ defaults:
         content_bottom: content-bottom.html
         sidebar_top: ads-sidebar-top.html
         sidebar_bottom: ads-sidebar-bottom.html
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
@@ -362,8 +360,8 @@ Define them in the front matter:
 
 ### Tips
 
-- `nextprev="category"` will link to the next/prev posts within the same category. It will use the last category assigned, because it's the subcategory. For example: `categories: [vehicles, cars]` will only navigate between `cars`. Therefore, it's a good idea to have the same level of categories in a project.
-- `nextprev="tag"` will link to the next/prev posts within the same tag. Use only one keyword to agroup posts for next/prev navigation.
+- `nextprev: cat` will link to the next/prev posts within the same category. It will use the last category assigned, because it's the subcategory. For example: `categories: [vehicles, cars]` will only navigate between `cars`. Therefore, it's a good idea to have the same level of categories in a project.
+- `nextprev: tag` will link to the next/prev posts within the same tag. Use only one keyword to agroup posts for next/prev navigation.
 
 ### General front matter for posts
 
@@ -382,7 +380,7 @@ excerpt: >-
   This is the excerpt text of the post
 image: images/whatever.jpg
 sidebar_custom: original-sidebar.html
-nextprev: "tag"
+nextprev: tag
 tag: Art
 ---
 ```
