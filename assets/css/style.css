@@ -1914,12 +1914,13 @@ footer a {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-		margin-bottom: 2px;
+		margin-bottom: 3px;
 		padding: 8px;
 	}
 
 	.title-bar .breadcrumbs ol li {
 		position: relative;
+		text-align: center;
 	}
 
 	.title-bar .breadcrumbs ol li:not(:last-child)::before,
@@ -1928,11 +1929,11 @@ footer a {
 		border: 1px solid #dcdcdc;
 		border-bottom: none;
 		border-top: none;
-		bottom: -6px;
+		bottom: -5px;
 		content: "";
-		height: 8px;
+		height: 5px;
 		position: absolute;
-		width: 8px;
+		width: 10px;
 		z-index: 1;
 	}
 
