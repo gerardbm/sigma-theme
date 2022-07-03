@@ -1391,7 +1391,11 @@ h6 {
 .next-prev a:link,
 .next-prev a:visited {
 	color: #095cae;
+	display: block;
+	overflow: hidden;
 	text-decoration: underline;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .next-prev a:hover {
