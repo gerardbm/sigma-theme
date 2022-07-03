@@ -1844,6 +1844,13 @@ footer a {
 	.next-prev div:nth-child(2) {
 		margin-top: 10px;
 	}
+
+	.next-prev a:link,
+	.next-prev a:visited {
+		overflow: initial;
+		text-overflow: initial;
+		white-space: initial;
+	}
 }
 
 /*----------------------------------------------------------*/
