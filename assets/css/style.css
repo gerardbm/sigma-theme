@@ -172,8 +172,6 @@ input[type="submit"] {
 .menu-bar,
 .title-bar,
 .title-bar .breadcrumbs ol li,
-.title-bar .breadcrumbs ol li:not(:last-child)::before,
-.title-bar .breadcrumbs ol li:not(:last-child)::after,
 .home-title-bar,
 .main-content,
 .sidenav {
@@ -1789,6 +1787,10 @@ footer a {
 		color: #ff7f2a;
 	}
 
+	.main-content {
+		padding: 34px 0 8px;
+	}
+
 	footer {
 		font-size: 1em;
 	}
@@ -1903,8 +1905,8 @@ footer a {
 		text-align: center;
 	}
 
-	.title-bar .breadcrumbs .sep {
-		display: none;
+	.title-bar .breadcrumbs {
+		margin-top: 10px;
 	}
 
 	.title-bar ol,
@@ -1915,49 +1917,23 @@ footer a {
 	.title-bar li {
 		background: #fff;
 		border: 1px solid #dcdcdc;
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		border-radius: 4px;
+		border-bottom: none;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-		margin-bottom: 3px;
-		padding: 8px;
-	}
-
-	.title-bar .breadcrumbs ol li {
+		margin-bottom: 0;
+		padding: 5px 8px;
 		position: relative;
 		text-align: center;
 	}
 
-	.title-bar .breadcrumbs ol li:not(:last-child)::before,
-	.title-bar .breadcrumbs ol li:not(:last-child)::after {
-		background-color: #fff;
-		border: 1px solid #dcdcdc;
-		border-bottom: none;
-		border-top: none;
-		bottom: -5px;
-		content: "";
-		height: 5px;
-		position: absolute;
-		width: 5px;
-		z-index: 1;
-	}
-
-	.title-bar .breadcrumbs ol li:not(:last-child)::before {
-		left: 8px;
-	}
-
-	.title-bar .breadcrumbs ol li:not(:last-child)::after {
-		right: 8px;
+	.title-bar li:first-of-type {
+		border-radius: 4px 4px 0 0;
 	}
 
 	.title-bar li:last-of-type {
-		margin-bottom: 0;
-	}
-
-	.title-bar .breadcrumbs {
-		margin-top: 10px;
+		border-bottom: 1px solid #dcdcdc;
+		border-radius: 0 0 4px 4px;
 	}
 
 	.social-share a {
@@ -2408,14 +2384,11 @@ footer a {
 	.dark .title-bar li {
 		background: #242628;
 		border: 1px solid #343638;
+		border-bottom: none;
 	}
 
-	.dark .title-bar .breadcrumbs ol li:not(:last-child)::before,
-	.dark .title-bar .breadcrumbs ol li:not(:last-child)::after {
-		background-color: #242628;
-		border: 1px solid #343638;
-		border-bottom: none;
-		border-top: none;
+	.dark .title-bar li:last-of-type {
+		border-bottom: 1px solid #343638;
 	}
 }
 
