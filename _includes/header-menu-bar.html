@@ -4,25 +4,29 @@
 
 <div class="menu-bar{{ sticky }}">
 	<div class="wrap">
+	<div class="tableize">
 		<div class="logo">
 			<a rel="home" title="{{ site.title }}" href="{{ "/" | relative_url }}">
 				<img width="{{ site.logo.width }}" height="{{ site.logo.height }}" src="{{ site.logo.path | relative_url }}" alt="{{ site.title }}" title="{{ site.title }}">
 			</a>
 		</div>
 		{% if site.data.navigation %}
-		<div class="button-nav" id="button-nav"></div>
-		<nav class="navigation" id="navigation">
-			<div class="close-nav" id="close-nav"></div>
-			<ul class="list-nav">
-			{% for item in site.data.navigation.docs -%}
-				{%- assign current = nil -%}
-				{%- if page.url == item.url -%}
-					{%- assign current = ' class="current"' -%}
-				{%- endif -%}
-				<li{{ current }}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-			{%- endfor %}
-			</ul>
-		</nav>
+		<div class="nav">
+			<div class="button-nav" id="button-nav"></div>
+			<nav class="navigation" id="navigation">
+				<div class="close-nav" id="close-nav"></div>
+				<ul class="list-nav">
+				{% for item in site.data.navigation.docs -%}
+					{%- assign current = nil -%}
+					{%- if page.url == item.url -%}
+						{%- assign current = ' class="current"' -%}
+					{%- endif -%}
+					<li{{ current }}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+				{%- endfor %}
+				</ul>
+			</nav>
+		</div>
 		{% endif %}
+	</div>
 	</div>
 </div>

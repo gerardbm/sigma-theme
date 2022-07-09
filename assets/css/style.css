@@ -451,17 +451,27 @@ section {
 	padding-top: 110px;
 }
 
-.logo {
-	display: inline-block;
-	height: 55px;
-	line-height: 55px;
-	max-width: 300px;
-	vertical-align: top;
+.tableize {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
 }
 
-.logo img {
-	display: inline-block;
+.logo {
+	display: table-cell;
+	height: 55px;
+	line-height: 0;
 	vertical-align: middle;
+	width: 250px;
+}
+
+.nav {
+	display: table-cell;
+	overflow: hidden;
+	padding-left: 15px;
+	vertical-align: middle;
+	white-space: nowrap;
+	width: auto;
 }
 
 .close-nav,
@@ -470,9 +480,8 @@ section {
 }
 
 .navigation {
-	float: right;
 	font-size: 0.875em;
-	position: relative;
+	text-align: right;
 }
 
 .navigation ul {
@@ -1602,6 +1611,19 @@ footer a {
 		width: 100%;
 	}
 
+	.logo {
+		width: 100%;
+	}
+
+	.logo img {
+		max-width: 100%;
+		width: auto;
+	}
+
+	.nav {
+		width: 35px;
+	}
+
 	.button-nav {
 		background: #fff;
 		border: 1px solid #dcdcdc;
@@ -1613,9 +1635,7 @@ footer a {
 		box-shadow: inset 0 -12px 10px -3px rgba(0, 0, 0, 0.05);
 		cursor: pointer;
 		display: block;
-		float: right;
 		height: 33px;
-		margin-top: 10px;
 		position: relative;
 		-webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
 		-moz-transition: background .2s ease-in-out, border .2s ease-in-out;
