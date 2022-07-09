@@ -1246,7 +1246,6 @@ h6 {
 
 .sidenav ul li.current {
 	background: #e3e5e8;
-	border-right: 2px solid #ff7f2a;
 }
 
 /*----------------------------------------------------------*/
@@ -2258,7 +2257,6 @@ footer a {
 
 .dark .sidenav ul li.current {
 	background: #242628;
-	border-right: 2px solid #ff7f2a;
 }
 
 .dark .social-share a:link,
