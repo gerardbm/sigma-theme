@@ -1345,68 +1345,36 @@ h6 {
 	border-bottom: 1px dashed #b3b5b8;
 	border-top: 1px dashed #b3b5b8;
 	display: block;
-	padding: 10px 0;
+	padding: 20px 0;
 }
 
 .np-prev,
 .np-next {
-	background: #f3f5f8;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 10px 15px;
-	-webkit-transition: background .2s ease-in-out,
-		box-shadow .2s ease-in-out,
-		color .2s ease-in-out;
-	-moz-transition: background .2s ease-in-out,
-		box-shadow .2s ease-in-out,
-		color .2s ease-in-out;
-	-ms-transition: background .2s ease-in-out,
-		box-shadow .2s ease-in-out,
-		color .2s ease-in-out;
-	-o-transition: background .2s ease-in-out,
-		box-shadow .2s ease-in-out,
-		color .2s ease-in-out;
-	transition: background .2s ease-in-out,
-		box-shadow .2s ease-in-out,
-		color .2s ease-in-out;
-}
-
-.np-prev {
-	border-left: 2px solid #ff7f2a;
-	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
-}
-
-.np-next {
-	border-right: 2px solid #ff7f2a;
-	box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
 }
 
 .next-prev .np-prev {
 	float: left;
-	margin-right: 2%;
+	margin-right: 4%;
 	text-align: left;
-	width: 49%;
+	width: 48%;
 }
 
 .next-prev .np-next {
 	float: right;
 	margin-right: 0;
 	text-align: right;
-	width: 49%;
+	width: 48%;
 }
 
 .next-prev a:link,
 .next-prev a:visited {
 	color: #095cae;
-	display: block;
-	overflow: hidden;
 	text-decoration: underline;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 }
 
 .next-prev a:hover {
@@ -2288,23 +2256,9 @@ footer a {
 	border-top: 1px dashed #545658;
 }
 
-.dark .np-prev,
-.dark .np-next {
-	background: #141618;
-}
-
-.dark .next-prev .np-prev {
-	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
-}
-
-.dark .next-next .np-prev {
-	box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.55);
-}
-
 .dark .next-prev a:link,
 .dark .next-prev a:visited {
 	color: #58a6ff;
-	text-decoration: underline;
 }
 
 .dark .next-prev a:hover {
