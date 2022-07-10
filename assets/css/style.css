@@ -1345,11 +1345,12 @@ h6 {
 	border-bottom: 1px dashed #b3b5b8;
 	border-top: 1px dashed #b3b5b8;
 	display: block;
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
 .np-prev,
 .np-next {
+	padding: 10px 0;
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
 	-ms-transition: color .2s ease-in-out;
@@ -1827,24 +1828,6 @@ footer a {
 		margin: 0 4%;
 		width: 92%;
 	}
-
-	.next-prev .np-prev,
-	.next-prev .np-next {
-		float: none;
-		margin-right: 0;
-		width: 100%;
-	}
-
-	.next-prev div:nth-child(2) {
-		margin-top: 10px;
-	}
-
-	.next-prev a:link,
-	.next-prev a:visited {
-		overflow: initial;
-		text-overflow: initial;
-		white-space: initial;
-	}
 }
 
 /*----------------------------------------------------------*/
@@ -1921,6 +1904,18 @@ footer a {
 	.title-bar li:last-of-type {
 		border-bottom: 1px solid #dcdcdc;
 		border-radius: 0 0 4px 4px;
+	}
+
+	.next-prev {
+		padding: 0;
+	}
+
+	.next-prev .np-prev,
+	.next-prev .np-next {
+		float: none;
+		margin-right: 0;
+		text-align: center;
+		width: 100%;
 	}
 
 	.social-share a {
