@@ -1617,7 +1617,7 @@ footer a {
 	}
 
 	.button-nav:before {
-		color: #505356;
+		color: #303336;
 		content: "\f0c9";
 		display: inline-block;
 		font: 20px "sigma-icons";
@@ -2285,7 +2285,7 @@ footer a {
 	}
 
 	.dark .button-nav:before {
-		color: #a4a6a8;
+		color: #bcbfc2;
 	}
 
 	.dark .navigation {
