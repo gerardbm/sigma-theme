@@ -1258,17 +1258,16 @@ h6 {
 }
 
 .social-share a {
-	-webkit-border-radius: 16px;
-	-moz-border-radius: 16px;
-	border-radius: 16px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 	display: block;
 	float: left;
 	height: 32px;
 	line-height: 32px;
-	margin-right: 2%;
+	margin-right: 8px;
 	text-align: center;
-	text-shadow: 1px 1px 3px #303336;
-	width: calc(92%/5);
+	width: 52px;
 }
 
 .social-share a:link,
@@ -1292,11 +1291,6 @@ h6 {
 
 .social-share a:before {
 	font-size: 1em;
-}
-
-.social-share a span {
-	display: none;
-	visibility: hidden;
 }
 
 .social-share .si-icon-twitter {
@@ -1919,35 +1913,11 @@ footer a {
 	}
 
 	.social-share a {
-		display: block;
-		height: 36px;
-		line-height: 36px;
-		margin: 0 0 10px 0;
-		text-align: left;
-		width: 100%;
-	}
-
-	.social-share a:before {
-		background: rgba(0,0,0,0.15);
-		-webkit-border-radius: 16px;
-		-moz-border-radius: 16px;
-		border-radius: 16px;
-		display: inline-block;
-		text-align: center;
-		width: 36px;
-	}
-
-	.social-share a:last-of-type {
-		margin-bottom: 0;
-	}
-
-	.social-share a span {
-		display: inline-block;
-		font-size: 0.813em;
-		height: 32px;
-		margin-left: 15px;
-		text-transform: uppercase;
-		visibility: visible;
+		height: 34px;
+		line-height: 34px;
+		margin-right: 2%;
+		min-width: 34px;
+		width: calc(92%/5);
 	}
 }
 
