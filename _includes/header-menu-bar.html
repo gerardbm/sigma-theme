@@ -21,7 +21,7 @@
 					{%- if page.url == item.url -%}
 						{%- assign current = ' class="current"' -%}
 					{%- endif -%}
-					<li{{ current }}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+					<li{{ current }}><a href="{{ item.url }}">{{ item.title }}</a></li>
 				{%- endfor %}
 				</ul>
 			</nav>
