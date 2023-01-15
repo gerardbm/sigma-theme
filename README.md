@@ -85,6 +85,10 @@ Sticky menu, in `_config.yml`:
 
 - `sticky_menu`: true or false to make the menu sticky on scroll.
 
+Scroll up button, in `_config.yml`:
+
+- `scrollup`: true or false to make the menu sticky on scroll.
+
 Favicons, in `_config.yml`:
 
 - `favicon_ico`: The relative path of your favicon.

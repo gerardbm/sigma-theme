@@ -1,4 +1,6 @@
+{%- if site.scrollup == true -%}
 <div id="button-scrollup" class="scrollup"></div>
+{%- endif -%}
 <script async src="{{ "/assets/js/scripts.js?ver=" | relative_url }}{{ site.version }}"></script>
 
 {% if page.latex == true %}
