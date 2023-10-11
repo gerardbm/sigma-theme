@@ -1027,8 +1027,9 @@ h6 {
 }
 
 .post-content > table {
+	display: block;
 	margin-bottom: 1.625em;
-	width: 100%;
+	overflow-x: auto;
 }
 
 .post-content > table thead {
