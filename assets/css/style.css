@@ -1826,17 +1826,6 @@ footer a {
 
 /*----------------------------------------------------------*/
 
-@media only screen and (max-width : 652px) {
-
-	table {
-		display: block;
-		overflow-x: auto;
-	}
-
-}
-
-/*----------------------------------------------------------*/
-
 @media only screen and (max-width : 480px) {
 
 	.wrap {
