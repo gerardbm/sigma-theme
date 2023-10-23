@@ -975,7 +975,7 @@ h6 {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	color: #d01040;
+	color: #bc004f;
 	font-family: monospace;
 	font-size: 1.1em;
 	margin: 0 2px;
@@ -2112,7 +2112,7 @@ footer a {
 .dark .post-content li > code {
 	background: #141618;
 	border: 1px solid #343638;
-	color: #d56777;
+	color: #fb6f92;
 }
 
 .dark .post-content .highlight {
