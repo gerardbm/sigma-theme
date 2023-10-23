@@ -20,10 +20,12 @@ function stickyMenu() {
 var buttonScroll = document.getElementById('button-scrollup');
 
 function displayScrollButton() {
-	if (window.pageYOffset > 250) {
-		buttonScroll.classList.add('is-visible');
-	} else {
-		buttonScroll.classList.remove('is-visible');
+	if (buttonScroll) {
+		if (window.pageYOffset > 250) {
+			buttonScroll.classList.add('is-visible');
+		} else {
+			buttonScroll.classList.remove('is-visible');
+		}
 	}
 }
 
