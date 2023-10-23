@@ -9,7 +9,7 @@
 			<meta itemprop="position" content="1"/>
 		</li>
 		{% if page.categories != empty %}
-		{% for category in page.categories %}
+			{% for category in page.categories %}
 			{% assign slug = category | slugify: 'latin' %}
 			{% assign path = path | append: '/' | append: slug %}
 		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -19,7 +19,7 @@
 			<meta itemprop="position" content="{{ i }}"/>
 			{% assign i = i | plus: 1 %}
 		</li>
-		{% endfor %}
+			{% endfor %}
 		{% endif %}
 		<li>
 			<span class="sep">{{ site.bc_sep }}</span>
