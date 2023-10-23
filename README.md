@@ -227,7 +227,6 @@ Sites verification, in `_config.yml`:
 
 - `google_sv`: Your Google site verification.
 - `bing_sv`: Your Bing site verification.
-- `alexa_sv`: Your Alexa site verification.
 
 ### SEO:
 
