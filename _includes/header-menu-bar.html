@@ -1,5 +1,11 @@
-{%- if site.sticky_menu == true -%}
-{%- assign sticky = " sticky-menu" -%}
+{%- if site.topbar == true -%}
+	{%- if site.sticky_menu == true -%}
+		{%- assign sticky = " sticky-menu" -%}
+	{%- endif -%}
+{%- else -%}
+	{%- if site.sticky_menu == true -%}
+		{%- assign sticky = " fixed-menu" -%}
+	{%- endif -%}
 {%- endif -%}
 
 <div class="menu-bar{{ sticky }}">

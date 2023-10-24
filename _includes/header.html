@@ -1,5 +1,7 @@
 <header class="site-header">
+	{% if site.topbar == true %}
 	{% include header-top-bar.html %}
+	{% endif %}
 	{% include header-menu-bar.html %}
 	{% if page.layout == 'home' %}
 	{% include home-title-bar.html %}

@@ -374,13 +374,10 @@ img {
 /* 3. Header (top bar)
 /*----------------------------------------------------------*/
 
-.site-header {
-	border-top: 5px solid #ff7f2a;
-}
-
 .top-bar {
 	background: #f3f5f8;
 	border-bottom: 1px solid #dcdcdc;
+	border-top: 5px solid #ff7f2a;
 	display: block;
 	height: 34px;
 	overflow: hidden;

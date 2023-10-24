@@ -58,6 +58,10 @@ Or install it yourself as:
 
 ### Header config
 
+Display the top bar, in `_config.yml`:
+
+- `topbar`: true or false to show the top bar.
+
 Top bar links, in `_config.yml`:
 
 - `twitter_username`: Your Twitter username.
