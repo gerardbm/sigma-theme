@@ -154,7 +154,7 @@ Copyright information, in `_config.yml`:
 
 ### Sidebar config
 
-First of all, in the post or page front matter:
+First, in the post or page front matter:
 
 ```yml
 sidebar: right / left / false
@@ -221,7 +221,7 @@ Open Graph, in `_config.yml`:
 
 - `fb_admins`: Your Facebook admin ID.
 - `fb_app_id`: Your Facebook app ID.
-- `og_locale`: The language locale. For example: en_US, es_CA, es_ES...
+- `og_locale`: The language locale. For example: en_US, es_CA, es_ES, etc.
 
 In the post or page front matter:
 
@@ -249,7 +249,7 @@ Meta tags, in post or page front matter:
 
 There is no prevision of using pagination in this theme at the moment, so `rel="prev"` and `rel="next"` are not included. This theme lists all posts of a category in the category page.
 
-TODO: Make the pagination customizable.
+To-Do: Make the pagination customizable.
 
 Insert backlink to the copied text when someone decides to copy text:
 
