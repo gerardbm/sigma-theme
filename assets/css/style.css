@@ -370,6 +370,14 @@ img {
 	cursor: pointer;
 }
 
+.navigation ul li .si-icon-search,
+.navigation ul li .si-icon-toggle {
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	width: 18px;
+}
+
 /*----------------------------------------------------------*/
 /* 3. Header (top bar)
 /*----------------------------------------------------------*/

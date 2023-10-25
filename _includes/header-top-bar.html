@@ -58,18 +58,6 @@
 					<a target="_blank" rel="noopener noreferrer" class="si-icon-sitemap" href="{{ 'sitemap.xml' | relative_url }}" title="Sitemap"><span class="screen-reader-text">Sitemap</span></a>
 				</li>
 			{% endif %}
-
-			{% if site.search_url %}
-				<li>
-					<a target="_self" rel="noopener noreferrer" class="si-icon-search" href="{{ site.search_url }}" title="Search"><span class="screen-reader-text">Search</span></a>
-				</li>
-			{% endif %}
-
-			{% if site.color_toggle == true %}
-				<li>
-					<a class="si-icon-toggle" id="button-colors"><span class="screen-reader-text">Toggle colors</span></a>
-				</li>
-			{% endif %}
 		</ul>
 	</div>
 </nav>

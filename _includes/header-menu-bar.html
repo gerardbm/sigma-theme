@@ -29,6 +29,18 @@
 					{%- endif -%}
 					<li{{ current }}><a href="{{ item.url }}">{{ item.title }}</a></li>
 				{%- endfor %}
+
+				{% if site.search_url %}
+					<li>
+						<a target="_self" rel="noopener noreferrer" class="si-icon-search" href="{{ site.search_url }}" title="Search"><span class="screen-reader-text">Search</span></a>
+					</li>
+				{% endif %}
+
+				{% if site.color_toggle == true %}
+					<li>
+						<a class="si-icon-toggle" id="button-colors"><span class="screen-reader-text">Toggle colors</span></a>
+					</li>
+				{% endif %}
 				</ul>
 			</nav>
 		</div>
