@@ -1399,7 +1399,8 @@ footer a {
 	color: #bcbfc2;
 }
 
-.bottom-links {
+.bottom-links,
+.footer-icons {
 	border-bottom: 1px solid #000;
 	-webkit-box-shadow: 0 1px 0 #393939;
 	-moz-box-shadow: 0 1px 0 #393939;
@@ -1407,7 +1408,8 @@ footer a {
 	min-height: 55px;
 }
 
-.bottom-links ul li {
+.bottom-links ul li,
+.footer-icons ul li {
 	display: inline-block;
 	line-height: 55px;
 }
@@ -1416,6 +1418,15 @@ footer a {
 	content: "|";
 	display: inline-block;
 	margin: 0 8px;
+}
+
+.footer-icons li a {
+	display: inline-block;
+	font-size: 1.25em;
+	line-height: 25px;
+	margin: 3px;
+	vertical-align: middle;
+	width: 25px;
 }
 
 .copyright {

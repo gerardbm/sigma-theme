@@ -91,7 +91,7 @@ Sticky menu, in `_config.yml`:
 
 Scroll up button, in `_config.yml`:
 
-- `scrollup`: true or false to make the menu sticky on scroll.
+- `scrollup`: true or false to display or hide the scroll up button.
 
 Favicons, in `_config.yml`:
 
@@ -142,6 +142,10 @@ docs:
 - title:
   url:
 ```
+
+Display the social media icons in the footer, in `_config.yml`:
+
+- `footer_icons`: true or false to show the social media icons in the footer.
 
 Copyright information, in `_config.yml`:
 
