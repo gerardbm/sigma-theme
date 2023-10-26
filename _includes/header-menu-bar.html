@@ -21,6 +21,20 @@
 			<div class="button-nav" id="button-nav"></div>
 			<nav class="navigation" id="navigation">
 				<div class="close-nav" id="close-nav"></div>
+				{% if site.search_url or site.color_toggle == true %}
+				<div class="nav-icons">
+				{% if site.search_url %}
+					<div class="nav-search">
+						<a target="_self" rel="noopener noreferrer" class="si-icon-search" href="{{ site.search_url }}" title="Search"><span class="screen-reader-text">Search</span></a>
+					</div>
+				{%- endif -%}
+				{%- if site.color_toggle == true -%}
+					<div class="nav-toggle">
+						<a class="si-icon-toggle" id="button-colors"><span class="screen-reader-text">Toggle colors</span></a>
+					</div>
+				{% endif %}
+				</div>
+				{% endif %}
 				<ul class="list-nav">
 				{% for item in site.data.navigation.docs -%}
 					{%- assign current = nil -%}
@@ -29,18 +43,6 @@
 					{%- endif -%}
 					<li{{ current }}><a href="{{ item.url }}">{{ item.title }}</a></li>
 				{%- endfor %}
-
-				{% if site.search_url %}
-					<li>
-						<a target="_self" rel="noopener noreferrer" class="si-icon-search" href="{{ site.search_url }}" title="Search"><span class="screen-reader-text">Search</span></a>
-					</li>
-				{% endif %}
-
-				{% if site.color_toggle == true %}
-					<li>
-						<a class="si-icon-toggle" id="button-colors"><span class="screen-reader-text">Toggle colors</span></a>
-					</li>
-				{% endif %}
 				</ul>
 			</nav>
 		</div>
