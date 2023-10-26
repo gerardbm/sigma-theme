@@ -22,14 +22,14 @@
 			<nav class="navigation" id="navigation">
 				<div class="close-nav" id="close-nav"></div>
 				{% if site.search_url or site.color_toggle == true %}
-				<div class="nav-icons">
+				<div class="icons-nav">
 				{% if site.search_url %}
-					<div class="nav-search">
+					<div class="search-nav">
 						<a target="_self" rel="noopener noreferrer" class="si-icon-search" href="{{ site.search_url }}" title="Search"><span class="screen-reader-text">Search</span></a>
 					</div>
 				{%- endif -%}
 				{%- if site.color_toggle == true -%}
-					<div class="nav-toggle">
+					<div class="toggle-nav">
 						<a class="si-icon-toggle" id="button-colors"><span class="screen-reader-text">Toggle colors</span></a>
 					</div>
 				{% endif %}

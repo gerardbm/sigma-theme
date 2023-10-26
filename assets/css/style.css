@@ -539,22 +539,22 @@ section {
 	color: #ff7f2a;
 }
 
-.nav-icons {
+.icons-nav {
 	float: right;
 }
 
-.nav-search,
-.nav-toggle {
+.search-nav,
+.toggle-nav {
 	display: inline-block;
 	line-height: 55px;
 }
 
-.nav-search a,
-.nav-search a:link,
-.nav-search a:visited,
-.nav-toggle a,
-.nav-toggle a:link,
-.nav-toggle a:visited {
+.search-nav a,
+.search-nav a:link,
+.search-nav a:visited,
+.toggle-nav a,
+.toggle-nav a:link,
+.toggle-nav a:visited {
 	color: #303336;
 	display: inline-block;
 	line-height: 30px;
@@ -563,8 +563,8 @@ section {
 	width: 20px;
 }
 
-.nav-search a:hover,
-.nav-toggle a:hover {
+.search-nav a:hover,
+.toggle-nav a:hover {
 	color: #ff7f2a;
 }
 
@@ -1790,21 +1790,21 @@ footer a {
 		color: #ff7f2a;
 	}
 
-	.nav-icons {
+	.icons-nav {
 		float: left;
 	}
 
-	.nav-search,
-	.nav-toggle {
+	.search-nav,
+	.toggle-nav {
 		line-height: 30px;
 	}
 
-	.nav-search a,
-	.nav-search a:link,
-	.nav-search a:visited,
-	.nav-toggle a,
-	.nav-toggle a:link,
-	.nav-toggle a:visited {
+	.search-nav a,
+	.search-nav a:link,
+	.search-nav a:visited,
+	.toggle-nav a,
+	.toggle-nav a:link,
+	.toggle-nav a:visited {
 		background: #e3e5e8;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
@@ -2057,17 +2057,17 @@ footer a {
 	color: #ff7f2a;
 }
 
-.dark .nav-search a,
-.dark .nav-search a:link,
-.dark .nav-search a:visited,
-.dark .nav-toggle a,
-.dark .nav-toggle a:link,
-.dark .nav-toggle a:visited {
+.dark .search-nav a,
+.dark .search-nav a:link,
+.dark .search-nav a:visited,
+.dark .toggle-nav a,
+.dark .toggle-nav a:link,
+.dark .toggle-nav a:visited {
 	color: #bcbfc2;
 }
 
-.dark .nav-search a:hover,
-.dark .nav-toggle a:hover {
+.dark .search-nav a:hover,
+.dark .toggle-nav a:hover {
 	color: #ff7f2a;
 }
 
@@ -2393,12 +2393,12 @@ footer a {
 		color: #ff7f2a;
 	}
 
-	.dark .nav-search a,
-	.dark .nav-search a:link,
-	.dark .nav-search a:visited,
-	.dark .nav-toggle a,
-	.dark .nav-toggle a:link,
-	.dark .nav-toggle a:visited {
+	.dark .search-nav a,
+	.dark .search-nav a:link,
+	.dark .search-nav a:visited,
+	.dark .toggle-nav a,
+	.dark .toggle-nav a:link,
+	.dark .toggle-nav a:visited {
 		background: #343638;
 	}
 
