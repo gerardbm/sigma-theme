@@ -307,6 +307,11 @@ img {
 	font-family: "sigma-icons";
 }
 
+.si-icon-x:before {
+	content: "\e900";
+	font-family: "sigma-icons";
+}
+
 .si-icon-facebook:before {
 	content: "\f09a";
 	font-family: "sigma-icons";
@@ -363,7 +368,7 @@ img {
 }
 
 .si-icon-toggle:before {
-	content: "\f186";
+	content: "\e9d4";
 	font-family: "sigma-icons";
 }
 
@@ -1333,6 +1338,10 @@ h6 {
 	background: #55acee;
 }
 
+.social-share .si-icon-x {
+	background: #000;
+}
+
 .social-share .si-icon-facebook {
 	background: #3b5998;
 }
@@ -2044,7 +2053,7 @@ footer a {
 }
 
 .dark .si-icon-toggle:before {
-	content: "\f185";
+	content: "\f186";
 	font-family: "sigma-icons";
 }
 
