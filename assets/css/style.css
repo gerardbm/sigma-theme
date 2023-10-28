@@ -106,7 +106,8 @@ a {
 }
 
 a,
-p {
+p,
+li {
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
 	-ms-transition: color .2s ease-in-out;
@@ -513,8 +514,8 @@ section {
 	transition-duration: .2s;
 	-webkit-transition-property: right,left;
 	transition-property: right,left;
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
 	z-index: -1;
 }
 
@@ -1422,6 +1423,11 @@ footer {
 	font-size: 0.875em;
 	overflow: hidden;
 	text-align: center;
+	-webkit-transition: border .2s ease-in-out;
+	-moz-transition: border .2s ease-in-out;
+	-ms-transition: border .2s ease-in-out;
+	-o-transition: border .2s ease-in-out;
+	transition: border .2s ease-in-out;
 }
 
 footer a {
@@ -1482,10 +1488,10 @@ footer a {
 	position: fixed;
 	right: 10px;
 	text-align: center;
-	-webkit-transition: background .3s ease-out, opacity .3s, visibility .3s;
-	-moz-transition: background .3s ease-out, opacity .3s, visibility .3s;
-	-o-transition: background .3s ease-out, opacity .3s, visibility .3s;
-	transition: background .3s ease-out, opacity .3s, visibility .3s;
+	-webkit-transition: background .3s ease-in-out, opacity .3s, visibility .3s;
+	-moz-transition: background .3s ease-in-out, opacity .3s, visibility .3s;
+	-o-transition: background .3s ease-in-out, opacity .3s, visibility .3s;
+	transition: background .3s ease-in-out, opacity .3s, visibility .3s;
 	visibility: hidden;
 	width: 34px;
 	z-index: 9985;
@@ -1568,11 +1574,21 @@ footer a {
 
 .search-button,
 .search-input {
-	-webkit-transition: color .2s ease-out, border .2s ease-out;
-	-moz-transition: color .2s ease-out, border .2s ease-out;
-	-ms-transition: color .2s ease-out, border .2s ease-out;
-	-o-transition: color .2s ease-out, border .2s ease-out;
-	transition: color .2s ease-out, border .2s ease-out;
+	-webkit-transition: background .2s ease-in-out,
+		color .2s ease-in-out,
+		border .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out,
+		color .2s ease-in-out,
+		border .2s ease-in-out;
+	-ms-transition: background .2s ease-in-out,
+		color .2s ease-in-out,
+		border .2s ease-in-out;
+	-o-transition: background .2s ease-in-out,
+		color .2s ease-in-out,
+		border .2s ease-in-out;
+	transition: background .2s ease-in-out,
+		color .2s ease-in-out,
+		border .2s ease-in-out;
 }
 
 .searchresult {
