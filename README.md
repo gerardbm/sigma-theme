@@ -277,6 +277,8 @@ Tools for the content, in post or page front matter:
 - `cookies`: the html filename.
 - `version`: any value, version number or date for CSS/JS files.
 - `suffix`: true or false to add a suffix to the post/page: `" | MySite"` with the title site.
+- `ldjson`: true or false to add JSON-LD structured data snippet into posts or pages.
+- `og_type`: introduce Open Graph metadata about of the type of your content: article, video, music, book, profile or website.
 
 ### Setting up default settings for all posts and pages, automatically
 
