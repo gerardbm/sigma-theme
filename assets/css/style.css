@@ -362,26 +362,32 @@ img {
 	font-family: "sigma-icons";
 }
 
-.si-icon-adjust:before {
-	content: "\f042";
-	font-family: "sigma-icons";
+.si-icon-toggle:before,
+.si-icon-toggle:after {
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+	border-radius: 11px;
+	display: inline-block;
+	width: 22px;
 }
 
 .si-icon-toggle:before {
+	background: white;
+	color: #ff7f2a;
 	content: "\e9d4";
+	font-family: "sigma-icons";
+	margin-right: 2px;
+}
+
+.si-icon-toggle:after {
+	background: none;
+	color: #303336;
+	content: "\f186";
 	font-family: "sigma-icons";
 }
 
 .si-icon-toggle {
 	cursor: pointer;
-}
-
-.navigation ul li .si-icon-search,
-.navigation ul li .si-icon-toggle {
-	cursor: pointer;
-	display: inline-block;
-	text-align: center;
-	width: 18px;
 }
 
 /*----------------------------------------------------------*/
@@ -563,15 +569,36 @@ section {
 .toggle-nav a:visited {
 	color: #303336;
 	display: inline-block;
-	line-height: 30px;
 	margin-left: 21px;
 	text-align: center;
+}
+
+.search-nav a,
+.search-nav a:link,
+.search-nav a:visited {
+	line-height: 30px;
 	width: 20px;
 }
 
-.search-nav a:hover,
-.toggle-nav a:hover {
+.search-nav a:hover {
 	color: #ff7f2a;
+}
+
+.toggle-nav a,
+.toggle-nav a:link,
+.toggle-nav a:visited {
+	background: #dcdcdc;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	border-radius: 14px;
+	line-height: 21px;
+	padding: 3px;
+	-webkit-transition: background .2s ease-in-out, color .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out, color .2s ease-in-out;
+	-ms-transition: background .2s ease-in-out, color .2s ease-in-out;
+	-o-transition: background .2s ease-in-out, color .2s ease-in-out;
+	transition: background .2s ease-in-out, color .2s ease-in-out;
+	width: 46px;
 }
 
 .close-nav,
@@ -1821,7 +1848,33 @@ footer a {
 
 	.search-nav,
 	.toggle-nav {
-		line-height: 30px;
+		line-height: 34px;
+	}
+
+	.si-icon-toggle:before,
+	.si-icon-toggle:after {
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		line-height: 28px;
+		width: 28px;
+	}
+
+	.si-icon-toggle:before {
+		margin-right: 4px;
+	}
+
+	.search-nav a,
+	.search-nav a:link,
+	.search-nav a:visited,
+	.toggle-nav a,
+	.toggle-nav a:link,
+	.toggle-nav a:visited,
+	.close-nav {
+		background: #e3e5e8;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
 	}
 
 	.search-nav a,
@@ -1830,26 +1883,31 @@ footer a {
 	.toggle-nav a,
 	.toggle-nav a:link,
 	.toggle-nav a:visited {
-		background: #e3e5e8;
-		-webkit-border-radius: 2px;
-		-moz-border-radius: 2px;
-		border-radius: 2px;
+		margin: 0 5px 13px 0;
+	}
+
+	.search-nav a,
+	.search-nav a:link,
+	.search-nav a:visited {
 		height: 34px;
 		line-height: 34px;
-		margin: 0 5px 13px 0;
 		-webkit-transition: background .2s ease-in-out, color .2s ease-in-out;
 		-moz-transition: background .2s ease-in-out, color .2s ease-in-out;
 		-ms-transition: background .2s ease-in-out, color .2s ease-in-out;
 		-o-transition: background .2s ease-in-out, color .2s ease-in-out;
 		transition: background .2s ease-in-out, color .2s ease-in-out;
-		width: 55px;
+		width: 34px;
+	}
+
+	.toggle-nav a,
+	.toggle-nav a:link,
+	.toggle-nav a:visited {
+		height: 28px;
+		line-height: 28px;
+		width: 60px;
 	}
 
 	.close-nav {
-		background: #e3e5e8;
-		-webkit-border-radius: 2px;
-		-moz-border-radius: 2px;
-		border-radius: 2px;
 		color: #303336;
 		cursor: pointer;
 		display: inline-block;
@@ -2053,8 +2111,13 @@ footer a {
 }
 
 .dark .si-icon-toggle:before {
-	content: "\f186";
-	font-family: "sigma-icons";
+	background: none;
+	color: #bcbfc2;
+}
+
+.dark .si-icon-toggle:after {
+	background: #141618;
+	color: #ff7f2a;
 }
 
 .dark .top-bar ul li:last-of-type a {
@@ -2084,15 +2147,18 @@ footer a {
 
 .dark .search-nav a,
 .dark .search-nav a:link,
-.dark .search-nav a:visited,
-.dark .toggle-nav a,
-.dark .toggle-nav a:link,
-.dark .toggle-nav a:visited {
+.dark .search-nav a:visited {
 	color: #bcbfc2;
 }
 
-.dark .search-nav a:hover,
-.dark .toggle-nav a:hover {
+.dark .toggle-nav a,
+.dark .toggle-nav a:link,
+.dark .toggle-nav a:visited {
+	background: #343638;
+	color: #bcbfc2;
+}
+
+.dark .search-nav a:hover {
 	color: #ff7f2a;
 }
 
@@ -2423,12 +2489,12 @@ footer a {
 	.dark .search-nav a:visited,
 	.dark .toggle-nav a,
 	.dark .toggle-nav a:link,
-	.dark .toggle-nav a:visited {
+	.dark .toggle-nav a:visited,
+	.dark .close-nav {
 		background: #343638;
 	}
 
 	.dark .close-nav {
-		background: #343638;
 		color: #bcbfc2;
 	}
 
