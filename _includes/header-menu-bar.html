@@ -39,9 +39,21 @@
 				{% for item in site.data.navigation.docs -%}
 					{%- assign current = nil -%}
 					{%- if page.url == item.url -%}
-						{%- assign current = ' class="current"' -%}
+					{%- assign current = ' class="current"' -%}
 					{%- endif -%}
-					<li{{ current }}><a href="{{ item.url }}">{{ item.title }}</a></li>
+					<li><a{{ current }} href="{{ item.url }}">{{ item.title }}</a>
+					{%- if item.cat -%}
+						<ul>
+						{%- for sub in item.cat -%}
+							{%- assign current = nil -%}
+							{%- if page.url == sub.url -%}
+							{%- assign current = ' class="current"' -%}
+							{%- endif -%}
+							<li><a{{ current }} href="{{ sub.url | relative_url }}">{{ sub.title }}</a></li>
+						{%- endfor %}
+						</ul>
+					{%- endif -%}
+					</li>
 				{%- endfor %}
 				</ul>
 			</nav>
