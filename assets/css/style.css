@@ -369,6 +369,11 @@ img {
 	border-radius: 11px;
 	display: inline-block;
 	width: 22px;
+	-webkit-transition: background .2s ease-in-out, color .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out, color .2s ease-in-out;
+	-ms-transition: background .2s ease-in-out, color .2s ease-in-out;
+	-o-transition: background .2s ease-in-out, color .2s ease-in-out;
+	transition: background .2s ease-in-out, color .2s ease-in-out;
 }
 
 .si-icon-toggle:before {
