@@ -22,7 +22,11 @@ layout: default
 </script>
 {% endif -%}
 
-<div class="post">
+{%- if site.sticky_menu == true -%}
+{%- assign scroll = " scroll-55" -%}
+{%- endif -%}
+
+<div class="post h-entry{{ scroll }}">
 
 	<article>
 		{%- if page.zone.content_top -%}
