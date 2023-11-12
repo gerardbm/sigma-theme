@@ -883,6 +883,11 @@ h6 {
 	color: #505356;
 	display: block;
 	padding-bottom: 15px;
+	-webkit-transition: color .2s ease-in-out, border .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out, border .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out, border .2s ease-in-out;
+	-o-transition: color .2s ease-in-out, border .2s ease-in-out;
+	transition: color .2s ease-in-out, border .2s ease-in-out;
 }
 
 .post-meta a:link,
@@ -898,6 +903,11 @@ h6 {
 .post-content h2 {
 	border-bottom: 1px dotted #b3b5b8;
 	padding-bottom: 15px;
+	-webkit-transition: border .2s ease-in-out, color .2s ease-in-out;
+	-moz-transition: border .2s ease-in-out, color .2s ease-in-out;
+	-ms-transition: border .2s ease-in-out, color .2s ease-in-out;
+	-o-transition: border .2s ease-in-out, color .2s ease-in-out;
+	transition: border .2s ease-in-out, color .2s ease-in-out;
 }
 
 .post-content .loop-excerpt h2 {
@@ -1056,6 +1066,11 @@ h6 {
 	-moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
 	padding: 10px 15px;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .post-content .notice-info {
@@ -1111,11 +1126,21 @@ h6 {
 	font-size: 1.1em;
 	margin: 0 2px;
 	padding: 1px 5px;
-	-webkit-transition: background .2s ease-in-out, border .2s ease-in-out, color 0.2s ease-in-out;
-	-moz-transition: background .2s ease-in-out, border .2s ease-in-out, color 0.2s ease-in-out;
-	-ms-transition: background .2s ease-in-out, border .2s ease-in-out, color 0.2s ease-in-out;
-	-o-transition: background .2s ease-in-out, border .2s ease-in-out, color 0.2s ease-in-out;
-	transition: background .2s ease-in-out, border .2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background .2s ease-in-out,
+		border .2s ease-in-out,
+		color 0.2s ease-in-out;
+	-moz-transition: background .2s ease-in-out,
+		border .2s ease-in-out,
+		color 0.2s ease-in-out;
+	-ms-transition: background .2s ease-in-out,
+		border .2s ease-in-out,
+		color 0.2s ease-in-out;
+	-o-transition: background .2s ease-in-out,
+		border .2s ease-in-out,
+		color 0.2s ease-in-out;
+	transition: background .2s ease-in-out,
+		border .2s ease-in-out,
+		color 0.2s ease-in-out;
 	white-space: pre;
 }
 
@@ -1161,6 +1186,11 @@ h6 {
 	display: block;
 	margin-bottom: 1.625em;
 	overflow-x: auto;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .post-content > table thead {
@@ -1178,6 +1208,15 @@ h6 {
 .post-content > table tfoot {
 	background: #f3f5f8;
 	font-weight: bold;
+}
+
+.post-content > table thead,
+.post-content > table tfoot {
+	-webkit-transition: border .2s ease-in-out, background .2s ease-in-out;
+	-moz-transition: border .2s ease-in-out, background .2s ease-in-out;
+	-ms-transition: border .2s ease-in-out, background .2s ease-in-out;
+	-o-transition: border .2s ease-in-out, background .2s ease-in-out;
+	transition: border .2s ease-in-out, background .2s ease-in-out;
 }
 
 .post-content sup,
@@ -1223,6 +1262,11 @@ h6 {
 	border: 0;
 	border-bottom: 1px dashed #b3b5b8;
 	margin-top: 0;
+	-webkit-transition: border .2s ease-in-out;
+	-moz-transition: border .2s ease-in-out;
+	-ms-transition: border .2s ease-in-out;
+	-o-transition: border .2s ease-in-out;
+	transition: border .2s ease-in-out;
 }
 
 .post-content dd {
