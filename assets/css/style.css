@@ -172,7 +172,6 @@ input[type="submit"] {
 .top-bar,
 .menu-bar,
 .title-bar,
-.title-bar .breadcrumbs ol li,
 .home-title-bar,
 .main-content,
 .sidenav {
@@ -735,6 +734,14 @@ section {
 .menu-bar,
 .title-bar {
 	clear: both;
+}
+
+.title-bar .sub-type {
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
 }
 
 /* --- */
@@ -1520,6 +1527,11 @@ h6 {
 
 .loop-excerpt {
 	border-bottom: 1px dashed #b3b5b8;
+	-webkit-transition: border .2s ease-in-out;
+	-moz-transition: border .2s ease-in-out;
+	-ms-transition: border .2s ease-in-out;
+	-o-transition: border .2s ease-in-out;
+	transition: border .2s ease-in-out;
 }
 
 .loop-excerpt:last-of-type {
@@ -1541,6 +1553,11 @@ h6 {
 	border-top: 1px dashed #b3b5b8;
 	display: block;
 	padding: 10px 0;
+	-webkit-transition: border .2s ease-in-out;
+	-moz-transition: border .2s ease-in-out;
+	-ms-transition: border .2s ease-in-out;
+	-o-transition: border .2s ease-in-out;
+	transition: border .2s ease-in-out;
 }
 
 .np-prev,
