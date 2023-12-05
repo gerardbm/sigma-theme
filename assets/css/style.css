@@ -367,7 +367,7 @@ img {
 
 .top-bar {
 	background: #f3f5f8;
-	border-bottom: 1px solid #dcdcdc;
+	border-bottom: 1px solid #d3d5d8;
 	border-top: 5px solid #ff7f2a;
 	display: block;
 	height: 34px;
@@ -386,7 +386,7 @@ img {
 }
 
 .top-bar a {
-	border-left: 1px solid #dcdcdc;
+	border-left: 1px solid #d3d5d8;
 	color: #808386;
 	display: inline-block;
 	font-size: 1em;
@@ -401,7 +401,7 @@ img {
 }
 
 .top-bar ul li:last-of-type a {
-	border-right: 1px solid #dcdcdc;
+	border-right: 1px solid #d3d5d8;
 }
 
 /*----------------------------------------------------------*/
@@ -534,7 +534,7 @@ section {
 
 .navigation ul li ul {
 	background: #fff;
-	border: 1px solid #dcdcdc;
+	border: 1px solid #d3d5d8;
 	-webkit-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.1);
 	box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.1);
@@ -565,7 +565,7 @@ section {
 .navigation ul li ul li a,
 .navigation ul li ul li a:link,
 .navigation ul li ul li a:visited {
-	border-top: 1px solid #dcdcdc;
+	border-top: 1px solid #d3d5d8;
 	display: block;
 	line-height: unset;
 	padding: 4px 12px;
@@ -615,7 +615,7 @@ section {
 }
 
 .si-icon-toggle {
-	background: #dcdcdc;
+	background: #d3d5d8;
 	-webkit-border-radius: 14px;
 	-moz-border-radius: 14px;
 	border-radius: 14px;
@@ -668,7 +668,7 @@ section {
 
 .title-bar {
 	background: #f3f5f8;
-	border-bottom: 1px solid #dcdcdc;
+	border-bottom: 1px solid #d3d5d8;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -741,7 +741,7 @@ section {
 
 .home-title-bar {
 	background: #f3f5f8;
-	border-bottom: 1px solid #dcdcdc;
+	border-bottom: 1px solid #d3d5d8;
 	display: block;
 	max-width: 100%;
 	padding: 55px 0;
@@ -1117,7 +1117,7 @@ h6 {
 .post-content th > code,
 .post-content li > code {
 	background: #f3f5f8;
-	border: 1px solid #dcdcdc;
+	border: 1px solid #d3d5d8;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -1373,7 +1373,7 @@ h6 {
 
 .sidenav {
 	background: #f3f5f8;
-	border: 1px solid #dcdcdc;
+	border: 1px solid #d3d5d8;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -1592,30 +1592,46 @@ h6 {
 /*----------------------------------------------------------*/
 
 footer {
-	background: #242628;
-	border-top: 8px solid #b3b5b8;
-	color: #bcbfc2;
+	background: #f3f5f8;
+	border-top: 8px solid #d3d5d8;
+	color: #303336;
 	font-size: 0.875em;
 	overflow: hidden;
 	text-align: center;
-	-webkit-transition: border .2s ease-in-out;
-	-moz-transition: border .2s ease-in-out;
-	-ms-transition: border .2s ease-in-out;
-	-o-transition: border .2s ease-in-out;
-	transition: border .2s ease-in-out;
+	-webkit-transition: border .2s ease-in-out,
+		background .2s ease-in-out;
+	-moz-transition: border .2s ease-in-out,
+		background .2s ease-in-out;
+	-ms-transition: border .2s ease-in-out,
+		background .2s ease-in-out;
+	-o-transition: border .2s ease-in-out,
+		background .2s ease-in-out;
+	transition: border .2s ease-in-out,
+		background .2s ease-in-out;
 }
 
 footer a {
-	color: #bcbfc2;
+	color: #303336;
 }
 
 .bottom-links,
 .footer-icons {
-	border-bottom: 1px solid #000;
-	-webkit-box-shadow: 0 1px 0 #393939;
-	-moz-box-shadow: 0 1px 0 #393939;
-	box-shadow: 0 1px 0 #393939;
 	min-height: 55px;
+}
+
+.bottom-links .wrap,
+.footer-icons .wrap {
+	border-bottom: 1px solid #c3c5c8;
+	-webkit-transition: border .2s ease-in-out,
+		box-shadow .2s ease-in-out;
+	-moz-transition: border .2s ease-in-out,
+		box-shadow .2s ease-in-out;
+	-ms-transition: border .2s ease-in-out,
+		box-shadow .2s ease-in-out;
+	-o-transition: border .2s ease-in-out,
+		box-shadow .2s ease-in-out;
+	transition: border .2s ease-in-out,
+		box-shadow .2s ease-in-out;
 }
 
 .bottom-links ul li,
@@ -1641,6 +1657,11 @@ footer a {
 
 .copyright {
 	min-height: 55px;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
 }
 
 .copyright span {
@@ -1709,7 +1730,7 @@ footer a {
 
 .search-input {
 	background: #f3f5f8;
-	border: 1px solid #dcdcdc;
+	border: 1px solid #d3d5d8;
 	-webkit-border-radius: 4px 0 0 4px;
 	-moz-border-radius: 4px 0 0 4px;
 	border-radius: 4px 0 0 4px;
@@ -1729,8 +1750,8 @@ footer a {
 }
 
 .search-button {
-	background: #dcdcdc;
-	border: 1px solid #dcdcdc;
+	background: #d3d5d8;
+	border: 1px solid #d3d5d8;
 	border-left: none;
 	-webkit-border-radius: 0 4px 4px 0;
 	-moz-border-radius: 0 4px 4px 0;
@@ -1825,7 +1846,7 @@ footer a {
 
 	.button-nav {
 		background: #fff;
-		border: 1px solid #dcdcdc;
+		border: 1px solid #d3d5d8;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
 		border-radius: 2px;
@@ -2141,7 +2162,7 @@ footer a {
 		padding: 13px 0;
 	}
 
-	.bottom-links {
+	.bottom-links .wrap {
 		padding: 30px 0;
 	}
 
@@ -2159,9 +2180,19 @@ footer a {
 	}
 
 	.bottom-links ul li a {
-		background: #141618;
+		background: #e3e5e8;
 		display: block;
 		line-height: 36px;
+		-webkit-transition: color .2s ease-in-out,
+			background .2s ease-in-out;
+		-moz-transition: color .2s ease-in-out,
+			background .2s ease-in-out;
+		-ms-transition: color .2s ease-in-out,
+			background .2s ease-in-out;
+		-o-transition: color .2s ease-in-out,
+			background .2s ease-in-out;
+		transition: color .2s ease-in-out,
+			background .2s ease-in-out;
 	}
 
 	.copyright span {
@@ -2224,7 +2255,7 @@ footer a {
 
 	.title-bar li {
 		background: #fff;
-		border: 1px solid #dcdcdc;
+		border: 1px solid #d3d5d8;
 		border-bottom: none;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -2240,7 +2271,7 @@ footer a {
 	}
 
 	.title-bar li:last-of-type {
-		border-bottom: 1px solid #dcdcdc;
+		border-bottom: 1px solid #d3d5d8;
 		border-radius: 0 0 4px 4px;
 	}
 
@@ -2618,7 +2649,21 @@ footer a {
 }
 
 .dark footer {
+	background: #141618;
 	border-top: 8px solid #343638;
+	color: #bcbfc2;
+}
+
+.dark footer a {
+	color: #bcbfc2;
+}
+
+.dark .bottom-links .wrap,
+.dark .footer-icons .wrap {
+	border-bottom: 1px solid #000;
+	-webkit-box-shadow: 0 1px 0 #292929;
+	-moz-box-shadow: 0 1px 0 #292929;
+	box-shadow: 0 1px 0 #292929;
 }
 
 .dark .search-input {
@@ -2731,6 +2776,10 @@ footer a {
 
 	.dark .close-nav:hover {
 		color: #ff7f2a;
+	}
+
+	.dark .bottom-links ul li a {
+		background: #242628;
 	}
 }
 
