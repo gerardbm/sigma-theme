@@ -2664,9 +2664,9 @@ footer a {
 .dark .bottom-links .wrap,
 .dark .footer-icons .wrap {
 	border-bottom: 1px solid #000;
-	-webkit-box-shadow: 0 1px 0 #33373c;
-	-moz-box-shadow: 0 1px 0 #33373c;
-	box-shadow: 0 1px 0 #33373c;
+	-webkit-box-shadow: 0 1px 0 #292c31;
+	-moz-box-shadow: 0 1px 0 #292c31;
+	box-shadow: 0 1px 0 #292c31;
 }
 
 .dark .search-input {
