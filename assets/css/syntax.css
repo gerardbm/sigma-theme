@@ -1,7 +1,7 @@
 @charset "utf-8";
-.highlight      { background-color: #141618; color: #A3ACB7 }
-.highlight .hll { background-color: #141618 }
-.highlight .err { background-color: #FB6F92; color: #141618 } /* Error */
+.highlight      { background-color: #0E1115; color: #A3ACB7 }
+.highlight .hll { background-color: #0E1115 }
+.highlight .err { background-color: #FB6F92; color: #0E1115 } /* Error */
 .highlight .ge { font-style: italic } /* Generic.Emph */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .c  { color: #6C7885 } /* Comment */
