@@ -416,6 +416,11 @@ img {
 	display: block;
 	height: 55px;
 	position: relative;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .fixed-menu {
@@ -2342,9 +2347,12 @@ footer a {
 
 .dark .menu-bar {
 	background: #1f2225;
-	-webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.55);
-	-moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.55);
-	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.55);
+	-webkit-box-shadow: 0 1px 0 #33373c,
+		0 3px 2px -1px rgba(0, 0, 0, 0.55);
+	-moz-box-shadow: 0 1px 0 #33373c,
+		0 3px 2px -1px rgba(0, 0, 0, 0.55);
+	box-shadow: 0 1px 0 #33373c,
+		0 3px 2px -1px rgba(0, 0, 0, 0.55);
 }
 
 .dark .navigation ul li a,
