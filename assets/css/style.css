@@ -2320,7 +2320,7 @@ footer a {
 
 .dark {
 	background: #1f2225;
-	color: #c0c7cf;
+	color: #cacfd6;
 }
 
 .dark ins {
@@ -2358,7 +2358,7 @@ footer a {
 .dark .navigation ul li a,
 .dark .navigation ul li a:link,
 .dark .navigation ul li a:visited {
-	color: #c0c7cf;
+	color: #cacfd6;
 }
 
 .dark .navigation ul li a:hover,
@@ -2390,7 +2390,7 @@ footer a {
 .dark .search-nav a,
 .dark .search-nav a:link,
 .dark .search-nav a:visited {
-	color: #c0c7cf;
+	color: #cacfd6;
 }
 
 .dark .search-nav a:hover {
@@ -2403,7 +2403,7 @@ footer a {
 
 .dark .si-icon-toggle:before {
 	background: #15181a;
-	color: #c0c7cf;
+	color: #cacfd6;
 	content: "\f186";
 	transform: translateX(22px);
 }
@@ -2427,7 +2427,7 @@ footer a {
 
 .dark .title-bar .breadcrumbs a:link,
 .dark .title-bar .breadcrumbs a:visited {
-	color: #c0c7cf;
+	color: #cacfd6;
 	text-decoration: underline;
 }
 
@@ -2586,7 +2586,7 @@ footer a {
 		inset 0 2px 0 0 rgba(44,44,44,.7);
 	box-shadow: 0 1px 1px rgba(0,0,0,.55),
 		inset 0 2px 0 0 rgba(44,44,44,.7);
-	color: #c0c7cf;
+	color: #cacfd6;
 }
 
 .dark .post-content hr {
@@ -2604,13 +2604,13 @@ footer a {
 }
 
 .dark .sidenav ul li ul li:before {
-	color: #c0c7cf;
+	color: #cacfd6;
 }
 
 .dark .sidenav a,
 .dark .sidenav a:link,
 .dark .sidenav a:visited {
-	color: #c0c7cf;
+	color: #cacfd6;
 }
 
 .dark .sidenav a:hover {
@@ -2662,11 +2662,11 @@ footer a {
 .dark footer {
 	background: #15181a;
 	border-top: 8px solid #33373c;
-	color: #c0c7cf;
+	color: #cacfd6;
 }
 
 .dark footer a {
-	color: #c0c7cf;
+	color: #cacfd6;
 }
 
 .dark .bottom-links .wrap,
@@ -2680,7 +2680,7 @@ footer a {
 .dark .search-input {
 	background: #15181a;
 	border: 1px solid #33373c;
-	color: #c0c7cf;
+	color: #cacfd6;
 }
 
 .dark .search-input:focus {
@@ -2691,7 +2691,7 @@ footer a {
 	background: #33373c;
 	border: 1px solid #33373c;
 	border-left: none;
-	color: #c0c7cf;
+	color: #cacfd6;
 }
 
 .dark .search-button:hover {
@@ -2728,7 +2728,7 @@ footer a {
 	}
 
 	.dark .button-nav:before {
-		color: #c0c7cf;
+		color: #cacfd6;
 	}
 
 	.dark .navigation {
@@ -2745,7 +2745,7 @@ footer a {
 
 	.dark .navigation.menu-visible ul li a:link,
 	.dark .navigation.menu-visible ul li a:visited {
-		color: #c0c7cf;
+		color: #cacfd6;
 	}
 
 	.dark .navigation.menu-visible ul li a:hover {
@@ -2762,7 +2762,7 @@ footer a {
 	}
 
 	.dark .navigation.menu-visible ul li ul li:before {
-		color: #c0c7cf;
+		color: #cacfd6;
 	}
 
 	.dark .navigation.menu-visible ul li ul li a,
@@ -2782,7 +2782,7 @@ footer a {
 	}
 
 	.dark .close-nav {
-		color: #c0c7cf;
+		color: #cacfd6;
 	}
 
 	.dark .close-nav:hover {
