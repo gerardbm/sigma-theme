@@ -1,5 +1,5 @@
 {%- assign t = site.data.translations -%}
-	
+
 {%- capture the_tag -%}{{ page.tags | last }}{%- endcapture -%}
 {%- assign sorted_posts = site.tags[the_tag] | sort: 'order' -%}
 
@@ -27,28 +27,22 @@
 	{%- endif -%}
 {%- endfor -%}
 
-<div class="next-prev">
-	{%- if curr_index != 0 -%}
-	<div class="np-prev">
-		<span>←&nbsp;{{ t[site.lang]['prevart'] }}</span><br>
-		{%- if page.h1 -%}
-		<a href="{{ prev_post.url }}" rel="prev">{{ prev_post.h1 }}</a>
+<div class="nav-bar">
+	<nav class="wrap">
+		{%- if curr_index != 0 -%}
+		<div><a href="{{ prev_post.url }}" rel="prev">🡠&nbsp;{{ t[site.lang]['prev'] }}</a></div>
 		{%- else -%}
-		<a href="{{ prev_post.url }}" rel="prev">{{ prev_post.title }}</a>
+		<div><span>🡠&nbsp;{{ t[site.lang]['prev'] }}</span></div>
 		{%- endif -%}
-	</div>
-	{%- endif -%}
-
-	{%- if curr_index != articleIndexLength -%}
-	<div class="np-next">
-		<span>{{ t[site.lang]['nextart'] }}&nbsp;→</span><br>
-		{%- if page.h1 -%}
-		<a href="{{ next_post.url }}" rel="next">{{ next_post.h1 }}</a>
+		{%- if page.sidebar != false -%}
+		<div><a href="#aside">🗁&nbsp;{{ t[site.lang]['index'] }}</a></div>
 		{%- else -%}
-		<a href="{{ next_post.url }}" rel="next">{{ next_post.title }}</a>
+		<div><span>🗁&nbsp;{{ t[site.lang]['index'] }}</span></div>
 		{%- endif -%}
-	</div>
-	{%- endif -%}
-		
-	<span class="clear"></span></span>
+		{%- if curr_index != articleIndexLength -%}
+		<div><a href="{{ next_post.url }}" rel="next">{{ t[site.lang]['next'] }}&nbsp;🡢</a></div>
+		{%- else -%}
+		<div><span>{{ t[site.lang]['next'] }}&nbsp;🡢</span></div>
+		{%- endif -%}
+	</nav>
 </div>

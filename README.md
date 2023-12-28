@@ -9,13 +9,14 @@ This theme is a subjective one focused on speed and SEO, taking care of a beauti
 - SEO friendly, fully optimized.
 - Sticky menu + scroll up button.
 - Sticky sidebar with sidenavs.
-- Layouts with sidebar right/left.
+- Layouts with sidebar right/left/none.
 - Set custom sidebar for every page.
 - Code blocks syntax highlighting.
 - LaTeX maths, Katex integrated.
 - Loop posts in category pages.
-- Links to next/previous posts (same category).
-- Links to next/previous posts (same tag).
+- Top navigation links to next/prev posts.
+- Bottom links to next/prev posts.
+- Navigation links by category or by tag.
 - Breadcrumbs with Schema.org.
 - Schema.org for posts and categories.
 - User interface multilanguage.
@@ -247,7 +248,7 @@ Meta tags, in post or page front matter:
 - `metadesc`: A description of the page. Less than 160 characters is recommended.
 - `kewyords`: A list of keywords. Google does not use them, though.
 
-There is no prevision of using pagination in this theme at the moment, so `rel="prev"` and `rel="next"` are not included. This theme lists all posts of a category in the category page.
+There is no prevision of using pagination in this theme at the moment, so `rel="prev"` and `rel="next"` are not included in category pages. This theme lists all posts of a category in one category page.
 
 To-Do: Make the pagination customizable.
 
@@ -268,7 +269,9 @@ Tools for the content, in post or page front matter:
 - `read_time`: true or false to show the read time of a page/post.
 - `breadcrumbs`: true or false to show the breadcrumbs.
 - `postmeta`: true or false to show the 'post meta' under the h1.
-- `nextprev`: "cat" or "tag" to show links for the next/previous posts by category/tag.
+- `nav_by`: "cat" or "tag" to navigate between posts by category or by tag.
+- `navbar`: true or false to show top links to next/prev posts and index.
+- `posts_np`: true or false to show bottom links to next/prev posts.
 - `share`: true or false to show the share buttons.
 - `sidebar`: right or left to show the sidebar.
 - `sticky_side`: true or false to make the sidebar sticky on scroll.
@@ -292,7 +295,9 @@ defaults:
     values:
       read_time: true
       breadcrumbs: true
-      nextprev: cat
+      nav_by: cat
+      navbar: ture
+      posts_np: ture
       share: true
       latex: true
       sidebar: right
@@ -373,8 +378,8 @@ Define them in the front matter:
 
 ### Tips
 
-- `nextprev: cat` will link to the next/prev posts within the same category. It will use the last category assigned, because it's the subcategory. For example: `categories: [vehicles, cars]` will only navigate between `cars`. Therefore, it's a good idea to have the same level of categories in a project.
-- `nextprev: tag` will link to the next/prev posts within the same tag. Use only one keyword to agroup posts for next/prev navigation.
+- `nav_by: cat` and `navbar: true` or `posts_np: true` will link to the next/prev posts within the same category. It will use the last category assigned, because it's the subcategory. For example: `categories: [vehicles, cars]` will only navigate between `cars`. Therefore, it's a good idea to have the same level of categories in a project.
+- `nav_by: tag` and `navbar: true` or `posts_np: true` will link to the next/prev posts within the same tag. Use only one keyword to agroup posts for next/prev navigation.
 
 ### General front matter for posts
 
@@ -393,7 +398,9 @@ excerpt: >-
   This is the excerpt text of the post
 image: images/whatever.jpg
 sidebar_custom: original-sidebar.html
-nextprev: tag
+nav_by: tag
+navbar: true
+posts_np: true
 tag: Art
 ---
 ```

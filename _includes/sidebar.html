@@ -7,7 +7,11 @@
 {%- assign ss_top = " ss-top-21" -%}
 {%- endif -%}
 
-<aside class="sidebar{{ is_sticky }}{{ ss_top }}">
+{%- if site.sticky_menu == true -%}
+{%- assign scroll = " scroll-76" -%}
+{%- endif -%}
+
+<aside id="aside" class="sidebar{{ is_sticky }}{{ ss_top }}{{ scroll }}">
 {%- if page.zone.sidebar_top -%}
 {%- include {{ page.zone.sidebar_top }} -%}
 {%- endif -%}

@@ -49,6 +49,7 @@ section {
 html {
 	overflow-x: hidden;
 	overflow-y: scroll;
+	scroll-behavior: smooth;
 }
 
 html,
@@ -776,6 +777,12 @@ section {
 
 .home-title-bar a:hover {
 	color: #ff7f2a;
+}
+
+/* --- */
+
+.nav-bar {
+	display: none;
 }
 
 /*----------------------------------------------------------*/
@@ -1838,6 +1845,10 @@ footer a {
 		width: 100%;
 	}
 
+	.scroll-76[id] {
+		scroll-margin-top: 76px;
+	}
+
 	.logo {
 		width: 100%;
 	}
@@ -2150,6 +2161,58 @@ footer a {
 		content: "\00d7";
 		font: 28px "sigma-icons";
 		line-height: 28px;
+	}
+
+	.nav-bar {
+		background: #fff;
+		border-bottom: 1px solid #cbd5e2;
+		display: block;
+		height: 34px;
+		overflow: hidden;
+		position: relative;
+		text-align: left;
+	}
+
+	.nav-bar div {
+		border-right: 1px solid #cbd5e2;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		float: left;
+		text-align: center;
+		width: calc(100% / 3);
+	}
+
+	.nav-bar div:last-of-type {
+		border-right: none;
+	}
+
+	.nav-bar a:link,
+	.nav-bar a:visited {
+		color: #475461;
+		display: block;
+		line-height: 34px;
+		width: 100%;
+	}
+
+	.nav-bar a:hover {
+		color: #ff7f2a;
+	}
+
+	.nav-bar span {
+		color: #8aa0b8;
+		line-height: 34px;
+		text-decoration: line-through;
+	}
+
+	.nav-bar,
+	.nav-bar div,
+	.nav-bar span {
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-ms-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
 	}
 
 	.main-content {
@@ -2786,6 +2849,32 @@ footer a {
 
 	.dark .close-nav:hover {
 		color: #ff7f2a;
+	}
+
+	.dark .nav-bar {
+		background: #1f2225;
+		border-bottom: 1px solid #33373c;
+	}
+
+	.dark .nav-bar div {
+		border-right: 1px solid #33373c;
+	}
+
+	.dark .nav-bar div:last-of-type {
+		border-right: none;
+	}
+
+	.dark .nav-bar a:link,
+	.dark .nav-bar a:visited {
+		color: #cacfd6;
+	}
+
+	.dark .nav-bar a:hover {
+		color: #ff7f2a;
+	}
+
+	.dark .nav-bar span {
+		color: #5f666f;
 	}
 
 	.dark .bottom-links ul li a {

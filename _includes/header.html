@@ -1,11 +1,22 @@
 <header class="site-header">
-	{% if site.topbar == true %}
-	{% include header-top-bar.html %}
-	{% endif %}
-	{% include header-menu-bar.html %}
-	{% if page.layout == 'home' %}
-	{% include home-title-bar.html %}
-	{% else %}
-	{% include title-bar.html %}
-	{% endif %}
+	{%- if site.topbar == true -%}
+	{%- include header-top-bar.html -%}
+	{%- endif -%}
+
+	{%- include header-menu-bar.html -%}
+
+	{%- if page.layout == 'home' -%}
+	{%- include home-title-bar.html -%}
+	{%- else -%}
+	{%- include title-bar.html -%}
+	{%- endif -%}
+
+	{%- if page.navbar == true -%}
+		{%- if page.nav_by == "cat" -%}
+		{%- include nav-bar-cat.html -%}
+		{%- endif -%}
+		{%- if page.nav_by == "tag" -%}
+		{%- include nav-bar-tag.html -%}
+		{%- endif -%}
+	{%- endif -%}
 </header>

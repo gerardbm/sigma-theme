@@ -32,9 +32,9 @@
 	<div class="np-prev">
 		<span>←&nbsp;{{ t[site.lang]['prevart'] }}</span><br>
 		{%- if page.h1 -%}
-		<a href="{{ prev_post.url }}">{{ prev_post.h1 }}</a>
+		<a href="{{ prev_post.url }}" rel="prev">{{ prev_post.h1 }}</a>
 		{%- else -%}
-		<a href="{{ prev_post.url }}">{{ prev_post.title }}</a>
+		<a href="{{ prev_post.url }}" rel="prev">{{ prev_post.title }}</a>
 		{%- endif -%}
 	</div>
 	{%- endif -%}
@@ -43,9 +43,9 @@
 	<div class="np-next">
 		<span>{{ t[site.lang]['nextart'] }}&nbsp;→</span><br>
 		{%- if page.h1 -%}
-		<a href="{{ next_post.url }}">{{ next_post.h1 }}</a>
+		<a href="{{ next_post.url }}" rel="next">{{ next_post.h1 }}</a>
 		{%- else -%}
-		<a href="{{ next_post.url }}">{{ next_post.title }}</a>
+		<a href="{{ next_post.url }}" rel="next">{{ next_post.title }}</a>
 		{%- endif -%}
 	</div>
 	{%- endif -%}
