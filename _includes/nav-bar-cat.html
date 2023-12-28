@@ -30,19 +30,19 @@
 <div class="nav-bar">
 	<nav class="wrap">
 		{%- if curr_index != 0 -%}
-		<div><a href="{{ prev_post.url }}" rel="prev">🡠&nbsp;{{ t[site.lang]['prev'] }}</a></div>
+		<div><a class="nv-prev" href="{{ prev_post.url }}" rel="prev">{{ t[site.lang]['prev'] }}</a></div>
 		{%- else -%}
-		<div><span>🡠&nbsp;{{ t[site.lang]['prev'] }}</span></div>
+		<div><span class="nv-prev">{{ t[site.lang]['prev'] }}</span></div>
 		{%- endif -%}
 		{%- if page.sidebar != false -%}
-		<div><a href="#aside">🗁&nbsp;{{ t[site.lang]['index'] }}</a></div>
+		<div><a class="nv-index" href="#aside">{{ t[site.lang]['index'] }}</a></div>
 		{%- else -%}
-		<div><span>🗁&nbsp;{{ t[site.lang]['index'] }}</span></div>
+		<div><span class="nv-index">{{ t[site.lang]['index'] }}</span></div>
 		{%- endif -%}
 		{%- if curr_index != articleIndexLength -%}
-		<div><a href="{{ next_post.url }}" rel="next">{{ t[site.lang]['next'] }}&nbsp;🡢</a></div>
+		<div><a class="nv-next" href="{{ next_post.url }}" rel="next">{{ t[site.lang]['next'] }}</a></div>
 		{%- else -%}
-		<div><span>{{ t[site.lang]['next'] }}&nbsp;🡢</span></div>
+		<div><span class="nv-next">{{ t[site.lang]['next'] }}</span></div>
 		{%- endif -%}
 	</nav>
 </div>

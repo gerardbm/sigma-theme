@@ -2215,6 +2215,35 @@ footer a {
 		transition: all .2s ease-in-out;
 	}
 
+	.nv-prev:before,
+	.nv-next:after,
+	.nv-index:before {
+		font-family: "sigma-icons";
+		line-height: normal;
+		position: relative;
+	}
+
+	.nv-prev:before {
+		content: '\f104';
+		font-size: 1.25em;
+		padding-right: 8px;
+		top: 2px;
+	}
+
+	.nv-next:after {
+		content: '\f105';
+		font-size: 1.25em;
+		padding-left: 8px;
+		top: 2px;
+	}
+
+	.nv-index:before {
+		content: '\e901';
+		font-size: 0.875em;
+		padding-right: 8px;
+		top: 1px;
+	}
+
 	.main-content {
 		padding: 34px 0 8px;
 	}
