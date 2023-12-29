@@ -2711,6 +2711,23 @@ footer a {
 	text-decoration: none;
 }
 
+.dark .post-content .btn-inverse {
+	background-color: #1f2225;
+	-webkit-box-shadow: inset 0 0 0 1px #7E93A9;
+	-moz-box-shadow: inset 0 0 0 1px #7E93A9;
+	box-shadow: inset 0 0 0 1px #7E93A9;
+	color: #cacfd6 !important;
+	text-shadow: none;
+}
+
+.dark .post-content .btn-inverse:hover {
+	background-color: #cacfd6;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color: #1f2225 !important;
+}
+
 .dark .sidenav {
 	background: #15181a;
 	border: 1px solid #33373c;
