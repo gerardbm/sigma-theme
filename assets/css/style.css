@@ -1285,7 +1285,7 @@ h6 {
 }
 
 .post-content .btn {
-	background-color: SlateGray;
+	background-color: #7E93A9;
 	border-radius: 4px;
 	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
 	-moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
@@ -1297,11 +1297,11 @@ h6 {
 	padding: 0.5em 1em;
 	text-align: center;
 	text-shadow: 1px 1px rgba(0,0,0,0.34);
-	-webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
-	-moz-transition: background .2s ease-in-out, border .2s ease-in-out;
-	-ms-transition: background .2s ease-in-out, border .2s ease-in-out;
-	-o-transition: background .2s ease-in-out, border .2s ease-in-out;
-	transition: background .2s ease-in-out, border .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 	vertical-align: bottom;
 }
 
@@ -1311,47 +1311,56 @@ h6 {
 }
 
 .post-content .btn-success {
-	background-color: #62c462;
+	background-color: #6D9E36;
 }
 
 .post-content .btn-warning {
-	background-color: #f89406;
+	background-color: #A98E36;
 }
 
 .post-content .btn-danger {
-	background-color: #ee5f5b;
+	background-color: #EC6937;
 }
 
 .post-content .btn-info {
-	background-color: #52adc8;
+	background-color: #3B9EA7;
+}
+
+.post-content .btn-teal {
+	background-color: #39A281;
 }
 
 .post-content .btn-inverse {
 	background-color: #fff;
-	-webkit-box-shadow: inset 0 0 0 1px SlateGray;
-	-moz-box-shadow: inset 0 0 0 1px SlateGray;
-	box-shadow: inset 0 0 0 1px SlateGray;
+	-webkit-box-shadow: inset 0 0 0 1px #7E93A9;
+	-moz-box-shadow: inset 0 0 0 1px #7E93A9;
+	box-shadow: inset 0 0 0 1px #7E93A9;
 	color: #29313a !important;
+	text-shadow: none;
 }
 
 .post-content .btn:hover {
-	background-color: #29313a;
+	background-color: #5C6C7D;
 }
 
 .post-content .btn-success:hover {
-	background-color: #4e9d4e;
+	background-color: #507525;
 }
 
 .post-content .btn-warning:hover {
-	background-color: #c67605;
+	background-color: #7D6926;
 }
 
 .post-content .btn-danger:hover {
-	background-color: #be4c49;
+	background-color: #B04C26;
 }
 
 .post-content .btn-info:hover {
-	background-color: #428aa0;
+	background-color: #2A757B;
+}
+
+.post-content .btn-teal:hover {
+	background-color: #28775E;
 }
 
 .post-content .btn-inverse:hover {
