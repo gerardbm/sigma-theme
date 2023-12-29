@@ -1383,6 +1383,10 @@ h6 {
 	font-size: 1.25em;
 }
 
+.post-content .btn-block {
+	display: block;
+}
+
 .post-content .katex-display {
 	margin: 1.625em 0;
 }
