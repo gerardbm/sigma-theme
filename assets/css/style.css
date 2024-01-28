@@ -1293,7 +1293,9 @@ h6 {
 .post-content .btn-purple,
 .post-content .btn-pink,
 .post-content .btn-inverse {
-	border-radius: 4px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
 	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
 	-moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
@@ -1535,9 +1537,9 @@ h6 {
 }
 
 .social-share a {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
 	display: block;
 	float: left;
 	height: 32px;
@@ -1814,9 +1816,9 @@ footer a {
 .search-input {
 	background: #eef1f5;
 	border: 1px solid #cbd5e2;
-	-webkit-border-radius: 4px 0 0 4px;
-	-moz-border-radius: 4px 0 0 4px;
-	border-radius: 4px 0 0 4px;
+	-webkit-border-radius: 8px 0 0 8px;
+	-moz-border-radius: 8px 0 0 8px;
+	border-radius: 8px 0 0 8px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -1836,9 +1838,9 @@ footer a {
 	background: #cbd5e2;
 	border: 1px solid #cbd5e2;
 	border-left: none;
-	-webkit-border-radius: 0 4px 4px 0;
-	-moz-border-radius: 0 4px 4px 0;
-	border-radius: 0 4px 4px 0;
+	-webkit-border-radius: 0 8px 8px 0;
+	-moz-border-radius: 0 8px 8px 0;
+	border-radius: 0 8px 8px 0;
 	color: #29313a;
 	font-size: 1em;
 	height: 45px;
