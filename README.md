@@ -45,6 +45,7 @@ plugins:
   - jekyll-data
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-minifier
 ```
 
 And then execute:
