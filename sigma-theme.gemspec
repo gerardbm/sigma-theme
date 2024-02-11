@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "sigma-theme"
-  spec.version       = "4.1.4"
+  spec.version       = "4.1.5"
   spec.authors       = ["Gerard"]
   spec.email         = [""]
 
