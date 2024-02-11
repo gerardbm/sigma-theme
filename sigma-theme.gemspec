@@ -12,11 +12,11 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
 
-  spec.add_runtime_dependency "jekyll", "~> 4.3.3"
+  spec.add_runtime_dependency "jekyll", "~> 4.2.2"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.17.0"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
   spec.add_runtime_dependency "jekyll-data", "~> 1.1.1"
 
-  spec.add_development_dependency "bundler", "~> 2.5.6"
+  spec.add_development_dependency "bundler", "~> 2.1.2"
   spec.add_development_dependency "rake", "~> 13.0.6"
 end
