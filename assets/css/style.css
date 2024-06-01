@@ -863,8 +863,7 @@ h6 {
 .post-content .align-right,
 .post-content .align-left,
 .loop-excerpt,
-.loop-excerpt div,
-.post .adsbygoogle {
+.loop-excerpt div {
 	margin-bottom: 1.625em;
 }
 
