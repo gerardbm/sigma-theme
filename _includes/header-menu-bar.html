@@ -12,8 +12,8 @@
 	<div class="wrap">
 	<div class="tableize">
 		<div class="logo">
-			<a rel="home" title="{{ site.title }}" href="{{ "/" | relative_url }}">
-				<img width="{{ site.logo.width }}" height="{{ site.logo.height }}" src="{{ site.logo.path | relative_url }}" alt="{{ site.title }}" title="{{ site.title }}">
+			<a rel="home" title="{{ site.title }}" href="{{ "/" | relative_url }}" aria-label="{{ site.title }} logo">
+				{% include {{ site.logo.path }} %}
 			</a>
 		</div>
 		{% if site.data.navigation %}

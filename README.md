@@ -83,8 +83,19 @@ Logotype, in `_config.yml`:
 ```yml
 logo:
   path: relative path
-  width: an integer value
-  height: an integer value
+```
+
+The logotype must be a vectorial image in SVG Plain format. You can remove the colors from the file (via `fill:currentcolor`) to apply custom colors in CSS for light and dark mode. For example:
+
+```css
+.logo svg path {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.dark .logo svg path {
+  color: white;
+}
 ```
 
 Sticky menu, in `_config.yml`:
