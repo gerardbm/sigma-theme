@@ -368,7 +368,7 @@ img {
 .top-bar {
 	background: #eef1f5;
 	border-bottom: 1px solid #cbd5e2;
-	border-top: 5px solid #ff7f2a;
+	border-top: 5px solid #ff5511;
 	display: block;
 	height: 34px;
 	overflow: hidden;
@@ -500,11 +500,11 @@ section {
 
 .navigation ul li a:hover,
 .navigation ul li a.current {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .navigation ul li a:before {
-	background: #ff7f2a;
+	background: #ff5511;
 	bottom: 14px;
 	content: "";
 	height: 2px;
@@ -616,7 +616,7 @@ section {
 }
 
 .search-nav a:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .si-icon-toggle {
@@ -659,7 +659,7 @@ section {
 }
 
 .si-icon-toggle:hover:before {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .close-nav,
@@ -721,7 +721,7 @@ section {
 }
 
 .title-bar .breadcrumbs a:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .title-bar .breadcrumbs .sep {
@@ -765,7 +765,7 @@ section {
 }
 
 .home-title-bar span {
-	color: #ff7f2a;
+	color: #ff5511;
 	font-weight: bold;
 }
 
@@ -776,7 +776,7 @@ section {
 }
 
 .home-title-bar a:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 /* --- */
@@ -907,7 +907,7 @@ h6 {
 }
 
 .post-meta a:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .post-content h2 {
@@ -932,7 +932,7 @@ h6 {
 }
 
 .post-content a:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .post-content img {
@@ -1503,7 +1503,7 @@ h6 {
 
 .sidenav ul li a.current {
 	background: #dce3eb;
-	border-right: 2px solid #ff7f2a;
+	border-right: 2px solid #ff5511;
 }
 
 .sidenav ul li ul li a,
@@ -1665,7 +1665,7 @@ h6 {
 }
 
 .next-prev a:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 /*----------------------------------------------------------*/
@@ -1829,7 +1829,7 @@ footer a {
 }
 
 .search-input:focus {
-	border: 1px solid #ff7f2a;
+	border: 1px solid #ff5511;
 	outline: none;
 }
 
@@ -1849,7 +1849,7 @@ footer a {
 }
 
 .search-button:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .search-button,
@@ -1890,7 +1890,7 @@ footer a {
 
 .post-content .searchresult a.title:hover,
 .post-content .searchresult a.url:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 /*----------------------------------------------------------*/
@@ -2086,7 +2086,7 @@ footer a {
 	}
 
 	.navigation.menu-visible ul li a:hover {
-		color: #ff7f2a;
+		color: #ff5511;
 	}
 
 	.navigation.menu-visible li a:after {
@@ -2094,8 +2094,8 @@ footer a {
 	}
 
 	.navigation.menu-visible ul li a.current {
-		border-left-color: #ff7f2a;
-		color: #ff7f2a;
+		border-left-color: #ff5511;
+		color: #ff5511;
 	}
 
 	.navigation.menu-visible ul li ul {
@@ -2224,7 +2224,7 @@ footer a {
 	}
 
 	.close-nav:hover {
-		color: #ff7f2a;
+		color: #ff5511;
 	}
 
 	.close-nav:before {
@@ -2266,7 +2266,7 @@ footer a {
 	}
 
 	.nav-bar a:hover {
-		color: #ff7f2a;
+		color: #ff5511;
 	}
 
 	.nav-bar span {
@@ -2524,11 +2524,11 @@ footer a {
 
 .dark .navigation ul li a:hover,
 .dark .navigation ul li a.current {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .dark .navigation ul li a:before {
-	background: #ff7f2a;
+	background: #ff5511;
 }
 
 .dark .navigation ul li ul {
@@ -2555,7 +2555,7 @@ footer a {
 }
 
 .dark .search-nav a:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .dark .si-icon-toggle {
@@ -2570,7 +2570,7 @@ footer a {
 }
 
 .dark .si-icon-toggle:hover:before {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .dark .title-bar {
@@ -2593,7 +2593,7 @@ footer a {
 }
 
 .dark .title-bar .breadcrumbs a:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .dark .home-title-bar {
@@ -2602,7 +2602,7 @@ footer a {
 }
 
 .dark .home-title-bar span {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .dark .home-title-bar a:link,
@@ -2612,7 +2612,7 @@ footer a {
 }
 
 .dark .home-title-bar a:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .dark .main-content {
@@ -2630,7 +2630,7 @@ footer a {
 }
 
 .dark .post-meta a:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .dark .post-content h2 {
@@ -2649,7 +2649,7 @@ footer a {
 }
 
 .dark .post-content a:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .dark .post-content figcaption {
@@ -2918,7 +2918,7 @@ footer a {
 }
 
 .dark .next-prev a:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .dark footer {
@@ -2946,7 +2946,7 @@ footer a {
 }
 
 .dark .search-input:focus {
-	border: 1px solid #ff7f2a;
+	border: 1px solid #ff5511;
 }
 
 .dark .search-button {
@@ -2957,7 +2957,7 @@ footer a {
 }
 
 .dark .search-button:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 .dark .post-content .searchresult a.title:link,
@@ -2972,7 +2972,7 @@ footer a {
 
 .dark .post-content .searchresult a.title:hover,
 .dark .post-content .searchresult a.url:hover {
-	color: #ff7f2a;
+	color: #ff5511;
 }
 
 @media only screen and (max-width : 1024px) {
@@ -3011,12 +3011,12 @@ footer a {
 	}
 
 	.dark .navigation.menu-visible ul li a:hover {
-		color: #ff7f2a;
+		color: #ff5511;
 	}
 
 	.dark .navigation.menu-visible ul li a.current {
-		border-left-color: #ff7f2a;
-		color: #ff7f2a;
+		border-left-color: #ff5511;
+		color: #ff5511;
 	}
 
 	.dark .navigation.menu-visible ul li ul {
@@ -3048,7 +3048,7 @@ footer a {
 	}
 
 	.dark .close-nav:hover {
-		color: #ff7f2a;
+		color: #ff5511;
 	}
 
 	.dark .nav-bar {
@@ -3070,7 +3070,7 @@ footer a {
 	}
 
 	.dark .nav-bar a:hover {
-		color: #ff7f2a;
+		color: #ff5511;
 	}
 
 	.dark .nav-bar span {
@@ -3098,18 +3098,18 @@ footer a {
 @media (hover: hover) and (pointer: fine) {
 
 	a:hover {
-		color: #ff7f2a;
+		color: #ff5511;
 	}
 	.top-bar a:hover {
-		color: #ff7f2a;
+		color: #ff5511;
 	}
 	.scrollup:hover {
-		background: #ff7f2a;
+		background: #ff5511;
 	}
 	.dark a:hover {
-		color: #ff7f2a;
+		color: #ff5511;
 	}
 	.dark .top-bar a:hover {
-		color: #ff7f2a;
+		color: #ff5511;
 	}
 }
