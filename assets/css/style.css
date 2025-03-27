@@ -620,7 +620,7 @@ section {
 }
 
 .si-icon-toggle {
-	background: #eef1f5;
+	background: #f8e4aa;
 	-webkit-border-radius: 14px;
 	-moz-border-radius: 14px;
 	border-radius: 14px;
@@ -2559,7 +2559,7 @@ footer a {
 }
 
 .dark .si-icon-toggle {
-	background: #33373c;
+	background: #24435a;
 }
 
 .dark .si-icon-toggle:before {
