@@ -1,0 +1,38 @@
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": {{ site.title | jsonify }},
+      "item": "{{ site.url }}{{ site.baseurl }}/"
+    },
+    {%- assign position = 2 -%}
+
+    {%- if page.categories != empty -%}
+    {%- assign path = "" -%}
+      {%- for category in page.categories -%}
+      {%- assign slug = category | slugify: 'latin' -%}
+      {%- assign path = path | append: '/' | append: slug %}
+    {
+      "@type": "ListItem",
+      "position": {{ position }},
+      "name": {{ category | jsonify }},
+      "item": "{{ site.url }}{{ site.baseurl }}{{ path }}/"
+    },
+      {%- assign position = position | plus: 1 -%}
+      {%- endfor -%}
+    {%- endif %}
+    {
+      "@type": "ListItem",
+      "position": {{ position }}, {% if page.cat %}
+      "name": {{ page.cat | jsonify }}, {% elsif page.h1 %}
+      "name": {{ page.h1 | jsonify }}, {% else %}
+      "name": {{ page.title | jsonify }}, {% endif %}
+      "item": "{{ site.url }}{{ page.url }}"
+    }
+  ]
+}
+</script>
