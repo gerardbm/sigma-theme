@@ -724,7 +724,8 @@ section {
 	color: #ff5511;
 }
 
-.title-bar .breadcrumbs .sep {
+.title-bar .breadcrumbs li + li::before {
+	content: attr(data-sep);
 	padding: 0;
 }
 
