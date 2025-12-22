@@ -1,34 +1,27 @@
 {% assign t = site.data.translations %}
-{% assign i = 2 %}
-<nav class="breadcrumbs">
-	<ol itemscope itemtype="http://schema.org/BreadcrumbList">
-		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-			<span>{{ t[site.lang]['path'] }}: </span>
-			<a itemprop="item" href="{{ "/" | relative_url }}">
-				<span itemprop="name">{{ site.title }}</span></a>
-			<meta itemprop="position" content="1"/>
+{% assign path = "" %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <span>{{ t[site.lang]['path'] }}: </span>
+	<ol>
+		<li>
+			<a href="{{ "/" | relative_url }}"><span>{{ site.title }}</span></a>
 		</li>
 		{% if page.categories != empty %}
 			{% for category in page.categories %}
 			{% assign slug = category | slugify: 'latin' %}
 			{% assign path = path | append: '/' | append: slug %}
-		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-			<span class="sep">{{ site.bc_sep }}</span>
-			<a itemprop="item" href="{{ path }}/">
-				<span itemprop="name">{{ category }}</span></a>
-			<meta itemprop="position" content="{{ i }}"/>
-			{% assign i = i | plus: 1 %}
+		<li data-sep="{{ site.bc_sep }}">
+			<a href="{{ path }}/"><span>{{ category }}</span></a>
 		</li>
 			{% endfor %}
 		{% endif %}
-		<li>
-			<span class="sep">{{ site.bc_sep }}</span>
+		<li data-sep="{{ site.bc_sep }}">
 			{% if page.cat %}
-			<span itemprop="name">{{ page.cat }}</span>
+			<span>{{ page.cat }}</span>
 			{% elsif page.h1 %}
-			<span itemprop="name">{{ page.h1 }}</span>
+			<span>{{ page.h1 }}</span>
 			{% else %}
-			<span itemprop="name">{{ page.title }}</span>
+			<span>{{ page.title }}</span>
 			{% endif %}
 		</li>
 	</ol>
