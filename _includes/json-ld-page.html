@@ -1,0 +1,25 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}{{ page.url }}#webpage",
+  "name": {{ page.h1 | default: page.title | jsonify }},
+  "url": "{{ site.url }}{{ page.url }}",
+  {%- if page.metadesc %}
+  "description": {{ page.metadesc | jsonify }},
+  {%- endif %}
+  "inLanguage": "es",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "{{ site.url }}/#website",
+    "url": "{{ site.url }}",
+    "name": {{ site.title | jsonify }}
+  },
+  {%- if page.image %}
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}/{{ page.image }}"
+  }
+  {%- endif %}
+}
+</script>
