@@ -5,12 +5,8 @@
 	font-family: 'Oswald';
 	font-style: normal;
 	font-weight: 400;
-	src: url('/assets/fonts/oswald-v29-latin-regular.eot');
-	src: url('/assets/fonts/oswald-v29-latin-regular.eot?#iefix') format('embedded-opentype'),
-		url('/assets/fonts/oswald-v29-latin-regular.woff2') format('woff2'),
-		url('/assets/fonts/oswald-v29-latin-regular.woff') format('woff'),
-		url('/assets/fonts/oswald-v29-latin-regular.ttf') format('truetype'),
-		url('/assets/fonts/oswald-v29-latin-regular.svg#Oswald') format('svg');
+	src: url('/assets/fonts/oswald-v29-latin-regular.woff2') format('woff2'),
+		url('/assets/fonts/oswald-v29-latin-regular.woff') format('woff');
 }
 
 @font-face {
@@ -18,12 +14,8 @@
 	font-family: 'sigma-icons';
 	font-style: normal;
 	font-weight: 400;
-	src: url('/assets/fonts/sigma-icons.eot');
-	src: url('/assets/fonts/sigma-icons.eot?#iefix') format('embedded-opentype'),
-		url('/assets/fonts/sigma-icons.woff2') format('woff2'),
-		url('/assets/fonts/sigma-icons.woff') format('woff'),
-		url('/assets/fonts/sigma-icons.ttf') format('truetype'),
-		url('/assets/fonts/sigma-icons.svg#sigma-icons') format('svg');
+	src: url('/assets/fonts/sigma-icons.woff2') format('woff2'),
+		url('/assets/fonts/sigma-icons.woff') format('woff');
 }
 
 /*----------------------------------------------------------*/
