@@ -3,7 +3,7 @@
 <nav class="breadcrumbs" aria-label="Breadcrumb">
   <span>{{ t[site.lang]['path'] }}: </span>
 	<ol>
-		<li>
+		<li data-sep="{{ site.bc_sep }}">
 			<a href="{{ "/" | relative_url }}"><span>{{ site.title }}</span></a>
 		</li>
 		{% if page.categories != empty %}
@@ -15,7 +15,7 @@
 		</li>
 			{% endfor %}
 		{% endif %}
-		<li data-sep="{{ site.bc_sep }}">
+		<li>
 			{% if page.cat %}
 			<span>{{ page.cat }}</span>
 			{% elsif page.h1 %}
