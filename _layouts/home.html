@@ -1,26 +1,46 @@
 ---
 layout: default
 ---
-{%- if page.ldjson == true %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "{{ site.url }}/#homepage",
   "name": {{ page.title | jsonify }},
   "url": "{{ site.url }}{{ page.url }}",
-  "inLanguage": "es-ES",
+  {%- if page.metadesc %}
+  "description": {{ page.metadesc | jsonify }},
+  {%- endif %}
+  "inLanguage": "es",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "{{ site.url }}/#website",
     "url": "{{ site.url }}",
     "name": {{ site.title | jsonify }}
   },
+  {%- if page.image %}
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "{{ site.url }}/{{ page.image }}"
   }
+  {%- endif %}
 }
 </script>
-{% endif -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "{{ site.url }}/#website",
+  "url": "{{ site.url }}",
+  "name": {{ site.title | jsonify }},
+  "inLanguage": "es",
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}"
+  }
+}
+</script>
 
 {%- if site.sticky_menu == true -%}
 {%- assign scroll = " scroll-55" -%}

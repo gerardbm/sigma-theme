@@ -1,26 +1,31 @@
 ---
 layout: default
 ---
-{%- if page.ldjson == true %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": {{ page.h1 | jsonify }},
+  "@id": "{{ site.url }}{{ page.url }}#collection",
+  "name": {{ page.h1 | default: page.title | jsonify }},
   "url": "{{ site.url }}{{ page.url }}",
-  "inLanguage": "es-ES",
+  {%- if page.metadesc %}
+  "description": {{ page.metadesc | jsonify }},
+  {%- endif %}
+  "inLanguage": "es",
   "isPartOf": {
     "@type": "WebSite",
+    "@id": "{{ site.url }}/#website",
     "url": "{{ site.url }}",
     "name": {{ site.title | jsonify }}
   },
+  {%- if page.image %}
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "{{ site.url }}/{{ page.image }}"
   }
+  {%- endif %}
 }
 </script>
-{% endif -%}
 
 {%- if site.sticky_menu == true -%}
 {%- assign scroll = " scroll-55" -%}
