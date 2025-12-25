@@ -14,8 +14,8 @@
     "@id": "{{ site.url }}/#website",
     "name": {{ site.title | jsonify }},
     "url": "{{ site.url }}"
-  },
-  {%- if page.image %}
+  }
+  {%- if page.image %},
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "{{ site.url }}/{{ page.image }}"

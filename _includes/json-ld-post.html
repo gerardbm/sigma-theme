@@ -36,8 +36,8 @@
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ site.url }}{{ page.url }}"
-  },
-  {%- if page.image %}
+  }
+  {%- if page.image %},
   "image": {
     "@type": "ImageObject",
     "url": "{{ site.url }}/{{ page.image }}"
