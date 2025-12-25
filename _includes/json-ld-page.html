@@ -12,8 +12,8 @@
   "isPartOf": {
     "@type": "WebSite",
     "@id": "{{ site.url }}/#website",
-    "url": "{{ site.url }}",
-    "name": {{ site.title | jsonify }}
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}"
   },
   {%- if page.image %}
   "primaryImageOfPage": {
