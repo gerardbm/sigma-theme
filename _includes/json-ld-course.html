@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "@id": "{{ site.url }}{{ page.url }}#course",
+  "name": {{ page.h1 | default: page.title | jsonify }},
+  "url": "{{ site.url }}{{ page.url }}",
+  {%- if page.metadesc %}
+  "description": {{ page.metadesc | jsonify }},
+  {%- endif %}
+  "inLanguage": "es",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "@id": "{{ site.url }}/#organization",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "{{ site.url }}/#website"
+  }
+  {%- if page.image %},
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}/{{ page.image }}"
+  }
+  {%- endif %}
+}
+</script>

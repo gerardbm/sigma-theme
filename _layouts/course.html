@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% include json-ld-course.html %}
+
+{%- if site.sticky_menu == true -%}
+{%- assign scroll = " scroll-55" -%}
+{%- endif -%}
+
+<div class="post{{ scroll }}">
+
+	{%- if page.zone.content_top -%}
+	{%- include {{ page.zone.content_top }} -%}
+	{%- endif -%}
+
+	{%- if page.h1 -%}
+		<h1 class="post-title">{{ page.h1 }}</h1>
+	{%- else -%}
+		<h1 class="post-title">{{ page.title }}</h1>
+	{%- endif -%}
+
+	<div class="post-content">
+		{{ content }}
+	</div>
+
+	{%- if page.zone.content_bottom -%}
+	{%- include {{ page.zone.content_bottom }} -%}
+	{%- endif -%}
+
+	{%- if page.share == true -%}
+	{%- include social-share.html -%}
+	{%- endif -%}
+
+</div>
