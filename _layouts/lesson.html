@@ -1,0 +1,56 @@
+---
+layout: default
+---
+{% include json-ld-lesson.html %}
+
+{%- if site.sticky_menu == true -%}
+{%- assign scroll = " scroll-55" -%}
+{%- endif -%}
+
+<div class="post h-entry{{ scroll }}">
+
+	<article>
+		{%- if page.zone.content_top -%}
+		{%- include {{ page.zone.content_top }} -%}
+		{%- endif -%}
+
+		<header>
+		{%- if page.h1 -%}
+			<h1 class="post-title">{{ page.h1 }}</h1>
+		{%- else -%}
+			<h1 class="post-title">{{ page.title }}</h1>
+		{%- endif -%}
+
+		{%- if page.postmeta -%}
+			{% include post-meta.html %}
+		{%- endif -%}
+		</header>
+
+		<div class="post-content">
+			{{ content }}
+		</div>
+
+		{%- if page.zone.content_bottom -%}
+		{%- include {{ page.zone.content_bottom }} -%}
+		{%- endif -%}
+	</article>
+
+	{%- if page.post_np == true -%}
+		{%- if page.nav_by == "cat" -%}
+		{%- include next-prev-cat.html -%}
+		{%- endif -%}
+
+		{%- if page.nav_by == "tag" -%}
+		{%- include next-prev-tag.html -%}
+		{%- endif -%}
+	{%- endif -%}
+
+	{%- if page.share == true -%}
+	{%- include social-share.html -%}
+	{%- endif -%}
+
+	{%- if site.disqus.shortname -%}
+	{%- include disqus_comments.html -%}
+	{%- endif -%}
+
+</div>
