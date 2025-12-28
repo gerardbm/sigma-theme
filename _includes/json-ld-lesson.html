@@ -36,11 +36,13 @@
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ site.url }}{{ page.url }}"
-  },
+  }
+  {%- if page.course_path %},
   "isPartOf": {
     "@type": "Course",
-    "@id": "{{ site.url }}/{{ page.category }}/#course"
+    "@id": "{{ site.url }}{{ page.course_path }}#course"
   }
+  {%- endif %}
   {%- if page.image %},
   "image": {
     "@type": "ImageObject",
