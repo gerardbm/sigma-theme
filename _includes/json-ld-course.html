@@ -23,7 +23,22 @@
   "image": {
     "@type": "ImageObject",
     "url": "{{ site.url }}/{{ page.image }}"
-  }
+  },
+  "hasPart": [
+  {%- assign lesson_tag = page.cat | append: "-art" -%}
+  {%- assign lessons = site.categories[page.cat]
+    | where: "tag", lesson_tag
+    | sort: "order"
+  -%}
+  {%- for post in lessons -%}
+    {
+    "@type": "Article",
+    "@id": "{{ site.url }}{{ post.url }}#article",
+    "headline": {{ post.h1 | default: post.title | jsonify }},
+    "url": "{{ site.url }}{{ post.url }}"
+  }{%- unless forloop.last %},{%- endunless %}
+  {%- endfor -%}
+]
   {%- endif %}
 }
 </script>
