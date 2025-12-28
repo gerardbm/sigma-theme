@@ -294,7 +294,7 @@ Tools for the content, in post or page front matter:
 - `suffix`: true or false to add a suffix to the post/page: `" | MySite"` with the title site.
 - `og_type`: introduce Open Graph metadata about of the type of your content: article, video, music, book, profile or website.
 - `author_type`: «Person» or «Organization» to define the author type (used in ld+json).
-- `course`: true or false to convert categories to courses and posts to lessons. It will use the correct ld+json.
+- `course`: true or false to convert categories to courses and posts to lessons. It will use the correct ld+json. Add the tag «lesson» in articles considered lessons.
 - `course_path`: when `course: true`, specify a path for the course (parent URL).
 
 ### Setting up default settings for all posts and pages, automatically

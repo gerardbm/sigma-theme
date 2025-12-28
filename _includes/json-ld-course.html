@@ -25,9 +25,8 @@
     "url": "{{ site.url }}/{{ page.image }}"
   },
   "hasPart": [
-  {%- assign lesson_tag = page.cat | append: "-art" -%}
   {%- assign lessons = site.categories[page.cat]
-    | where: "tag", lesson_tag
+    | where: "tag", "lesson"
     | sort: "order"
   -%}
   {%- for post in lessons -%}
