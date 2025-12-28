@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-{% include json-ld-category.html %}
+{%- if page.course == true -%}
+{%- include json-ld-course.html -%}
+{%- else -%}
+{%- include json-ld-category.html -%}
+{%- endif -%}
 
 {%- if site.sticky_menu == true -%}
 {%- assign scroll = " scroll-55" -%}
