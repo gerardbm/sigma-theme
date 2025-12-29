@@ -303,7 +303,7 @@ By default, posts use the type «Article» and categories are «CollectionPage»
   - Category («CollectionPage») to course («Course» with «hasPart» lessons).
 - `course_path`: when `course: true`, specify a path for the course (URL).
 
-Who is the author of the posts/lessons? «Person» or «Organization»:
+The author of the posts/lessons can be «Person» or «Organization»:
 
 - `organization`: true if it's an «Organization». If not, the default is «Person».
 
