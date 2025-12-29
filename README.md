@@ -293,9 +293,19 @@ Tools for the content, in post or page front matter:
 - `version`: any value, version number or date for CSS/JS files.
 - `suffix`: true or false to add a suffix to the post/page: `" | MySite"` with the title site.
 - `og_type`: introduce Open Graph metadata about of the type of your content: article, video, music, book, profile or website.
-- `author_type`: «Person» or «Organization» to define the author type (used in ld+json).
-- `course`: true or false to convert categories to courses and posts to lessons. It will use the correct ld+json. Add the tag «lesson» in articles considered lessons.
-- `course_path`: when `course: true`, specify a path for the course (parent URL).
+
+Customize the ld+json:
+
+By default, posts use the type «Article» and categories are «CollectionPage». To change this to lessons and courses, use the following:
+
+- `course`: true or false. «True» will convert:
+  - Post («Article») to lesson («Article» with «isPartOf» the course).
+  - Category («CollectionPage») to course («Course» with «hasPart» lessons).
+- `course_path`: when `course: true`, specify a path for the course (URL).
+
+Who is the author of the posts/lessons? «Person» or «Organization»:
+
+- `organization`: true if it's an «Organization». If not, the default is «Person».
 
 ### Setting up default settings for all posts and pages, automatically
 
@@ -309,7 +319,7 @@ defaults:
     values:
       read_time: true
       breadcrumbs: true
-      author_type: Organization
+      organization: true
       nav_by: cat
       navbar: ture
       posts_np: ture
@@ -336,6 +346,20 @@ defaults:
         pages: true
         categories: true
       robots: noindex,nofollow
+  - scope:
+      path: "*/course/linux/"
+      type: "posts"
+    values:
+      course: true
+      course_path: "/course/linux/"
+      sidebar: left
+      sidebar_custom: sidebar-linux.html
+      nav_by: tag
+      navbar: true
+      post_np: true
+      share: true
+      rouge: true
+      tag: linux-lessons
 ```
 
 ### Category pages

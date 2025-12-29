@@ -14,12 +14,14 @@
   "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},
   {%- endif %}
   "author": {
-    "@type": "{{ page.author_type }}",
-    {%- if page.author_type == "Organization" %}
+    {%- if page.organization == true %}
+    "@type": "Organization",
     "@id": "{{ site.url }}/#organization",
+    "url": "{{ site.url }}",
+    {%- else %}
+    "@type": "Person",
     {%- endif %}
-    "name": {{ page.author | jsonify }},
-    "url": "{{ site.url }}"
+    "name": {{ page.author | jsonify }}
   },
   "publisher": {
     "@type": "Organization",
@@ -37,7 +39,7 @@
     "@type": "WebPage",
     "@id": "{{ site.url }}{{ page.url }}"
   }
-  {%- if page.course_path %},
+  {%- if page.course == true and page.course_path %},
   "isPartOf": {
     "@type": "Course",
     "@id": "{{ site.url }}{{ page.course_path }}#course"

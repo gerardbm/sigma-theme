@@ -26,7 +26,7 @@
   },
   "hasPart": [
   {%- assign lessons = site.categories[page.cat]
-    | where: "tag", "lesson"
+    | where: "course", true
     | sort: "order"
   -%}
   {%- for post in lessons -%}
